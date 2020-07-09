@@ -450,6 +450,10 @@ header .professionalBanner {
     margin-bottom: 5%;
 }
 
+.sideContent a{
+    color: black;
+}
+
 .projectNavigation .projectCarousel {
     display: flex;
     flex-direction: row;

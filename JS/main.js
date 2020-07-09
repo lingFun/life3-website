@@ -261,6 +261,42 @@ function sortContent(index) {
       var projectMembers = [];
 
       break;
+    case "mucktracker":
+      $(".projectHeadline").text("Mucktracker Value Proposition");
+      $(".projectConcept").text(
+        "Mucktracker’s platform allows students to survey coverage of newsworthy events and compare reporting from a range of diverse sources. Through data visualization, digital annotation, and organizational tools, students improve their 21st century media literacy skills in a fresh, relevant, and engaging way."
+      );
+      $(".projectDescription").text(
+        "Mucktracker had a need for design of an application for students to research current news in a visually appealing way. This led to design of the Search Engine Result Page (SERP) from both a User Interface (UI) perspective as well as on advisement on the use of Application Program Interfaces (APIs) to access news from different news sources."
+      );
+      $(".weOffer").text(
+        "LIFE3 consulted with company stakeholders, gathered business requirements, led User Interface design, and presented requirements for a Minimum Viable Product (MVP). We presented various options for User Interface design, tied the design to API functionality, and advised on the implementation of Artificial Intelligence as part of their MVP release."
+      );
+      //$(".phasesTable tr")[3].innerHTML = "<th>p1</th><th>p2</th><th>p3</th>"
+      $(".adviseList").css("display", "block");
+      $(".adviseList p")[2].innerHTML = "Functional Specs";
+      $(".adviseList p")[3].innerHTML = "Application Design";
+      $(".adviseList p")[4].innerHTML = "Application Development";
+      $(".adviseList ul")[0].innerHTML =
+        "<li>- User Requirements</li> <li>- API Specifications</li>";
+      $(".adviseList ul")[1].innerHTML =
+        "<li>- Hi-Fidelity Wireframe </li> <li>- Mock-ups</li>";
+      $(".adviseList ul")[2].innerHTML =
+        "<li>- Development Roadmap </li> <li>- AI implementation</li>";
+      // $(".mobileServicesTable .adviseList p")[2].innerHTML = "Functional Specs";
+      // $(".mobileServicesTable .adviseList p")[3].innerHTML = "Application Design";
+      // $(".mobileServicesTable .adviseList p")[4].innerHTML = "Application Development";
+      $(".mobileServicesTable .adviseList ul")[0].innerHTML =
+        "<li>- User Requirements</li> <li>- API Specifications</li>";
+      $(".mobileServicesTable .adviseList ul")[1].innerHTML =
+        "<li>- Hi-Fidelity Wireframe </li> <li>- Mock-ups</li>";
+      $(".mobileServicesTable .adviseList ul")[2].innerHTML =
+        "<li>- Development Roadmap </li> <li>- AI implementation</li>";
+
+      var projectImages = [      ];
+      var projectMembers = ["omarD","micaelaR"]; 
+
+      break;
     /*  --------Template for Adding Client Information ----------- 
 
 
