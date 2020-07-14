@@ -1,4 +1,4 @@
-
+<?php require_once('../functions/config.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
