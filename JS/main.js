@@ -127,6 +127,14 @@ function sortImages(projectImages) {
     $(".sideContentImages").append("<img src='" + this + "'>");
   });
 }
+function sortImages2(projectImages) {
+  $(".ContentImages")
+    .children()
+    .remove();
+  $(projectImages).each(function() {
+    $(".ContentImages").append("<img src='" + this + "'>");
+  });
+}
 var project = "";
 function sortContent(index) {
   $("body").css("overflow", "hidden");
@@ -151,17 +159,17 @@ function sortContent(index) {
 
       $(".adviseList").css("display", "block");
       $(".adviseList ul")[0].innerHTML =
-        "<li>- User Persona </li> <li>- Competitive Analysis</li>";
+        "<li>User Persona </li> <li>Competitive Analysis</li>";
       $(".adviseList ul")[1].innerHTML =
-        "<li>- Empathy Maps </li> <li>- User Stories</li>";
+        "<li>Empathy Maps </li> <li>User Stories</li>";
       $(".adviseList ul")[2].innerHTML =
-        "<li>- Design Requirements </li> <li>- Hi-Fidelity Wireframe</li>";
+        "<li>Design Requirements </li> <li>Hi-Fidelity Wireframe</li>";
       $(".mobileServicesTable .adviseList ul")[0].innerHTML =
-        "<li>- User Persona </li> <li>- Competitive Analysis</li>";
+        "<li>User Persona </li> <li>Competitive Analysis</li>";
       $(".mobileServicesTable .adviseList ul")[1].innerHTML =
-        "<li>- Empathy Maps </li> <li>- User Stories</li>";
+        "<li>Empathy Maps </li> <li>User Stories</li>";
       $(".mobileServicesTable .adviseList ul")[2].innerHTML =
-        "<li>- Design Requirements </li> <li>- Hi-Fidelity Wireframe</li>";
+        "<li>Design Requirements </li> <li>Hi-Fidelity Wireframe</li>";
       var projectImages = [
         "Assets/Images/GroupImages/LIFE3 WEB TEAM.png",
         "Assets/Images/GroupImages/LIFE3 TEAM PIX.png"
@@ -188,13 +196,13 @@ function sortContent(index) {
       $($(".adviseList")[2]).css("display", "none");
       $($(".mobileServicesTable .adviseList")[2]).css("display", "none");
       $(".adviseList ul")[0].innerHTML =
-        "<li>- User Surverys </li> <li>- User Flows</li> <li>- User Persona</li> <li>- Competitive Analysis</li>";
+        "<li>User Surverys </li> <li>User Flows</li> <li>User Persona</li> <li>Competitive Analysis</li>";
       $(".adviseList ul")[1].innerHTML =
-        "<li>- Empathy Maps </li> <li>- As-Is Scenario</li> <li>- Idea Prioritization</li><li>- User Stories</li>";
+        "<li>Empathy Maps </li> <li>As-Is Scenario</li> <li>Idea Prioritization</li><li>User Stories</li>";
       $(".mobileServicesTable .adviseList ul")[0].innerHTML =
-        "<li>- User Surverys </li> <li>- User Flows</li> <li>- User Persona</li> <li>- Competitive Analysis</li>";
+        "<li>User Surverys </li> <li>User Flows</li> <li>User Persona</li> <li>Competitive Analysis</li>";
       $(".mobileServicesTable .adviseList ul")[1].innerHTML =
-        "<li>- Empathy Maps </li> <li>- As-Is Scenario</li> <li>- Idea Prioritization</li><li>- User Stories</li>";
+        "<li>Empathy Maps </li> <li>As-Is Scenario</li> <li>Idea Prioritization</li><li>User Stories</li>";
       var projectImages = [
         "Assets/Images/GroupImages/generatorOne.jpg",
         "Assets/Images/GroupImages/generatorTwo.jpg"
@@ -215,17 +223,17 @@ function sortContent(index) {
       );
       $(".adviseList").css("display", "block");
       $(".adviseList ul")[0].innerHTML =
-        "<li>- User Persona</li> <li>- Competitive Analysis</li>";
+        "<li>User Persona</li> <li>Competitive Analysis</li>";
       $(".adviseList ul")[1].innerHTML =
-        "<li>- Empathy Maps </li> <li>- User Stories</li>";
+        "<li>Empathy Maps </li> <li>User Stories</li>";
       $(".adviseList ul")[2].innerHTML =
-        "<li>- Design Requirements </li> <li>- Hi-Fidelity Wireframe</li>";
+        "<li>Design Requirements </li> <li>Hi-Fidelity Wireframe</li>";
       $(".mobileServicesTable .adviseList ul")[0].innerHTML =
-        "<li>- User Persona</li> <li>- Competitive Analysis</li>";
+        "<li>User Persona</li> <li>Competitive Analysis</li>";
       $(".mobileServicesTable .adviseList ul")[1].innerHTML =
-        "<li>- Empathy Maps </li> <li>- User Stories</li>";
+        "<li>Empathy Maps </li> <li>User Stories</li>";
       $(".mobileServicesTable .adviseList ul")[2].innerHTML =
-        "<li>- Design Requirements </li> <li>- Hi-Fidelity Wireframe</li>";
+        "<li>Design Requirements </li> <li>Hi-Fidelity Wireframe</li>";
 
       var projectImages = [
         "Assets/Images/GroupImages/tvsenseiOne.jpg",
@@ -243,7 +251,6 @@ function sortContent(index) {
         "../Assets/Images/GroupImages/prattOne.png",
         "../Assets/Images/GroupImages/prattTwo.png",
         "../Assets/Images/GroupImages/prattThree.jpg",
-        "../Assets/Images/GroupImages/prattFour.jpg",
         "../Assets/Images/GroupImages/prattFive.jpg"
       ];
       var projectMembers = [];
@@ -274,24 +281,24 @@ function sortContent(index) {
       );
       //$(".phasesTable tr")[3].innerHTML = "<th>p1</th><th>p2</th><th>p3</th>"
       $(".adviseList").css("display", "block");
-      $(".adviseList p")[2].innerHTML = "Functional Specs";
-      $(".adviseList p")[3].innerHTML = "Application Design";
-      $(".adviseList p")[4].innerHTML = "Application Development";
+      // $(".adviseList p")[2].innerHTML = "Functional Specs";
+      // $(".adviseList p")[3].innerHTML = "Application Design";
+      // $(".adviseList p")[4].innerHTML = "Application Development";
       $(".adviseList ul")[0].innerHTML =
-        "<li>- User Requirements</li> <li>- API Specifications</li>";
+        "<li>User Requirements</li> <li>API Specifications</li>";
       $(".adviseList ul")[1].innerHTML =
-        "<li>- Hi-Fidelity Wireframe </li> <li>- Mock-ups</li>";
+        "<li>Hi-Fidelity Wireframe </li> <li>Mock-ups</li>";
       $(".adviseList ul")[2].innerHTML =
-        "<li>- Development Roadmap </li> <li>- AI implementation</li>";
+        "<li>Development Roadmap </li> <li>AI implementation</li>";
       // $(".mobileServicesTable .adviseList p")[2].innerHTML = "Functional Specs";
       // $(".mobileServicesTable .adviseList p")[3].innerHTML = "Application Design";
       // $(".mobileServicesTable .adviseList p")[4].innerHTML = "Application Development";
       $(".mobileServicesTable .adviseList ul")[0].innerHTML =
-        "<li>- User Requirements</li> <li>- API Specifications</li>";
+        "<li>User Requirements</li> <li>API Specifications</li>";
       $(".mobileServicesTable .adviseList ul")[1].innerHTML =
-        "<li>- Hi-Fidelity Wireframe </li> <li>- Mock-ups</li>";
+        "<li>Hi-Fidelity Wireframe </li> <li>Mock-ups</li>";
       $(".mobileServicesTable .adviseList ul")[2].innerHTML =
-        "<li>- Development Roadmap </li> <li>- AI implementation</li>";
+        "<li>Development Roadmap </li> <li>AI implementation</li>";
 
       var projectImages = [      ];
       var projectMembers = ["omarD","micaelaR"]; 
@@ -351,6 +358,7 @@ function sortContent(index) {
   });
 
   sortImages(projectImages);
+  sortImages2(projectImages);
   sortTeam(projectMembers);
 }
 

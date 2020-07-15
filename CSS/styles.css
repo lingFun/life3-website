@@ -453,6 +453,11 @@ header .professionalBanner {
 .sideContent a{
     color: black;
 }
+.ContentImages img{
+    width: 60%;
+    height: auto;
+    margin: 3vh;
+}
 
 .projectNavigation .projectCarousel {
     display: flex;
@@ -568,8 +573,12 @@ header .professionalBanner {
     margin: 2vh 0vw 0;
 }
 
-.servicesTable .adviseList ul {
+.servicesTable {
     list-style-type: none;
+}
+
+.adviseList p {
+    font-weight: bold;
 }
 
 .aboutTeam {
