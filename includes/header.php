@@ -12,7 +12,8 @@
     <div>
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li class="floatright"><a href="signin.html">Sign in</a></li>
+      <li class="floatright"><a href="signup.php">Sign up</a></li>
+      <li class="floatright"><a href="signin.php">Sign in</a></li>
     </ul>
   </div>
   </nav>

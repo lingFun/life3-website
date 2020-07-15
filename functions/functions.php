@@ -22,8 +22,10 @@
 
     //Display Message Function
     function display_message() {
-        echo $_SESSION['Message'];
-        unset($_SESSION['Message']);
+        if(isset($_SESSION['Message'])) {
+            echo $_SESSION['Message'];
+            unset($_SESSION['Message']);
+        }
     }
 
     //Generate Token
@@ -32,7 +34,18 @@
         return $token;
     }
 
+    //Send Email Function
+    function send_email($email, $sub, $msg, $header) {
+        return mail($email, $sub, $msg, $header);
+    }
+
+
     //**********User Validation Functions********** */ 
+
+    //print error
+    function error_validation($Error) {
+        return '<div style="color:red">'.$Error.'</div>';
+    }
 
     //User Vlidation Function
     function user_validation() {
@@ -89,13 +102,17 @@
 
             if(!empty($Errors)) {
                 foreach($Errors as $Error){
-                    echo '<div style="color:red">'.$Error.'</div>'; 
+                    echo error_validation($Error); 
                 }
             }
             else {
                 if(user_registration($FirstName, $LastName, $UserName, $Email, $Password)) {
-                    set_message("Registered Successfully...");
-                    redirect("../Pages/signin.php");
+                    set_message('<p>Register Successfully...Check email</p>');
+                    redirect("../Pages/temp.php");
+                }
+                else {
+                    set_message('<p>Register Failed...Pleas try again</p>');
+                    redirect("../Pages/temp.php");
                 }
             }
         }
@@ -146,7 +163,82 @@
 
             $result = Query($sql);
             confirm($result);
+
+            $subject = "Active your Life3 Account ";
+            $msg = "Please click the link to active your Life3 account: http://localhost:8081/life3/Pages/activate.php?Email=$Email&Code=$validation_code";
+            $header = "From no-reply admin@life3.io";
+
+            send_email($email,$subject,$msg,$header);
+
             return true;
         }
+    }
+
+    //Activation
+    function activation() {
+        if($_SERVER['REQUEST_METHOD']=="GET") {
+            $Email = $_GET['Email'];
+            $Code = $_GET['Code'];
+
+            $sql = "select * from users where Email='$Email' and Validation_Code='$Code'";
+            $result = Query($sql);
+            confirm($result);
+
+            if(fetch_data($result)) {
+                $sqlquery = "update users set Active='1', Validation_Code='0' where Email='$Email' and Validation_Code='$Code'";
+                $result2 = Query($sqlquery);
+                confirm($result2);
+                echo'<p style="color:blue">Your Life3 account has been activated.</p>';
+                redirect('signin.php');
+            }
+            else {
+                echo '<p style="color:red">Your Life3 account has not been activated.</p>';
+            }
+        }
+    }
+
+    //User Login Validation
+    function login_validation() {
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $UserEmail = clean($_POST['Uemail']);
+            $UserPass = clean($_POST['Upass']);
+            $Remember = isset($_POST['remember']);
+
+            // $Errors = [];
+
+            // if(!empty($Errors)) {
+            //     foreach ($Errors as $Error) {
+            //         echo error_validation($Error);
+            //     }
+            // }
+
+            if(user_login($UserEmail, $UserPass, $Remember)) {
+                redirect("https://drive.google.com/drive/folders/1VHjuMVQsq8nccqJ4WTnj8b1h99Hi6SIp");
+            }
+            else {
+                echo error_validation("*Please enter correct email or password");
+            }
+        }
+
+    }
+
+    //log in check
+    function user_login($Uemail, $Upass, $Remember) {
+        $query = "select * from users where Email='$Uemail' and Active='1'";
+        $result = Query($query);
+
+        if($row=fetch_data($result)) {
+            $db_pass = $row['Password'];
+            if(md5($Upass) == $db_pass) {
+                if($Remember == true) {
+                    setcookie('email', $Uemail, time() + 86400);
+                }
+                $_SESSION['Email'] = $Uemail; 
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
     }
 ?>
