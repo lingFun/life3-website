@@ -2,15 +2,19 @@
 <body>
   <div class="parent">
     <div class="child">
-    <form class="modal-content" action="signin.php" style="border:1px solid #ccc" method="post">
+    <form class="modal-content" style="border:1px solid #ccc" method="POST">
         <div id="recover" class="container" mt-5>
           <h1>Reset Password</h1>
           <hr>
+          <?php reset_password(); 
+                display_message(); ?>
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Enter Password" name="password" required>
       
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <input type="password" placeholder="Repeat Password" name="confirm-password" required>
+
+          <input type="hidden" name="token" value="<?php echo Token_Generator();?>">
 
           <div class="clearfix">
             <button type="button"  class="cancelbtn">Cancel</button>

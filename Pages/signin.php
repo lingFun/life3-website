@@ -8,11 +8,11 @@
       echo $row['Email'];
   ?> -->
 
-<?php display_message(); ?>
   
     <form class="modal-content" style="border:1px solid #ccc" method="post">
         <div id="signin" class="container" >
-          <?php login_validation();?>
+          <?php login_validation();
+                display_message(); ?>
           <h1>Life3 Member Sign in</h1>
           <hr>
           <label for="useremail"><b>User email</b></label>
@@ -28,7 +28,7 @@
           </div>
           <hr>
           <input type="checkbox" name="remember"><span>Remember Me</span>
-          <a href="forget.php" class="floatright">Forget Password</a>
+          <a href="recover.php" class="floatright">Forget Password</a>
         </div>
       </form>
 

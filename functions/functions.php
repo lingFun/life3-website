@@ -12,7 +12,7 @@
 
     //Set Session Message
     function set_message($msg) {
-        if(!$msg) {
+        if($msg) {
             $_SESSION['Message'] = $msg;
         }
         else {
@@ -107,12 +107,12 @@
             }
             else {
                 if(user_registration($FirstName, $LastName, $UserName, $Email, $Password)) {
-                    set_message('<p>Register Successfully...Check email</p>');
-                    redirect("../Pages/temp.php");
+                    set_message('<p style="color:blue">Register Successfully...Check email</p>');
+                    //redirect("../Pages/temp.php");   //TODO TEST HERE
                 }
                 else {
-                    set_message('<p>Register Failed...Pleas try again</p>');
-                    redirect("../Pages/temp.php");
+                    set_message('<p style="color:blue">Register Failed...Pleas try again</p>');
+                    //redirect("../Pages/temp.php");    //TODO TEST HERE
                 }
             }
         }
@@ -156,7 +156,7 @@
             return true;
         } else {
             $Password = md5($Pass);
-            $validation_code = md5($UserName + microtime());
+            $validation_code = md5($UserName.microtime());
 
             $sql = "insert into users (FirstName, LastName, UserName, Email, Password, Validation_Code, Active)
             values ('$FirstName','$LastName','$UserName','$Email','$Password','$validation_code','0')";
@@ -165,8 +165,8 @@
             confirm($result);
 
             $subject = "Active your Life3 Account ";
-            $msg = "Please click the link to active your Life3 account: http://localhost:8081/life3/Pages/activate.php?Email=$Email&Code=$validation_code";
-            $header = "From no-reply admin@life3.io";
+            $msg = "Please click the link to active your Life3 account: http://localhost:8081/life3-g/Pages/activate.php?Email=$Email&Code=$validation_code";
+            $header = "From: no-reply-admin@life3.io";
 
             send_email($email,$subject,$msg,$header);
 
@@ -240,5 +240,110 @@
             }
         }
         return false;
+    }
+
+    /**************Recover Function************** */
+    function recover_password() {
+        if($_SERVER['REQUEST_METHOD'] == "POST") {
+            if(isset($_SESSION['token']) && $_POST['token'] == $_SESSION['token']) {
+                $email = $_POST['UserEmail'];
+
+                if(email_exists($email)) {
+                    $code = md5($email.microtime());
+                    setcookie('temp_code',$code,time()+300);
+
+                    $sql = "update users set Validation_Code='$code' where Email='$email'";
+                    Query($sql);
+
+                    $subject = "Please reset your Life3 account password";
+                    $message = "Please click the link to reset your password: .... Your code is: {$code} http://localhost:8081/life3-g/Pages/code.php?Email=$email&Code=$code";
+                    $header = "From: no-reply-admin@life3.io";
+
+                    if(send_email($email,$subject,$message,$header)) {
+                        echo '<div style="color:blue">Please check your email.</div>';
+                    } else {
+                        echo error_validation("*Sending failed...");
+                    }
+
+                } else {
+                    echo error_validation("*Email not found...");
+                }
+            }
+            else {
+                redirect("signin.php");
+            }
+        }
+    }
+
+    //Validation Code
+    function validation_code() {
+        if(isset($_COOKIE['temp_code'])) {
+            if(!isset($_GET['Email']) && !isset($_GET['Code'])) {
+                redirect('signin.php');
+            } else if(empty($_GET['Email']) && empty($_GET['Code'])) {
+                redirect("signin.php");
+            } else {
+                if(isset($_POST['recover-code'])) {
+                    $code = $_POST['recover-code'];
+                    $email = $_GET['Email'];
+
+                    $query = "select * from users where Validation_Code='$code' and Email='$email'";
+                    $result = Query($query);
+
+                    if(fetch_data($result)) {
+                        setcookie('temp_code',$code,time()+300);
+                        redirect("reset.php?Email=$email&Code=$code");
+                    }
+                    else {
+                        echo error_validation("*Query failed...");
+                    }
+                }
+            }
+
+        } else {
+            set_message('<div style="color:red">*Your code has been expired.</div>');
+            redirect("recover.php");
+        }
+    }
+
+    //Reset password
+    function reset_password() {
+        if(isset($_COOKIE['temp_code'])) {
+            if(isset($_GET['Email']) && isset($_GET['Code'])) {
+                if(isset($_SESSION['token']) && isset($_POST['token'])) {
+                    if($_SESSION['token'] == $_POST['token']) {
+                        if($_POST['password'] == $_POST['confirm-password']) {
+                            $password = md5($_POST['password']);
+                            $email = $_GET['Email'];
+                            $query = "update users set Password='$password', Validation_Code='0' where Email='$email'";
+                            $result = Query($query);
+
+                            set_message('<div style="color:blue">*Password has been updated</div>');
+                            if($result) {
+                                set_message('<div style="color:blue">*Password has been updated</div>');
+                                echo'<p>*Password has been updated</p>';
+                                redirect("signin.php");
+                            } else {
+                                set_message('<div style="color:red">*something went wrong...</div>');
+                            }
+
+                        } else {
+                            set_message('<div style="color:red">*Password not matched</div>');
+                        }
+                    } 
+                    // else {
+                    //     set_message('<div style="color:red">*Invalid code1</div>');
+                    // }
+                } 
+                // else {
+                //     set_message('<div style="color:red">*Invalid code2</div>');
+                // }
+
+            } else {
+                set_message('<div style="color:red">*Code/Email did not match</div>');
+            }
+        } else {
+            set_message('<div style="color:red">*Time(5 mins) is up...</div>');
+        }
     }
 ?>
