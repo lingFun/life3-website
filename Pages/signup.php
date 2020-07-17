@@ -1,17 +1,10 @@
 <?php require_once('../includes/header.php')?>
 
-  <!-- <?php
-      $sql = "select * from users";
-      $query = Query($sql);
-      confirm($query);
-      $row = fetch_data($query);
-      echo $row['Email'];
-  ?> -->
-
 <?php display_message(); ?>
 
-<form style="border:1px solid #ccc" method="post">
-        <div id="signup" class="container">
+
+<div id="signup" class="container" style="border:1px solid #ccc">
+  <form method="post">
           <?php user_validation();?>
           <h1>Life3 Member Sign Up</h1>
           <hr>
@@ -38,11 +31,10 @@
       
           <div class="clearfix">
             <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="submit" class="signupbtn"><b>Sign Up</b></button>
           </div>
-        </div>
+        
       </form>
-    
+</div>    
           
-</body>
-</html>
+<?php require_once('../includes/footer.php') ?>

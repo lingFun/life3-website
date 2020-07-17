@@ -1,22 +1,34 @@
 <?php require_once('../functions/config.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIFE3</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIFE3 - Learn & Innovate For Education, Enablement, Empowerment</title>
     <link type="text/css" rel="stylesheet" href="../CSS/form.css">
 </head>
+
 <body>
-  <nav class="container">
-    <div>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li class="floatright"><a href="signup.php">Sign up</a></li>
-      <li class="floatright"><a href="signin.php">Sign in</a></li>
-    </ul>
-  </div>
-  </nav>
-<hr>
-<hr>
-<hr>
+    <header>
+        <nav class="navBar">
+            <a class="navLink navLinkText" href="Pages/community.html">Community
+                Development</a>
+            <a class="navLink navLogo" href="../index.html"><img src="../Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
+                    title="LIFE3"></img></a>
+            <a class="navLink navLinkText" href="Pages/professional.html">Professional Development</a>
+            <a href="signin.php"><button type="button" class="contactUsButton"><p>Sign in</p></button></a>
+            <!-- <button type="button" class="contactUsButton">
+                <p>Contact Us</p>
+                <i class="fas fa-envelope-open-text"></i>
+            </button> -->
+        </nav>
+
+        <div class="homeBanner">
+            <a class="navClickArea" href="Pages/community.html"></a>
+            <a class="navClickArea" href="#eventsAnchor"></a>
+            <a class="navClickArea" href="Pages/professional.html"></a>
+        </div>
+    </header>

@@ -2,7 +2,7 @@
 <body>
   <div class="parent">
     <div class="child">
-    <form class="modal-content" style="border:1px solid #ccc" method="POST">
+    <form class="modal-content" method="POST">
         <div id="recover" class="container" mt-5>
           <h1>Reset Password</h1>
           <hr>
@@ -23,5 +23,4 @@
       </form>
       </div>
     </div>
-</body>
-</html>
+    <?php require_once('../includes/footer.php') ?>
