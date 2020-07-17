@@ -454,9 +454,8 @@ header .professionalBanner {
     color: black;
 }
 .ContentImages img{
-    width: 60%;
-    height: auto;
-    margin: 3vh;
+    width: 40%;
+    margin: 2vh 5% 2vh 5%;
 }
 
 .projectNavigation .projectCarousel {
@@ -571,6 +570,14 @@ header .professionalBanner {
 
 .servicesTable .adviseList {
     margin: 2vh 0vw 0;
+}
+
+.adviseList ul{
+    margin-left: 20px;
+}
+
+.adviseList li{
+    font-size: 0.95rem;
 }
 
 .servicesTable {
