@@ -14,11 +14,11 @@
 <body>
     <header>
         <nav class="navBar">
-            <a class="navLink navLinkText" href="Pages/community.html">Community
+            <a class="navLink navLinkText" href="community.html">Community
                 Development</a>
             <a class="navLink navLogo" href="../index.html"><img src="../Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
                     title="LIFE3"></img></a>
-            <a class="navLink navLinkText" href="Pages/professional.html">Professional Development</a>
+            <a class="navLink navLinkText" href="professional.html">Professional Development</a>
             <a href="signup.php"><button type="button" class="contactUsButton"><p>Sign Up</p></button></a>
             <!-- <button type="button" class="contactUsButton">
                 <p>Contact Us</p>
@@ -27,9 +27,9 @@
         </nav>
 
         <div class="homeBanner">
-            <a class="navClickArea" href="Pages/community.html"></a>
-            <a class="navClickArea" href="#eventsAnchor"></a>
-            <a class="navClickArea" href="Pages/professional.html"></a>
+            <a class="navClickArea" href="community.html"></a>
+            <a class="navClickArea" href="../index.html"></a>
+            <a class="navClickArea" href="professional.html"></a>
         </div>
     </header>
 

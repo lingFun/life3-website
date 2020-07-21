@@ -1,9 +1,7 @@
  <?php require_once('../includes/header.php')?>
 <body>
-  <div class="parent">
-    <div class="child">
+  <div class="container" style="border:1px solid #ccc">
     <form class="modal-content" method="post">
-        <div id="recover" class="container" mt-5>
           <h1>Enter Code</h1>
           <hr>
           <?php validation_code(); ?>
@@ -14,7 +12,6 @@
             <button type="submit" class="signupbtn">Send Password</button>
           </div>
       </form>
-      </div>
     </div>
 
     <?php require_once('../includes/footer.php') ?>

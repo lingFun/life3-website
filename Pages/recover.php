@@ -1,9 +1,7 @@
 <?php require_once('../includes/header.php'); ?>
 <body>
-  <div class="parent">
-    <div class="child">
-    <form class="modal-content" method="POST">
-        <div id="recover" class="container" mt-5>
+  <div id="recover" class="container" mt-5 style="border:1px solid #ccc">
+    <form method="POST"  >
           <h1>Recover Password</h1>
           <hr>
           <?php recover_password();
@@ -17,7 +15,6 @@
             <button type="submit" class="signupbtn">Send Password</button>
           </div>
       </form>
-      </div>
-    </div>
+</div>
 
 <?php require_once('../includes/footer.php') ?>

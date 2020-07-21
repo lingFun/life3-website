@@ -354,7 +354,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
       width: 10%;
       height: auto;
   }
-  .ourApproach .sectionContent .serviceStepsContainer figure img {
+  .ourApproach .sectionContent .serviceStepsContainer figure img .container{
       width: 40%;
   }
   .phasesTable th {
@@ -414,7 +414,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
       padding: 1% 2%;
   }
-  .events .sectionContent .eventsContainer figure{
+  .events .sectionContent .eventsContainer figure .container{
       max-width: 30vw;
   }
 }
@@ -552,7 +552,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
       margin: 2% auto;
       display: block;
   }
-  .events .sectionContent .eventsContainer figure{
+  .events .sectionContent .eventsContainer figure .container{
       max-width: 40vw;
   }
 
@@ -571,7 +571,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   .phasesTable th {
       font-size: .8rem;
   }
-  .phasesTable td {
+  .phasesTable td .container{
       font-size: .8rem;
   }
   header .navBar {
@@ -595,7 +595,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   }
   header .homeBanner .navClickArea:nth-child(3) {
       height: 90%;
-      width: 30%;
+      width: 100%;
       left: 68%;
   }
   header .contactUsButton .fa-envelope-open-text {
@@ -615,9 +615,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
       box-shadow: 0 0 3px 3px black;
       border-radius: 0 0 0 10px;
   }
-  header .contactUsButton p {
+  /* header .contactUsButton p {
       display: none;
-  }
+  } */
   .ourApproach .sectionContent .serviceStepsContainer figure img {
       width: 30%;
   }
@@ -685,6 +685,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   .events .sectionContent .eventsContainer figure{
       max-width: 30vw;
   }
+
+  .container{
+      width: 90%;
+  }
 }
 
 
@@ -692,7 +696,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   section, .sectionContent{
       min-height: 350px;
   }
-  header {
+  header .container {
       height: 100vh;
       width: 100vw;
   }
@@ -754,7 +758,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
       flex-wrap: wrap;
       justify-content: center;
   }
-  .ourApproach .sectionContent .serviceStepsContainer figure {
+  .ourApproach .sectionContent .serviceStepsContainer figure .container{
       width: 70%;
       max-width: auto;
   }
@@ -775,7 +779,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
       width: 100vw;
       margin-top: 5vh;
   }
-  .ourApproach .mobilePhasesTable th {
+  .ourApproach .mobilePhasesTable th .container{
       width: 100vw;
   }
   
@@ -802,6 +806,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   footer .socialMediaContainer .socialMediaIcon{
       font-size: 1rem;
   }
+  .container{
+    width: 90%;
+}
 }
 
 @media (max-height: 550px){
@@ -811,18 +818,24 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   .events .sectionContent .eventsContainer figure img{
       width: 75%;
   }
+  .container{
+    width: 90%;
+}
 }
 
 @media (max-height: 400px){
   .events .sectionContent .eventsContainer{
       justify-content: center;
   }
-  .events .sectionContent .eventsContainer figure{
+  .events .sectionContent .eventsContainer figure .container{
       max-width: 20vw;
   }
-  header .navBar .navLinkText{
+  header .navBar .navLinkText .container{
       font-size: .8rem;
   }
+  .container{
+    width: 90%;
+}
 }
 
 @media (max-width: 350px) {
@@ -836,10 +849,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
       font-size: .7rem;
       line-height: 1rem;
   }
-  header .navBar .navLinkText {
+  header .navBar .navLinkText .container{
       font-size: .8rem;
   }
-  header .homeBanner {
+  header .homeBanner .container{
       background-size: auto 80%;
   }
   .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
@@ -848,6 +861,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
   .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
       padding: 5%;
   }
+  .container{
+    width: 90%;
+}
 }
 
 /* End Media Queries */
