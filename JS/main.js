@@ -304,7 +304,7 @@ function sortContent(index) {
       var projectMembers = ["omarD","micaelaR"]; 
 
       break;
-      /*   for new client energy edc   */
+      /*   for new client energy economic development corp   */
     case "energyedc":
       $(".projectHeadline").text("Energy Economic Development Corp Value Proposition");
       $(".projectConcept").text(
