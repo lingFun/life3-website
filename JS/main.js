@@ -306,7 +306,7 @@ function sortContent(index) {
       break;
       /*   for new client energy edc   */
     case "energyedc":
-      $(".projectHeadline").text("Energy Economic Devlopment Corp Value Proposition");
+      $(".projectHeadline").text("Energy Economic Development Corp Value Proposition");
       $(".projectConcept").text(
         "Energy EDC was founded with the goal of using energy as a vehicle to create green jobs. We believe that retrofitting buildings and using their energy savings to pay for the service, parts, and labor needed is an organic way to fund a Twenty First century workforce. The jobs that can be created from doing this represent the New Deal of our time."
       );
