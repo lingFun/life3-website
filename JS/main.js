@@ -304,6 +304,39 @@ function sortContent(index) {
       var projectMembers = ["omarD","micaelaR"]; 
 
       break;
+      /*   for new client energy edc   */
+    case "energyedc":
+      $(".projectHeadline").text("Energy Economic Devlopment Corp Value Proposition");
+      $(".projectConcept").text(
+        "Energy EDC was founded with the goal of using energy as a vehicle to create green jobs. We believe that retrofitting buildings and using their energy savings to pay for the service, parts, and labor needed is an organic way to fund a Twenty First century workforce. The jobs that can be created from doing this represent the New Deal of our time."
+      );
+      $(".projectDescription").text(
+        "As a result of COVID-19 Clean Energy training delivered through Energy Economic Development Corp had to be converted from in-person classes to virtual online classes, in a very rapid fashion. This provided an opportunity to create a remote training program that makes optimal use of digital tools for training and facilitating employment opportunities within clean energy industries. Additionally, we are supporting improved student acquisition through digital marketing of the training program."
+      );
+      $(".weOffer").text(
+        "LIFE3 is offering Product Design Services to support high student satisfaction with online, clean energy, training. The team implemented surveys and user interviews to gather qualitative data which informed how to adjust the use of digital tools resulting in an optimal remote learning experience. We also created a more prominent digital presence by designing a program flyer and landing page. "
+      );
+      $(".adviseList").css("display", "block");
+      $(".adviseList ul")[0].innerHTML =
+        "<li>User Personas</li> <li>Competitive Analysis </li>";
+      $(".adviseList ul")[1].innerHTML =
+        "<li>Journey Maps</li> <li>User Stories</li>";
+      $(".adviseList ul")[2].innerHTML =
+        "<li>Program Flyer Design</li> <li>Webpage Design</li>";
+        
+       
+      $(".mobileServicesTable .adviseList ul")[0].innerHTML =
+        "<li>User Personas</li> <li>Competitive Analysis </li>";
+      $(".mobileServicesTable .adviseList ul")[1].innerHTML =
+        "<li>Journey Maps</li> <li>User Stories</li>";
+      $(".mobileServicesTable .adviseList ul")[2].innerHTML =
+        "<li>Program Flyer Design</li> <li>Webpage Design</li>";
+
+      var projectImages = [      ];
+      var projectMembers = ["omarD","sabineS","katherineF","smithC"];
+
+      break;
+      
     /*  --------Template for Adding Client Information ----------- 
 
 
