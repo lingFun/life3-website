@@ -108,11 +108,11 @@
             else {
                 if(user_registration($FirstName, $LastName, $UserName, $Email, $Password)) {
                     set_message('<p style="color:blue">Register Successfully...Check email</p>');
-                    //redirect("../Pages/temp.php");   //TODO TEST HERE
+                    redirect("../Pages/signin.php");   //TODO TEST HERE
                 }
                 else {
                     set_message('<p style="color:blue">Register Failed...Pleas try again</p>');
-                    //redirect("../Pages/temp.php");    //TODO TEST HERE
+                    redirect("../Pages/signup.php");    //TODO TEST HERE
                 }
             }
         }
@@ -165,7 +165,7 @@
             confirm($result);
 
             $subject = "Active your Life3 Account ";
-            $msg = "Please click the link to active your Life3 account: http://localhost:8081/life3-g/Pages/activate.php?Email=$Email&Code=$validation_code";
+            $msg = "Please click the link to active your Life3 account: http://life3.io/login/Pages/activate.php?Email=$Email&Code=$validation_code";
             $header = "From: no-reply-admin@life3.io";
 
             send_email($email,$subject,$msg,$header);
@@ -256,7 +256,7 @@
                     Query($sql);
 
                     $subject = "Please reset your Life3 account password";
-                    $message = "Please click the link to reset your password: .... Your code is: {$code} http://localhost:8081/life3-g/Pages/code.php?Email=$email&Code=$code";
+                    $message = "Please click the link to reset your password: .... Your code is: {$code} http://life3.io/login/Pages/code.php?Email=$email&Code=$code";
                     $header = "From: no-reply-admin@life3.io";
 
                     if(send_email($email,$subject,$message,$header)) {

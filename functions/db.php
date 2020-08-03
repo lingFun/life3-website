@@ -1,6 +1,6 @@
 <?php
 
-    $con = mysqli_connect('localhost', 'root', '', 'loginPro');
+    $con = mysqli_connect('localhost', 'funny1206', 'a272245952', 'loginPro');
 
     if(!$con) {
         echo 'Connection Error';

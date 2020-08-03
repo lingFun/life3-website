@@ -1,11 +1,12 @@
 <?php require_once('../includes/header.php')?>
 
-<?php display_message(); ?>
+
 
 
 <div id="signup" class="container" style="border:1px solid #ccc">
   <form method="post">
-          <?php user_validation();?>
+          <?php user_validation();
+                display_message(); ?>
           <h1>Life3 Member Sign Up</h1>
           <hr>
           
