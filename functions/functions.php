@@ -188,7 +188,7 @@
                 $sqlquery = "update users set Active='1', Validation_Code='0' where Email='$Email' and Validation_Code='$Code'";
                 $result2 = Query($sqlquery);
                 confirm($result2);
-                echo'<p style="color:blue">Your Life3 account has been activated.</p>';
+                set_message('<p style="color:blue">Your Life3 account has been activated.</p>');
                 redirect('signin.php');
             }
             else {
@@ -250,7 +250,7 @@
 
                 if(email_exists($email)) {
                     $code = md5($email.microtime());
-                    setcookie('temp_code',$code,time()+300);
+                    setcookie('temp_code',$code,time()+86400);
 
                     $sql = "update users set Validation_Code='$code' where Email='$email'";
                     Query($sql);
@@ -291,7 +291,7 @@
                     $result = Query($query);
 
                     if(fetch_data($result)) {
-                        setcookie('temp_code',$code,time()+300);
+                        setcookie('temp_code',$code,time()+86400);
                         redirect("reset.php?Email=$email&Code=$code");
                     }
                     else {

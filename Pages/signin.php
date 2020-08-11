@@ -32,7 +32,7 @@
             <a class="navClickArea" href="professional.html"></a>
         </div>
     </header>
-
+    <?php  display_message(); ?>
     <div id="signin" class="container" style="border:1px solid #ccc"  >
       <form class="modal-content" method="post">
         

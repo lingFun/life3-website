@@ -2,7 +2,7 @@
 
 
 
-
+<?php  display_message(); ?>
 <div id="signup" class="container" style="border:1px solid #ccc">
   <form method="post">
           <?php user_validation();

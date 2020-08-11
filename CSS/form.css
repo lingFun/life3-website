@@ -1,6 +1,16 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
 h1{
   text-align: center;
   text-transform: uppercase;
+  font-family: "Big Caslon", "Magneta", "Big Moore";
 }
 
 input[type=text], input[type=password], input[type=email] {
