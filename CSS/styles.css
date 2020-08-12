@@ -149,23 +149,32 @@ header .contactUsButton:hover {
     background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
     height: 500px;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     background-size: 100% 500px;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    /* align-items: center; */
+    flex-direction: column;
     justify-content: space-around;
     text-align: center;
 }
 .homeBanner2 h1 {
     color:mediumaquamarine;
-    margin: 5px;
+    margin:50px 0 30px 50px;
     font-size: 250%;
+    text-align: left;
+}
+.homeBanner2 h2 {
+    text-align: left;
+    margin:5px 20px;
+    font-size: 130%;
+    font-weight: bold;
 }
 .homeBanner2 p {
-    padding: 5% 20%;
+    /* padding: 5% 20%; */
+    text-align: left;
+    margin:5px 20px;
 }
 .homeBanner2 button {
     text-transform: uppercase;
@@ -174,8 +183,11 @@ header .contactUsButton:hover {
     background-color: mediumaquamarine; 
     border: 0; 
     border-radius: 15px;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     font-weight:bold;
+    float: left;
+    margin: 20px;
+
 }
 .homeBanner2 button:hover{
     opacity: .5;
@@ -194,10 +206,17 @@ header .contactUsButton:hover {
     cursor: pointer;
 }
 .homeBanner2 .explore{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    flex:1;
     padding: 20px;
     color: white;
+    justify-content:space-evenly;
+}
+.homeBanner2 .col{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 header .homeBanner {
     height: 100%;
@@ -415,7 +434,7 @@ header .professionalBanner {
 /* Partners Section Stylings */
 .partners {
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
     margin: 15vh 0 10vh;
     align-items: center;
 }
@@ -439,7 +458,7 @@ header .professionalBanner {
     text-transform: uppercase;
     color: black;
     text-align: center;
-    text-shadow: 0 0 0.2em #8F7;
+    /* text-shadow: 0 0 0.2em #8F7; */
     font-style:italic;
     font-size: 300%;
     margin-top: 1em 0 1em;
@@ -480,7 +499,26 @@ header .professionalBanner {
     height: 100%;
     width: auto;
 }
-
+.partners .approach{
+    display: flex;
+    flex-direction: row;
+}
+.partners .phase {
+    /* display: flex;
+    flex-direction: column; */
+    border: 3px solid black;
+    width: 20vw;
+    height: 13vh;
+    margin: 3vh 1vw 5vh;
+    text-align: center;
+}
+.partners .phase h2{
+    background-color: black;
+    color: mediumaquamarine;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* End Partners Section Stylings */
 
 /* ------ Business Development Stylings */
@@ -712,6 +750,8 @@ footer {
     height: 20vh;
     min-height: 600px;
     min-width: 300px;
+    /* clear: both;
+    position: relative; */
 }
 
 footer .footerLogo {
@@ -749,7 +789,7 @@ footer .socialMediaContainer .iconBar {
     justify-content: center;
 }
 
-footer .contactUsForm input,select{
+footer .contactUsForm input{
     padding: 5px;
     width: 40%;
     height: 35px;
