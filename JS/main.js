@@ -52,6 +52,32 @@ $(".teamProfiles figure").click(function() {
   $(".teamMemberLightBox .teamProfileImage a").attr("href", teamMemberLinkedin);
 });
 
+$(".partnerLogosContainer figure").click(function() {
+  $(".lightBox").fadeIn(500);
+  $(".lightBox").css("display", "flex");
+  $(".lightBoxContent .projectLightBox").css("display", "flex");
+  $(".lightBoxContent iFrame").css("display", "none");
+
+  var onez = $(this)
+    .children("figcaption")
+    .children(".one")
+    .text();
+
+  var twoz = $(this)
+  .children("figcaption")
+  .children(".two")
+  .text();
+
+  var threez = $(this)
+  .children("figcaption")
+  .children(".three")
+  .text();
+
+  $(".projectLightBox .one").text(onez);
+  $(".projectLightBox .two").text(twoz);
+  $(".projectLightBox .three").text(threez);
+});
+
 $(".lightBoxBackground").click(function() {
   $(".lightBox").css("display", "none");
   $(".lightBoxContent iFrame").attr("src", "");

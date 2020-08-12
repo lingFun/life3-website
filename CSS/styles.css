@@ -519,6 +519,10 @@ header .professionalBanner {
     text-transform: uppercase;
     font-weight: bold;
 }
+.partnerLogosContainer figcaption {
+    display: none;
+}
+
 /* End Partners Section Stylings */
 
 /* ------ Business Development Stylings */
@@ -1045,6 +1049,30 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     cursor: pointer;
 }
 
+.lightBox .projectLightBox {
+    background-color: black;
+    color: white;
+    width: 60%;
+    height: 70%;
+}
+.lightBox .projectLightBox .weProvide {
+    background-color: white;
+    color: black;
+    height: 33%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.lightBox .projectLightBox .weOffer,.weAdvise {
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.lightBox .projectLightBox img {
+    width: 10vw ;
+   margin: 5px;
+}
 /* End LightBox Stylins */
 
 /* Media Queries */
