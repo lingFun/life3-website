@@ -4,7 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     scroll-behavior: smooth;
 }
 
@@ -143,6 +144,61 @@ header .contactUsButton:hover {
     cursor: pointer;
 }
 
+.homeBanner2 {
+    /* color: black; */
+    background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.homeBanner2 h1 {
+    color:mediumaquamarine;
+    margin: 5px;
+    font-size: 250%;
+}
+.homeBanner2 p {
+    padding: 5% 20%;
+}
+.homeBanner2 button {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px;
+    margin-top: 5%;
+    font-weight:bold;
+}
+.homeBanner2 button:hover{
+    opacity: .5;
+    cursor: pointer; 
+}
+.contactUsForm .submitBtn {
+    width: 150px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px; 
+    font-weight:bold; 
+}
+.contactUsForm .submitBtn:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.homeBanner2 .explore{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
 header .homeBanner {
     height: 100%;
     width: 100%;
@@ -357,15 +413,16 @@ header .professionalBanner {
 /* End Our Events Section Stylings */
 
 /* Partners Section Stylings */
-
 .partners {
+    width: 100%;
     height: 70vh;
-    padding: 0 0 5vh;
+    margin: 15vh 0 10vh;
     align-items: center;
 }
 
 .partners .sectionContent {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center
 }
@@ -379,12 +436,18 @@ header .professionalBanner {
 }
 
 .partners h1 {
-    text-transform: none;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    text-shadow: 0 0 0.2em #8F7;
+    font-style:italic;
+    font-size: 300%;
+    margin-top: 1em 0 1em;
 }
 
 .partners .sectionContent .partnersInfoContainer {
-    margin: 0 5vw;
-    width: 50%;
+    margin: 2vh auto;
+    /* width: 50%; */
     max-width: 800px;
 }
 
@@ -398,10 +461,10 @@ header .professionalBanner {
 
 .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center; */
+    /* position: relative; */
     height: 200px;
     flex-wrap: wrap;
 }
@@ -643,11 +706,11 @@ footer {
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 20vh;
-    min-height: 80px;
+    min-height: 600px;
     min-width: 300px;
 }
 
@@ -665,10 +728,42 @@ footer .contactUsContainer h3 {
     font-size: 1.5rem;
 }
 
+footer .contactUsForm {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+footer .socialMediaContainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
 footer .socialMediaContainer .iconBar {
     display: flex;
     flex-direction: row;
     margin: 1vh 0;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+footer .contactUsForm input,select{
+    padding: 5px;
+    width: 40%;
+    height: 35px;
+    margin: 10px 2%;
+    align-items: center;
+    display: inline-block;
+}
+
+footer .contactUsForm textarea{
+    padding: 5px;
+    width: 85%;
+    height: 70px;
+    margin:10px 0;
+    align-items: center;
 }
 
 footer .socialMediaContainer .socialMediaIcon {
