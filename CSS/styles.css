@@ -166,10 +166,6 @@ header .empowerButton {
     text-transform: uppercase;
 }
 
-header .empowerButton .fa-envelope-open-text {
-    display: none;
-}
-
 header .empowerButton:hover {
     opacity: .5;
     cursor: pointer;
