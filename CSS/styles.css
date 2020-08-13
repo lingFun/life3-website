@@ -554,7 +554,7 @@ header .professionalBanner {
 /* Partners Section Stylings */
 .partners {
     width: 100%;
-    /* height: 70vh; */
+    height: 60vh;
     margin: 15vh 0 10vh;
     align-items: center;
 }
