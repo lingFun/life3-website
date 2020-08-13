@@ -140,11 +140,11 @@ header .contactUsButton {
     padding: 10px;
     text-transform: uppercase;
 }
-
+/*
 header .contactUsButton .fa-envelope-open-text {
     display: none;
 }
-
+*/
 header .contactUsButton:hover {
     opacity: .5;
     cursor: pointer;

@@ -69,13 +69,13 @@ $(".exitIcon").click(function() {
   $(".lightBoxContent .contactUsForm").css("display", "none");
   $(".lightBoxContent .teamMemberLightBox").css("display", "none");
 });
-
+/*
 $(".contactUsButton").click(function() {
   $(".lightBox").fadeIn(500);
   $(".lightBoxContent .contactUsForm").css("display", "block");
   $(".lightBox").css("display", "flex");
 });
-
+*/
 /* End Light Box Script */
 
 /*Project Information Script */
