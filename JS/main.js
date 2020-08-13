@@ -52,6 +52,32 @@ $(".teamProfiles figure").click(function() {
   $(".teamMemberLightBox .teamProfileImage a").attr("href", teamMemberLinkedin);
 });
 
+$(".partnerLogosContainer figure").click(function() {
+  $(".lightBox").fadeIn(500);
+  $(".lightBox").css("display", "flex");
+  $(".lightBoxContent .projectLightBox").css("display", "flex");
+  $(".lightBoxContent iFrame").css("display", "none");
+
+  var weoffer = $(this)
+    .children("figcaption")
+    .children(".weOfferContent")
+    .text();
+
+  var weprovide = $(this)
+  .children("figcaption")
+  .children(".weProvideContent")
+  .text();
+
+  var weadvise = $(this)
+  .children("figcaption")
+  .children(".weAdviseContent")
+  .text();
+
+  $(".projectLightBox .weOfferContent").text(weoffer);
+  $(".projectLightBox .weProvideContent").text(weprovide);
+  $(".projectLightBox .weAdviseContent").text(weadvise);
+});
+
 $(".lightBoxBackground").click(function() {
   $(".lightBox").css("display", "none");
   $(".lightBoxContent iFrame").attr("src", "");
@@ -69,13 +95,13 @@ $(".exitIcon").click(function() {
   $(".lightBoxContent .contactUsForm").css("display", "none");
   $(".lightBoxContent .teamMemberLightBox").css("display", "none");
 });
-/*
-$(".contactUsButton").click(function() {
-  $(".lightBox").fadeIn(500);
-  $(".lightBoxContent .contactUsForm").css("display", "block");
-  $(".lightBox").css("display", "flex");
-});
-*/
+
+// $(".contactUsButton").click(function() {
+//   $(".lightBox").fadeIn(500);
+//   $(".lightBoxContent .contactUsForm").css("display", "block");
+//   $(".lightBox").css("display", "flex");
+// });
+
 /* End Light Box Script */
 
 /*Project Information Script */
@@ -147,7 +173,7 @@ function sortContent(index) {
 
   $(".projectInformation").css("display", "none");
   switch (projectName) {
-    case "lifeThree":
+    case "lifeweAdviseContent":
       $(".projectHeadline").text("");
       $(".projectConcept").text("");
       $(".projectDescription").text(
@@ -250,7 +276,7 @@ function sortContent(index) {
       var projectImages = [
         "../Assets/Images/GroupImages/prattOne.png",
         "../Assets/Images/GroupImages/prattTwo.png",
-        "../Assets/Images/GroupImages/prattThree.jpg",
+        "../Assets/Images/GroupImages/prattweAdviseContent.jpg",
         "../Assets/Images/GroupImages/prattFive.jpg"
       ];
       var projectMembers = [];
