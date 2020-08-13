@@ -105,20 +105,16 @@ header .navBar .navLogo {
     width: 15vh;
     height: 15vh;
     border-radius: 50%;
-    /*
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    */
+    align-items: center; */
     box-shadow: 0px 0px 5px 5px black;
-
- 
 }
+
 header .navBar .navLogo img {
     width: 80%;
     margin-right: -5%;
     height: auto;
-
 }
 
 header .navBar .navLogo img:hover {
@@ -126,9 +122,10 @@ header .navBar .navLogo img:hover {
 }
 
 header .contactUsButton {
+    right: 1%;
     position: absolute;
     z-index: 3;
-    right: 1%;
+    right: 8%;
     top: 20%;
     width: 12vw;
     height: auto;
@@ -139,12 +136,13 @@ header .contactUsButton {
     font-weight: 600;
     padding: 10px;
     text-transform: uppercase;
+    margin: 5px;
 }
-/*
+
 header .contactUsButton .fa-envelope-open-text {
     display: none;
 }
-*/
+
 header .contactUsButton:hover {
     opacity: .5;
     cursor: pointer;
@@ -153,7 +151,7 @@ header .contactUsButton:hover {
 header .empowerButton {
     position: absolute;
     z-index: 3;
-    right: 14%;
+    right: 20%;
     top: 20%;
     width: 12vw;
     height: auto;
@@ -164,6 +162,7 @@ header .empowerButton {
     font-weight: 600;
     padding: 10px;
     text-transform: uppercase;
+    margin:5px;
 }
 
 header .empowerButton:hover {
@@ -171,20 +170,92 @@ header .empowerButton:hover {
     cursor: pointer;
 }
 
-/* ---original approach---  */
-/*
-header .homeBanner {
+.homeBanner2 {
+    /* color: black; */
+    background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
+    height: 500px;
+    width: 100%;
+    /* position: relative; */
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px 0;
+}
+.homeBanner2 h1 {
+    color:mediumaquamarine;
+    margin:50px 0 30px 50px;
+    font-size: 250%;
+    text-align: left;
+}
+.homeBanner2 h2 {
+    text-align: left;
+    margin:5px 20px;
+    font-size: 130%;
+    font-weight: bold;
+}
+.homeBanner2 p {
+    /* padding: 5% 20%; */
+    text-align: left;
+    margin:5px 20px;
+}
+.homeBanner2 button {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px;
+    /* margin-top: 5%; */
+    font-weight:bold;
+    float: left;
+    margin: 20px;
+
+}
+.homeBanner2 button:hover{
+    opacity: .5;
+    cursor: pointer; 
+}
+.contactUsForm .submitBtn {
+    width: 150px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px; 
+    font-weight:bold; 
+}
+.contactUsForm .submitBtn:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.homeBanner2 .explore{
+    /* display: flex;
+    flex-direction: column; */
+    flex:1;
+    padding: 20px;
+    color: white;
+    justify-content:space-evenly;
+}
+.homeBanner2 .col{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+/* header .homeBanner {
     height: 100%;
     width: 100%;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-image: url("../Assets/Images/Banner/Homepage3 image.png");
+    background-size: 73% auto;
+    background-image: url("../Assets/Images/Banner/desktop-home-banner-gif2.gif");
     display: flex;
     align-items: center;
 }
-
 
 header .homeBanner .navClickArea {
     position: absolute;
@@ -196,15 +267,14 @@ header .homeBanner .navClickArea {
 
 header .homeBanner .navClickArea:hover {
     cursor: pointer;
-    opacity: .2;
+    opacity: .5;
 }
 
 header .homeBanner .navClickArea:nth-child(1) {
-    width: 43%;
-    left: 50%;
+    width: 25%;
+    left: 12%;
 }
-*/
-/*
+
 header .homeBanner .navClickArea:nth-child(2) {
     width: 23%;
     left: 40%;
@@ -213,10 +283,7 @@ header .homeBanner .navClickArea:nth-child(2) {
 header .homeBanner .navClickArea:nth-child(3) {
     width: 23%;
     left: 65%;
-}
-*/
-
-/*   -- new approach for homebanner --- */ 
+} */
 
 .homeBanner3 {
     background-image: url("../Assets/Images/Banner/Homepage image.png");
@@ -228,7 +295,7 @@ header .homeBanner .navClickArea:nth-child(3) {
     display: flex;
     flex-direction: column;
     text-align: left;
-    
+
 }
 .homeBanner3 h1 {
     position:absolute;
@@ -246,7 +313,7 @@ header .homeBanner .navClickArea:nth-child(3) {
     margin:5px 20px;
     font-size:200%;
     font-weight: bold;
-    
+
 }
 
 .homeBanner3 button {
@@ -308,8 +375,6 @@ header .professionalBanner {
 
 /* End About Section Stylings */
 
-/* Our Approach Section Stylings */
-
 
 .quote {
     text-align:center;
@@ -317,32 +382,42 @@ header .professionalBanner {
     line-height: 1.5;
 }
 
+.aboutUs {
+    display: flex;
+    flex-direction: row;
+}
+
 .aboutUs .aboutContent { 
     margin-left: 100px;
     line-height:2.0;
+    width: 55vw;
 }
 
-.aboutUs .displayAbout {
-    margin-left: 100px;
-    font-style: normal;
+.aboutUs h1 {
+    margin: 1em 0 1em 3em;
+    /* font-style: normal; */
+    font-size: 300%;
 }
 .aboutUs .aboutImage {
-    display: inline-block;
+    /* display: inline-block; */
     position:relative;
     width:400px;
     height:400px;
     overflow:hidden;
     border-radius: 50%;
-    float: right ;
-    margin-right: 10px;
-    margin-bottom:5 px;
+    /* float: right; */
+    margin: 0 5vw 0;
 
 }
 .aboutUs .aboutImage img{
     width:auto;
     height: 100%;
-    margin-right: -50%;
+    /* margin-right: -50%; */
 }
+
+
+
+/* Our Approach Section Stylings */
 
 .ourApproach {
     height: 45vh;
@@ -477,15 +552,16 @@ header .professionalBanner {
 /* End Our Events Section Stylings */
 
 /* Partners Section Stylings */
-
 .partners {
-    height: 70vh;
-    padding: 0 0 5vh;
+    width: 100%;
+    height: 60vh;
+    margin: 15vh 0 10vh;
     align-items: center;
 }
 
 .partners .sectionContent {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center
 }
@@ -499,12 +575,18 @@ header .professionalBanner {
 }
 
 .partners h1 {
-    text-transform: none;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    /* text-shadow: 0 0 0.2em #8F7; */
+    font-style:italic;
+    font-size: 300%;
+    margin-top: 1em 0 1em;
 }
 
 .partners .sectionContent .partnersInfoContainer {
-    margin: 0 5vw;
-    width: 50%;
+    margin: 2vh auto;
+    /* width: 50%; */
     max-width: 800px;
 }
 
@@ -518,10 +600,10 @@ header .professionalBanner {
 
 .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center; */
+    /* position: relative; */
     height: 200px;
     flex-wrap: wrap;
 }
@@ -536,6 +618,29 @@ header .professionalBanner {
 .partners .sectionContent .partnersInfoContainer .partnerLogo img {
     height: 100%;
     width: auto;
+}
+.partners .approach{
+    display: flex;
+    flex-direction: row;
+}
+.partners .phase {
+    /* display: flex;
+    flex-direction: column; */
+    border: 3px solid black;
+    width: 20vw;
+    height: 13vh;
+    margin: 3vh 1vw 5vh;
+    text-align: center;
+}
+.partners .phase h2{
+    background-color: black;
+    color: mediumaquamarine;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.partnerLogosContainer figcaption {
+    display: none;
 }
 
 /* End Partners Section Stylings */
@@ -763,12 +868,14 @@ footer {
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 20vh;
-    min-height: 80px;
+    min-height: 600px;
     min-width: 300px;
+    /* clear: both;
+    position: relative; */
 }
 
 footer .footerLogo {
@@ -785,10 +892,42 @@ footer .contactUsContainer h3 {
     font-size: 1.5rem;
 }
 
+footer .contactUsForm {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+footer .socialMediaContainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
 footer .socialMediaContainer .iconBar {
     display: flex;
     flex-direction: row;
     margin: 1vh 0;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+footer .contactUsForm input{
+    padding: 5px;
+    width: 40%;
+    height: 35px;
+    margin: 10px 2%;
+    align-items: center;
+    display: inline-block;
+}
+
+footer .contactUsForm textarea{
+    padding: 5px;
+    width: 85%;
+    height: 70px;
+    margin:10px 0;
+    align-items: center;
 }
 
 footer .socialMediaContainer .socialMediaIcon {
@@ -1028,6 +1167,37 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 .lightBox .contactUsForm form .submitBtn:hover {
     cursor: pointer;
+}
+
+.lightBox .projectLightBox {
+    background-color: black;
+    color: white;
+    width: 60%;
+    height: 70%;
+}
+.lightBox .projectLightBox .weProvide {
+    background-color: white;
+    color: black;
+    height: 33%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lightBox .projectLightBox .weOffer,.weAdvise {
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.lightBox .projectLightBox img {
+    width: 10vw ;
+   margin: 5px;
+}
+.lightBox .weOfferContent,.weProvideContent,.weAdviseContent {
+    text-align: left;
+    margin-right: 2em;
 }
 
 /* End LightBox Stylins */
