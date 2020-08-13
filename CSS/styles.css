@@ -1182,17 +1182,24 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     text-align: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .lightBox .projectLightBox .weOffer,.weAdvise {
     height: 33%;
     display: flex;
     flex-direction: row;
     text-align: center;
+    align-items: center;
 }
 .lightBox .projectLightBox img {
     width: 10vw ;
    margin: 5px;
 }
+.lightBox .weOfferContent,.weProvideContent,.weAdviseContent {
+    text-align: left;
+    margin-right: 2em;
+}
+
 /* End LightBox Stylins */
 
 /* Media Queries */

@@ -58,24 +58,24 @@ $(".partnerLogosContainer figure").click(function() {
   $(".lightBoxContent .projectLightBox").css("display", "flex");
   $(".lightBoxContent iFrame").css("display", "none");
 
-  var onez = $(this)
+  var weoffer = $(this)
     .children("figcaption")
-    .children(".one")
+    .children(".weOfferContent")
     .text();
 
-  var twoz = $(this)
+  var weprovide = $(this)
   .children("figcaption")
-  .children(".two")
+  .children(".weProvideContent")
   .text();
 
-  var threez = $(this)
+  var weadvise = $(this)
   .children("figcaption")
-  .children(".three")
+  .children(".weAdviseContent")
   .text();
 
-  $(".projectLightBox .one").text(onez);
-  $(".projectLightBox .two").text(twoz);
-  $(".projectLightBox .three").text(threez);
+  $(".projectLightBox .weOfferContent").text(weoffer);
+  $(".projectLightBox .weProvideContent").text(weprovide);
+  $(".projectLightBox .weAdviseContent").text(weadvise);
 });
 
 $(".lightBoxBackground").click(function() {
@@ -173,7 +173,7 @@ function sortContent(index) {
 
   $(".projectInformation").css("display", "none");
   switch (projectName) {
-    case "lifeThree":
+    case "lifeweAdviseContent":
       $(".projectHeadline").text("");
       $(".projectConcept").text("");
       $(".projectDescription").text(
@@ -276,7 +276,7 @@ function sortContent(index) {
       var projectImages = [
         "../Assets/Images/GroupImages/prattOne.png",
         "../Assets/Images/GroupImages/prattTwo.png",
-        "../Assets/Images/GroupImages/prattThree.jpg",
+        "../Assets/Images/GroupImages/prattweAdviseContent.jpg",
         "../Assets/Images/GroupImages/prattFive.jpg"
       ];
       var projectMembers = [];
