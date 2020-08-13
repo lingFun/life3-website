@@ -98,14 +98,16 @@ header .navBar .navLinkText:visited {
 }
 
 header .navBar .navLogo {
+    position: absolute;
+    left: 1%;
     background-color: black;
     margin-top: 5vh;
     width: 15vh;
     height: 15vh;
     border-radius: 50%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     box-shadow: 0px 0px 5px 5px black;
 }
 
@@ -120,6 +122,7 @@ header .navBar .navLogo img:hover {
 }
 
 header .contactUsButton {
+    right: 1%;
     position: absolute;
     z-index: 3;
     right: 8%;
@@ -133,6 +136,7 @@ header .contactUsButton {
     font-weight: 600;
     padding: 10px;
     text-transform: uppercase;
+    margin: 5px;
 }
 
 header .contactUsButton .fa-envelope-open-text {
@@ -140,6 +144,28 @@ header .contactUsButton .fa-envelope-open-text {
 }
 
 header .contactUsButton:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+header .empowerButton {
+    position: absolute;
+    z-index: 3;
+    right: 20%;
+    top: 20%;
+    width: 12vw;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    margin:5px;
+}
+
+header .empowerButton:hover {
     opacity: .5;
     cursor: pointer;
 }
@@ -158,6 +184,7 @@ header .contactUsButton:hover {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    margin: 10px 0;
 }
 .homeBanner2 h1 {
     color:mediumaquamarine;
@@ -218,7 +245,7 @@ header .contactUsButton:hover {
     flex-direction: row;
     justify-content:space-between;
 }
-header .homeBanner {
+/* header .homeBanner {
     height: 100%;
     width: 100%;
     position: relative;
@@ -256,6 +283,57 @@ header .homeBanner .navClickArea:nth-child(2) {
 header .homeBanner .navClickArea:nth-child(3) {
     width: 23%;
     left: 65%;
+} */
+
+.homeBanner3 {
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    height: 100%;
+    width: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.homeBanner3 h1 {
+    position:absolute;
+    color:white;
+    margin:50px 0 30px 50px;
+    font-size: 360%;
+    top:12%;
+    right:18%;
+}
+.homeBanner3 h2 {
+    position:absolute;
+    color: white;
+    top:26%;
+    right:7%;
+    margin:5px 20px;
+    font-size:200%;
+    font-weight: bold;
+
+}
+
+.homeBanner3 button {
+    position:absolute;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px;
+    /* margin-top: 5%; */
+    font-weight:bold;
+    right:375px;
+    top: 200%;
+    margin: 20px;
+
+}
+.homeBanner3 button:hover{
+    opacity: .5;
+    cursor: pointer; 
 }
 
 header .businessBanner {
@@ -296,6 +374,48 @@ header .professionalBanner {
 } */
 
 /* End About Section Stylings */
+
+
+.quote {
+    text-align:center;
+    font-style:italic;
+    line-height: 1.5;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutUs .aboutContent { 
+    margin-left: 100px;
+    line-height:2.0;
+    width: 55vw;
+}
+
+.aboutUs h1 {
+    margin: 1em 0 1em 3em;
+    /* font-style: normal; */
+    font-size: 300%;
+}
+.aboutUs .aboutImage {
+    /* display: inline-block; */
+    position:relative;
+    width:400px;
+    height:400px;
+    overflow:hidden;
+    border-radius: 50%;
+    /* float: right; */
+    margin: 0 5vw 0;
+
+}
+.aboutUs .aboutImage img{
+    width:auto;
+    height: 100%;
+    /* margin-right: -50%; */
+}
+
+
 
 /* Our Approach Section Stylings */
 

@@ -34,21 +34,60 @@
 <body>
     <header>
         <nav class="navBar">
+            <!--  
+            <a class="navLink navLinkText" href="Pages/community.html">Community
+                Development</a>
+            -->
             <a class="navLink navLogo" href="."><img src="Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
                     title="LIFE3"></img></a>
-            <a class="navLink navLinkText" href="Pages/community.html">Educate</a>
-            <a class="navLink navLinkText" href="Pages/professional.html">Enable</a>
-            <a class="navLink navLinkText" href="Pages/professional.html">Empower</a>
-            <a class="navLink navLinkText" href="Pages/professional.html">Contact Us</a>
-            <!-- <button type="button" class="contactUsButton">
-                <p>Contact Us</p>
-                <i class="fas fa-envelope-open-text"></i>
-            </button> -->
+            <!--
+            <a class="navLink navLinkText" href="Pages/professional.html">Professional Development</a>
+            -->
+            <a href="Pages/community.html"><button class="empowerButton"><p>Empower</p></button></a>
+            <a href="#contactUs"><button class="contactUsButton"><p>Contact Us</p></button></a>
         </nav>
+
+
+        <!--  -- original approach --  -->
+        <!--
+        <div class="homeBanner">
+            <a class="navClickArea" href="Pages/community.html"></a>
+        -->
+
+         <!--   -- new approach --  -->
+        <div class ="homeBanner3">
+            <h1> We Empower </h1>
+            <div class ="moreInfo">
+                <h2> Entrepreneurs with options to design <br> and build mobile or web applications <h2>
+                <br> <a href="#homeBanner2"> <button> LEARN MORE </button> </a>
+            </div>
+        </div>
 
 
     </header>
     <main>
+        
+        <div class="quote">
+            <h2><br>" LIFE3's vision is to provide convenient and personalized,user-driven <br> experiences empowered through ideas, creativity and creations " <br></h2>
+        </div>
+
+
+
+        <div class= "aboutUs">
+            <div class="displayAbout">
+                <h1 >  ABOUT US </h1>
+                <div class = "aboutContent">
+                    <p>LIFE3 is committed to <strong>educating</strong> its community by demonstrating how product development  and design is applied to building 
+                        mobile and web applications. LIFE3 <strong>enables</strong> startups to build and create product releases while <strong>empowering</strong> early-to-mid 
+                        career professionals with  the opportunity to work on real business problems.
+                    </p>
+                </div>
+            </div>
+
+            <div class= "aboutImage">
+                <img src="Assets/Images/Banner/About Us image.jpg">
+            </div>
+        </div>
         <!-- <section class="ourApproach">
             <div class="sectionContent">
                 <h1>Our Service Approach</h1>
@@ -165,7 +204,7 @@
 
 
                                     <!--****End Template For Client Image For Carousel****-->
-                            </div>
+                            <!-- </div>
                         </div>
                         <i class="fas fa-chevron-right carouselControls"></i>
 
@@ -175,21 +214,21 @@
                     </div>
                 </nav>
 
-            </div>
+            </div> -->
             <div class="projectInformation">
-                <h1 class="projectHeadline">Life3 Value Proposition</h1>
+                <!-- <h1 class="projectHeadline">Life3 Value Proposition</h1> -->
                 <br>
                 <p class="projectConcept">
 
                 </p>
                 <br>
-                <h1>The Project</h1>
+                <!-- <h1>The Project</h1> -->
                 <p class="projectDescription">
 
                 </p>
                 <br>
-                <h1>Our Services</h1>
-                <table class="servicesTable">
+                <!-- <h1>Our Services</h1> -->
+                <!-- <table class="servicesTable">
                     <tr>
                         <th><img src="Assets/Images/Icons/weOffer.png" alt="We Offer Icon" title="We Offer"></th>
                         <td rowspan="2">
@@ -511,7 +550,7 @@
                                                 <li>Informed project stakeholders on design approach for supporting product design </li>
                                                 <li>Created user personas from student interviews and survey results </li>
                                         </figcaption>
-                                    </figure>
+                                    </figure> -->
                                     <!--**** Template For New Team Member in Desktop View****-->
 
 
@@ -533,7 +572,7 @@
                                     </figure> -->
 
                                      <!--**** End Template For New Team Member in Desktop View****-->
-                                </div>
+                                <!-- </div>
                             </div>
                         </td>
                     </tr>
@@ -637,7 +676,7 @@
                             <h2>We Advise</h2>
                         </th>
                     </tr>
-                </table>
+                </table> -->
                 <table class="servicesTable mobileServicesTable">
                     <tr>
                         <th><img src="Assets/Images/Icons/weOffer.png" alt="We Offer Icon" title="We Offer"></th>
@@ -1161,7 +1200,7 @@
         </div>
     </div>
 
-    <div class="homeBanner2">
+    <div class="homeBanner2" id="homeBanner2">
         <h1>HOW CAN WE HELP YOU?</h1>
         <div class="col">
             <div class="explore">

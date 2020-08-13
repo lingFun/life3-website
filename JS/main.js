@@ -96,11 +96,11 @@ $(".exitIcon").click(function() {
   $(".lightBoxContent .teamMemberLightBox").css("display", "none");
 });
 
-$(".contactUsButton").click(function() {
-  $(".lightBox").fadeIn(500);
-  $(".lightBoxContent .contactUsForm").css("display", "block");
-  $(".lightBox").css("display", "flex");
-});
+// $(".contactUsButton").click(function() {
+//   $(".lightBox").fadeIn(500);
+//   $(".lightBoxContent .contactUsForm").css("display", "block");
+//   $(".lightBox").css("display", "flex");
+// });
 
 /* End Light Box Script */
 
