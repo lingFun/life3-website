@@ -55,23 +55,28 @@ button {
     margin: 20px;
 
 }
+button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
 /* End Global Stylings */
 
 /* Nav Bar Stylings */
 
 header {
-    height: 50vh;
-    width: 100vw;
+    height: 60vh;
+    width: 100%;
     padding-top: 10vh;
-    background-color: #030303;
+    /* background-color: #030303; */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 
 header .navBar {
+    z-index: 10;
     position: fixed;
     height: 10vh;
     top: 0;
@@ -155,10 +160,10 @@ header .contactUsButton .fa-envelope-open-text {
     display: none;
 }
 
-header .contactUsButton:hover {
+/* header .contactUsButton:hover {
     opacity: .5;
     cursor: pointer;
-}
+} */
 
 header .empowerButton {
     position: absolute;
@@ -216,22 +221,9 @@ header .empowerButton:hover {
     margin:5px 20px;
 }
 .homeBanner2 button {
-    /* text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    background-color: mediumaquamarine; 
-    border: 0; 
-    border-radius: 15px;
-    margin-top: 5%;
-    font-weight:bold; */
     float: left;
     margin: 20px;
 
-}
-
-.homeBanner2 button:hover{
-    opacity: .5;
-    cursor: pointer; 
 }
 .contactUsForm .submitBtn {
     width: 150px;
@@ -297,8 +289,11 @@ header .homeBanner .navClickArea:nth-child(3) {
     width: 23%;
     left: 65%;
 } */
-
-.homeBanner3 {
+video #bannerVideo{
+    z-index: -11;
+    min-width: 100%;
+}
+/* .homeBanner3 {
     background-image: url("../Assets/Images/Banner/Homepage image.png");
     height: 100%;
     width: 100%; 
@@ -308,9 +303,15 @@ header .homeBanner .navClickArea:nth-child(3) {
     display: flex;
     flex-direction: column;
     text-align: left;
-
+} */
+video{
+    position:absolute; 
+    z-index: -9999; 
+    height: 50vh;
+    width:100%;
+    object-fit: fill;
 }
-.homeBanner3 h1 {
+.newbanner h1 {
     position:absolute;
     color:white;
     margin:50px 0 30px 50px;
@@ -318,7 +319,7 @@ header .homeBanner .navClickArea:nth-child(3) {
     top:12%;
     right:18%;
 }
-.homeBanner3 h2 {
+.newbanner h2 {
     position:absolute;
     color: white;
     top:26%;
@@ -329,16 +330,12 @@ header .homeBanner .navClickArea:nth-child(3) {
 
 }
 
-.homeBanner3 button {
+.newbanner button {
     position:absolute;
     right:375px;
     top: 200%;
     margin: 20px;
 
-}
-.homeBanner3 button:hover{
-    opacity: .5;
-    cursor: pointer; 
 }
 
 header .businessBanner {
@@ -417,8 +414,8 @@ header .professionalBanner {
     width:auto;
     /* height: 100%; */
     border-radius: 50%;
-    margin: 0 5rem 0 ;
-    /* position: absolute; */
+    margin: 0 8rem 0 ;
+    position: absolute;
 }
 
 
@@ -625,11 +622,11 @@ header .professionalBanner {
     height: 100%;
     width: auto;
 }
-.partners .approach{
+.approach{
     display: flex;
     flex-direction: row;
 }
-.partners .phase {
+ .phase {
     /* display: flex;
     flex-direction: column; */
     border: 3px solid black;
@@ -638,12 +635,21 @@ header .professionalBanner {
     margin: 3vh 1vw 5vh;
     text-align: center;
 }
-.partners .phase h2{
+ .phase h2{
     background-color: black;
     color: mediumaquamarine;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+}
+.projectLightBox .phase{
+    background-color:white;
+    color: black;
+    height: 80%;
+}
+.projectLightBox .phase h2{
+    background-color: mediumaquamarine;
+    color: black;
 }
 .partnerLogosContainer figcaption {
     display: none;
@@ -1179,31 +1185,43 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     background-color: black;
     color: white;
     width: 60%;
-    height: 70%;
+    height: 100%;
 }
 .lightBox .projectLightBox .weProvide {
     background-color: white;
     color: black;
-    height: 33%;
+    height: 25%;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .lightBox .projectLightBox .weOffer,.weAdvise {
-    height: 33%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
 }
 .lightBox .projectLightBox img {
-    width: 10vw ;
+    width: 8vw ;
    margin: 5px;
 }
-.lightBox .weOfferContent,.weProvideContent,.weAdviseContent {
+.lightBox .weOfferContent,.weProvideContent {
     text-align: left;
     margin-right: 2em;
+}
+.lightBox .weAdviseContent p{
+    text-align: left;
+    margin-left: 4em;
+}
+.lightBox .nextProject {
+    height: 20%;
+    text-align: end;
+    padding-right: 2vw;
+    background-color: white;
+    color:black;
+    align-items: center;
 }
 
 /* End LightBox Stylins */
