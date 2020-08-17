@@ -284,12 +284,16 @@ header .homeBanner .navClickArea:nth-child(3) {
     width: 23%;
     left: 65%;
 } */
-
+/*
 .homeBanner3 {
-    background-image: url("../Assets/Images/Banner/Homepage image.png");
-    height: 100%;
-    width: 100%; 
+    background-image: url("../Assets/Images/Banner/life3.MP4");
+    position:absolute;
+    z-index: -1;
+    top:0%;
+    height:100%;
+    width:100%;
     background-size: cover;
+    object-fit:cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -297,43 +301,39 @@ header .homeBanner .navClickArea:nth-child(3) {
     text-align: left;
 
 }
-.homeBanner3 h1 {
+*/
+video{
+    position:absolute; 
+    z-index: -9999; 
+    height: 50vh;
+    width:100%;
+    object-fit: fill;
+}
+.newbanner h1 {
     position:absolute;
     color:white;
     margin:50px 0 30px 50px;
-    font-size: 360%;
+    font-size: 3rem;
     top:12%;
     right:18%;
 }
-.homeBanner3 h2 {
+.newbanner h2 {
     position:absolute;
     color: white;
     top:26%;
     right:7%;
     margin:5px 20px;
-    font-size:200%;
+    font-size:2rem;
     font-weight: bold;
 
 }
 
-.homeBanner3 button {
+.newbanner button {
     position:absolute;
-    text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    background-color: mediumaquamarine; 
-    border: 0; 
-    border-radius: 15px;
-    /* margin-top: 5%; */
-    font-weight:bold;
     right:375px;
     top: 200%;
     margin: 20px;
 
-}
-.homeBanner3 button:hover{
-    opacity: .5;
-    cursor: pointer; 
 }
 
 header .businessBanner {
