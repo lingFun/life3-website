@@ -42,24 +42,41 @@ a {
     text-decoration: none;
     color: white;
 }
+button {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px;
+    /* margin-top: 5%; */
+    font-weight:bold;
+    float: left;
+    margin: 20px;
 
+}
+button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
 /* End Global Stylings */
 
 /* Nav Bar Stylings */
 
 header {
-    height: 50vh;
-    width: 100vw;
+    height: 60vh;
+    width: 100%;
     padding-top: 10vh;
-    background-color: #030303;
+    /* background-color: #030303; */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 
 header .navBar {
+    z-index: 10;
     position: fixed;
     height: 10vh;
     top: 0;
@@ -143,10 +160,10 @@ header .contactUsButton .fa-envelope-open-text {
     display: none;
 }
 
-header .contactUsButton:hover {
+/* header .contactUsButton:hover {
     opacity: .5;
     cursor: pointer;
-}
+} */
 
 header .empowerButton {
     position: absolute;
@@ -173,10 +190,10 @@ header .empowerButton:hover {
 .homeBanner2 {
     /* color: black; */
     background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
-    height: 500px;
+    height: 100%;
     width: 100%;
-    /* position: relative; */
-    background-size: 100% 500px;
+    position: relative;
+    /* background-size: 100% 500px; */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -184,7 +201,7 @@ header .empowerButton:hover {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    margin: 10px 0;
+    margin: 0;
 }
 .homeBanner2 h1 {
     color:mediumaquamarine;
@@ -204,21 +221,9 @@ header .empowerButton:hover {
     margin:5px 20px;
 }
 .homeBanner2 button {
-    text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    background-color: mediumaquamarine; 
-    border: 0; 
-    border-radius: 15px;
-    /* margin-top: 5%; */
-    font-weight:bold;
     float: left;
     margin: 20px;
 
-}
-.homeBanner2 button:hover{
-    opacity: .5;
-    cursor: pointer; 
 }
 .contactUsForm .submitBtn {
     width: 150px;
@@ -284,24 +289,21 @@ header .homeBanner .navClickArea:nth-child(3) {
     width: 23%;
     left: 65%;
 } */
-/*
-.homeBanner3 {
-    background-image: url("../Assets/Images/Banner/life3.MP4");
-    position:absolute;
-    z-index: -1;
-    top:0%;
-    height:100%;
-    width:100%;
+video #bannerVideo{
+    z-index: -11;
+    min-width: 100%;
+}
+/* .homeBanner3 {
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    height: 100%;
+    width: 100%; 
     background-size: cover;
-    object-fit:cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
     text-align: left;
-
-}
-*/
+} */
 video{
     position:absolute; 
     z-index: -9999; 
@@ -390,29 +392,30 @@ header .professionalBanner {
 .aboutUs .aboutContent { 
     margin-left: 100px;
     line-height:2.0;
-    width: 55vw;
+    width: 50vw;
 }
 
 .aboutUs h1 {
     margin: 1em 0 1em 3em;
     /* font-style: normal; */
-    font-size: 300%;
+    font-size: 3rem;
 }
 .aboutUs .aboutImage {
-    /* display: inline-block; */
-    position:relative;
-    width:400px;
-    height:400px;
-    overflow:hidden;
-    border-radius: 50%;
+    display: inline-block;
+    /* height: 300px; */
+    
+    /* overflow:hidden; */
+    /* border-radius: 50%; */
     /* float: right; */
-    margin: 0 5vw 0;
+    
 
 }
 .aboutUs .aboutImage img{
     width:auto;
-    height: 100%;
-    /* margin-right: -50%; */
+    /* height: 100%; */
+    border-radius: 50%;
+    margin: 0 8rem 0 ;
+    position: absolute;
 }
 
 
@@ -553,9 +556,9 @@ header .professionalBanner {
 
 /* Partners Section Stylings */
 .partners {
-    width: 100%;
-    height: 60vh;
-    margin: 15vh 0 10vh;
+    /* width: 100%; */
+    /* height: 60vh; */
+    margin:5vh 5vw;
     align-items: center;
 }
 
@@ -580,12 +583,12 @@ header .professionalBanner {
     text-align: center;
     /* text-shadow: 0 0 0.2em #8F7; */
     font-style:italic;
-    font-size: 300%;
+    font-size: 3rem;
     margin-top: 1em 0 1em;
 }
 
 .partners .sectionContent .partnersInfoContainer {
-    margin: 2vh auto;
+    /* margin: 2vh auto; */
     /* width: 50%; */
     max-width: 800px;
 }
@@ -619,11 +622,11 @@ header .professionalBanner {
     height: 100%;
     width: auto;
 }
-.partners .approach{
+.approach{
     display: flex;
     flex-direction: row;
 }
-.partners .phase {
+ .phase {
     /* display: flex;
     flex-direction: column; */
     border: 3px solid black;
@@ -632,12 +635,21 @@ header .professionalBanner {
     margin: 3vh 1vw 5vh;
     text-align: center;
 }
-.partners .phase h2{
+ .phase h2{
     background-color: black;
     color: mediumaquamarine;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+}
+.projectLightBox .phase{
+    background-color:white;
+    color: black;
+    height: 80%;
+}
+.projectLightBox .phase h2{
+    background-color: mediumaquamarine;
+    color: black;
 }
 .partnerLogosContainer figcaption {
     display: none;
@@ -874,8 +886,8 @@ footer {
     height: 20vh;
     min-height: 600px;
     min-width: 300px;
-    /* clear: both;
-    position: relative; */
+    clear: both;
+    position: relative;
 }
 
 footer .footerLogo {
@@ -1173,31 +1185,43 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     background-color: black;
     color: white;
     width: 60%;
-    height: 70%;
+    height: 100%;
 }
 .lightBox .projectLightBox .weProvide {
     background-color: white;
     color: black;
-    height: 33%;
+    height: 25%;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .lightBox .projectLightBox .weOffer,.weAdvise {
-    height: 33%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
 }
 .lightBox .projectLightBox img {
-    width: 10vw ;
+    width: 8vw ;
    margin: 5px;
 }
-.lightBox .weOfferContent,.weProvideContent,.weAdviseContent {
+.lightBox .weOfferContent,.weProvideContent {
     text-align: left;
     margin-right: 2em;
+}
+.lightBox .weAdviseContent p{
+    text-align: left;
+    margin-left: 4em;
+}
+.lightBox .nextProject {
+    height: 20%;
+    text-align: end;
+    padding-right: 2vw;
+    background-color: white;
+    color:black;
+    align-items: center;
 }
 
 /* End LightBox Stylins */
@@ -1373,7 +1397,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 } */
 
 @media (max-width:850px), (max-height: 650px) {
-    header .navBar .navLinkText {
+    header .navBar .navLinkText .homeBanner2{
         font-size: 1.3rem;
     }
     header .navBar .navLinkText:first-child {
