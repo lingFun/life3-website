@@ -165,7 +165,7 @@ header .contactUsButton .fa-envelope-open-text {
     cursor: pointer;
 } */
 
-header .empowerButton {
+header .educateButton {
     position: absolute;
     z-index: 3;
     right: 20%;
@@ -182,7 +182,7 @@ header .empowerButton {
     margin:5px;
 }
 
-header .empowerButton:hover {
+header .educateButton:hover {
     opacity: .5;
     cursor: pointer;
 }
@@ -338,6 +338,34 @@ video{
 
 }
 
+header .enableBanner {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    background-color: black;
+}
+.enableBanner h1 {
+    position:absolute;
+    color:white;
+    margin:50px 0 30px 50px;
+    font-size: 3rem;
+    top:12%;
+    right:75%;
+}
+.enableBanner h3 {
+    position:absolute;
+    color: white;
+    top:26%;
+    right:7%;
+    margin:5px 20px;
+    font-size:2rem;
+    font-weight: bold;
+
+}
+
 header .businessBanner {
     height: 100%;
     width: 100%;
@@ -416,6 +444,23 @@ header .professionalBanner {
     border-radius: 50%;
     margin: 0 8rem 0 ;
     position: absolute;
+}
+
+.diverseContent {
+    text-align:center;
+    font-style:italic;
+    line-height: 1.5;
+}
+.diverseContent .diverseContentinfo {
+    text-align:center;
+    line-height: 1.5;
+    line-height: 1.5;
+}
+
+.testimonialsContent {
+    text-align:center;
+    font-style:italic;
+    line-height: 1.5
 }
 
 
