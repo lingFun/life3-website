@@ -172,7 +172,7 @@ header .contactUsButton .fa-envelope-open-text {
 .homeBanner2 {
     /* color: black; */
     background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     position: relative;
     /* background-size: 100% 500px; */
@@ -196,6 +196,9 @@ header .contactUsButton .fa-envelope-open-text {
     margin:5px 20px;
     /* font-size: 130%; */
     font-weight: bold;
+}
+.homeBanner2 ul{
+    margin-left: 40px;
 }
 .homeBanner2 p {
     /* padding: 5% 20%; */
@@ -221,13 +224,19 @@ header .contactUsButton .fa-envelope-open-text {
     cursor: pointer;
 }
 .homeBanner2 .explore{
-    /* display: flex;
-    flex-direction: column; */
     flex:1;
     padding: 20px;
     color: white;
     justify-content:space-evenly;
     align-items: center;
+    line-height: 2;
+}
+.homeBanner2 .explore li{
+    text-decoration: underline;
+}
+.homeBanner2 .explore li:hover,h2:hover{
+    opacity: .5;
+    cursor: pointer;
 }
 .homeBanner2 .col{
     display: flex;
@@ -1240,6 +1249,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .projectNavigation .projectCarousel .carouselControls {
         font-size: 5rem;
     }
+    footer .contactUsForm {
+        width: 60%;
+    }
 }
 
 @media(max-width: 1400px), (max-height: 750px) {
@@ -1282,6 +1294,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .events .sectionContent .eventsContainer figure{
         max-width: 30vw;
+    }
+    footer .contactUsForm {
+        width: 60%;
     }
 }
 
@@ -1354,6 +1369,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .servicesTable .phasesTable td{
         padding-bottom: 0;
     }
+    footer .contactUsForm {
+        width: 60%;
+    }
+    header .navBar .navLinkText {
+        margin-right: 40px;
+        margin-left: 0;
+    }
 }
 
 /* @media (max-height: 700px){
@@ -1424,6 +1446,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .navBar .navLinkText {
         margin-right: 20px;
 
+    }
+    footer .contactUsForm {
+        width: 90%;
     }
 
 }

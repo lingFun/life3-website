@@ -21,6 +21,17 @@ $(".eventImage").click(function() {
   $(".lightBoxContent iFrame").attr("src", fileLink);
 });
 
+$(".slide").click(function() {
+  var fileLink = $(this).attr("file");
+  $(".lightBox").fadeIn(500);
+  $(".lightBox").css("display", "flex");
+  $(".projectLightBox").css("display", "none");
+  $(".lightBox .slideShow").css("display", "block");
+  $(".lightBoxContent iFrame").css("display", "block");
+  $(".lightBoxContent iFrame").attr("src", fileLink);
+});
+
+
 $(".teamProfiles figure").click(function() {
   $(".lightBox").fadeIn(500);
   $(".lightBox").css("display", "flex");
