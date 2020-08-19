@@ -172,7 +172,7 @@ header .contactUsButton .fa-envelope-open-text {
 .homeBanner2 {
     /* color: black; */
     background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
-    height: 100%;
+    height: 50vh;
     width: 100%;
     position: relative;
     /* background-size: 100% 500px; */
@@ -227,6 +227,7 @@ header .contactUsButton .fa-envelope-open-text {
     padding: 20px;
     color: white;
     justify-content:space-evenly;
+    align-items: center;
 }
 .homeBanner2 .col{
     display: flex;
@@ -383,7 +384,7 @@ header .professionalBanner {
     width:auto;
     /* height: 100%; */
     border-radius: 50%;
-    margin: auto;
+    margin: 10vh auto 0;
     /* position: absolute; */
 }
 
@@ -553,7 +554,7 @@ header .professionalBanner {
     /* text-shadow: 0 0 0.2em #8F7; */
     font-style:italic;
     font-size: 3rem;
-    margin-top: 1em 0 1em;
+    margin-top: 1em;
 }
 
 .partners .sectionContent .partnersInfoContainer {
@@ -877,6 +878,10 @@ footer .contactUsContainer h3 {
     font-size: 1.5rem;
 }
 
+.contactUsForm h2{
+    color: mediumaquamarine;
+    font-size: 1.5rem;
+}
 footer .contactUsForm {
     text-align: center;
     align-items: center;
@@ -1281,9 +1286,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 @media(max-width:1000px) {
-    header .navBar .navLinkText {
+    /* header .navBar .navLinkText {
         white-space: normal;
-    }
+    } */
     header .contactUsButton {
         width: 18vw;
     }
@@ -1416,6 +1421,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .events .sectionContent .eventsContainer figure{
         max-width: 40vw;
     }
+    header .navBar .navLinkText {
+        margin-right: 20px;
+
+    }
 
 }
 
@@ -1467,6 +1476,12 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .homeBanner2 button{
         margin: 0;
     }
+    .navBar .navLink {
+        margin:0;
+    }
+    header .navBar .navLogo {
+        margin-left: 10px;
+    }
     h1, footer h1 {
         font-size: 1.3rem;
     }
@@ -1486,6 +1501,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         padding: 0;
     }
     header .navBar .navLinkText {
+        margin-right: 20px;
+        margin-left: 0;
         font-size: 1rem;
     }
     /* .homeBanner2 {
@@ -1574,6 +1591,59 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 @media (max-height:650px) {
+    video{
+        height: 60%;
+    }
+    .aboutImage {
+        width: 50%;
+    }
+    .partnersInfoContainer h1,.aboutUs h1,.contactUsForm h1{
+        font-size: 2rem;
+    }
+    footer .contactUsForm {
+        width: 90%;
+    }
+    button,.contactUsForm .submitBtn{
+        width: 180px;
+        height: 30px;
+        font-size: .8rem;
+    }
+    .newbanner{
+        margin: 80px 0 0 40px;
+    }
+    .newbanner h1{
+        font-size: 2.3rem;
+    }
+    .newbanner h2{
+        font-size: 1.3rem;
+    }
+    header{
+        height: 487px;
+    }
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutImage .img{
+        margin-top: 20px;
+    }
+    .homeBanner2 .col{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeBanner2 p,h2{
+        margin: 0;
+        padding: 0;
+    }
+    .homeBanner2 button{
+        margin: 0;
+    }
+    .navBar .navLink {
+        margin:0;
+    }
+    header .navBar .navLogo {
+        margin-left: 10px;
+    }
     .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput {
         height: 12%;
     }
@@ -1597,6 +1667,59 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 
 @media (max-width: 450px), (max-height: 550px) {
+    video{
+        height: 60%;
+    }
+    .aboutImage {
+        width: 50%;
+    }
+    .partnersInfoContainer h1,.aboutUs h1,.contactUsForm h1{
+        font-size: 2rem;
+    }
+    footer .contactUsForm {
+        width: 90%;
+    }
+    button,.contactUsForm .submitBtn{
+        width: 180px;
+        height: 30px;
+        font-size: .8rem;
+    }
+    .newbanner{
+        margin: 80px 0 0 40px;
+    }
+    .newbanner h1{
+        font-size: 2.3rem;
+    }
+    .newbanner h2{
+        font-size: 1.3rem;
+    }
+    header{
+        height: 487px;
+    }
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutImage .img{
+        margin-top: 20px;
+    }
+    .homeBanner2 .col{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeBanner2 p,h2{
+        margin: 0;
+        padding: 0;
+    }
+    .homeBanner2 button{
+        margin: 0;
+    }
+    .navBar .navLink {
+        margin:0;
+    }
+    header .navBar .navLogo {
+        margin-left: 10px;
+    }
     .homeBanner2 h1{
         margin: 10px 0 0 20px;
         padding: 0;
