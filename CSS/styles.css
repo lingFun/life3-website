@@ -116,7 +116,7 @@ header .navBar .navLinkText:hover {
 }
 
 header .navBar .navLinkText:visited {
-    color: grey;
+    color: white;
 }
 
 header .navBar .navLogo {
@@ -1501,7 +1501,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .newbanner h1{
         font-size: 2.3rem;
     }
-    .newbanner h2,{
+    .newbanner h2{
         font-size: 1.3rem;
     }
     header{
@@ -1537,6 +1537,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     header .navBar .navLogo {
         margin-left: 10px;
+        width: 20%;
     }
     h1, footer h1 {
         font-size: 1.3rem;
