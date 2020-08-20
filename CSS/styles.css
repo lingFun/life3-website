@@ -106,7 +106,7 @@ header .navBar .navLinkText {
     text-align: center;
     display: block;
     white-space: nowrap;
-    color: mediumaquamarine;
+    color: white;
     text-align: right;
     float: right;
 }
@@ -116,7 +116,7 @@ header .navBar .navLinkText:hover {
 }
 
 header .navBar .navLinkText:visited {
-    color: white;
+    color: grey;
 }
 
 header .navBar .navLogo {
@@ -196,9 +196,11 @@ header .contactUsButton .fa-envelope-open-text {
     margin:5px 20px;
     /* font-size: 130%; */
     font-weight: bold;
+    font-style:italic;
+    font-size: 1.3rem;
 }
 .homeBanner2 ul{
-    margin-left: 40px;
+    margin-left: 70px;
 }
 .homeBanner2 p {
     /* padding: 5% 20%; */
@@ -301,6 +303,7 @@ video{
     object-fit: fill;
 }
 .newbanner {
+    width: 45%;
     position:absolute;
     top:16%;
     right:12%;
@@ -359,13 +362,13 @@ header .professionalBanner {
 /* End About Section Stylings */
 
 
-.quote {
+/* .quote {
     text-align:center;
     font-style:italic;
     line-height: 1.5;
     width: 50%;
     margin:20px auto;
-}
+} */
 
 .aboutUs {
     display: flex;
@@ -374,27 +377,29 @@ header .professionalBanner {
 
 .aboutUs .aboutContent { 
     margin-left: 100px;
-    line-height:2.0;
+    line-height: 2.0;
     width: 50vw;
 }
-
 .aboutUs h1 {
-    margin: 1em 0 1em 3em;
-    /* font-style: normal; */
+    margin: 2em 0 1em 3em;
     font-size: 3rem;
+}
+.aboutUs p{
+    font-size: 1.9rem;
 }
 .aboutUs .aboutImage {
     display: inline-block;
-    margin: auto;
-    
-
+    margin: 0 auto 3vh;
 }
 .aboutUs .aboutImage img{
     width:auto;
-    /* height: 100%; */
     border-radius: 50%;
     margin: 10vh auto 0;
-    /* position: absolute; */
+
+}
+.aboutUs button{
+    background-color: white;
+    float: right;
 }
 
 
@@ -1397,6 +1402,24 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 } */
 
 @media (max-width:850px), (max-height: 650px) {
+    .newbanner{
+        width: 60%;
+    }
+    .newbanner h2{
+        font-size: 1.5rem;
+    }
+    .aboutUs p,.homeBanner2 h2{
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    button{
+        width: 150px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
     header .navBar .navLinkText .homeBanner2{
         font-size: 1.3rem;
     }
@@ -1473,11 +1496,12 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .newbanner{
         margin: 80px 0 0 40px;
+        width: 80%;
     }
     .newbanner h1{
         font-size: 2.3rem;
     }
-    .newbanner h2{
+    .newbanner h2,{
         font-size: 1.3rem;
     }
     header{
@@ -1489,6 +1513,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .aboutImage .img{
         margin-top: 20px;
+    }
+    .aboutUs p{
+        font-size: 1.2rem;
+        line-height: normal;
+    }
+    .homeBanner2 h2{
+        font-size: 1rem;
     }
     .homeBanner2 .col{
         display: flex;
@@ -1530,9 +1561,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         margin-left: 0;
         font-size: 1rem;
     }
-    /* .homeBanner2 {
-        background-size: 100% auto;
-    } */
+    .homeBanner2 {
+        height: 90vh;
+    }
     /* header .homeBanner .navClickArea:nth-child(1) {
         height: 90%;
         width: 29%;
@@ -1641,6 +1672,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .newbanner h2{
         font-size: 1.3rem;
+    }
+    .homeBanner2 h2{
+        font-size: 1rem;
+    }
+    .aboutUs p{
+        font-size: 1.2rem;
+        line-height: normal;
     }
     header{
         height: 487px;
@@ -1752,6 +1790,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .homeBanner2 p,h2{
         margin-left: 0;
         padding: 0;
+        font-size: 0.8rem;
     }
     .aboutUs .aboutImage img{
         height: 200px;
@@ -1903,6 +1942,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 @media (max-width: 350px) {
+    .homeBanner2 h2{
+        font-size: .7rem;
+    }
     h1, footer h1 {
         font-size: .8rem;
     }
