@@ -4,26 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
+    overflow-y: scroll !important;
 }
-
-section {
-    padding: 5vh 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-}
-
-
 
 h1 {
     text-transform: uppercase;
@@ -42,6 +30,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 button {
     text-transform: uppercase;
     width: 200px;
@@ -60,18 +49,16 @@ button:hover {
 }
 /* End Global Stylings */
 
-/* Nav Bar Stylings */
 
+/* Nav Bar Stylings */
 header {
     height: 50vh;
     /* width: 100vw; */
     padding-top: 10vh;
-    /* background-color: #030303; */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    /* min-width: 300px; */
 }
 
 header .navBar {
@@ -84,7 +71,7 @@ header .navBar {
     padding: 0 20vw;
     background-color: black;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     color: white;
     align-items: center;
     font-size: 1.5rem;
@@ -96,8 +83,6 @@ header .navBar {
 
 header .navBar .navLink {
     display: inline-block;
-    /* text-align: center; */
-    /* width: 33%; */
     margin-left: 60px;
 }
 
@@ -115,9 +100,9 @@ header .navBar .navLinkText:hover {
     opacity: .5;
 }
 
-header .navBar .navLinkText:visited {
-    color: white;
-}
+/* header .navBar .navLinkText:visited {
+    color: grey;
+} */
 
 header .navBar .navLogo {
     position: absolute;
@@ -160,397 +145,116 @@ header .contactUsButton {
     margin: 5px;
 }
 
-header .contactUsButton .fa-envelope-open-text {
+/* header .contactUsButton .fa-envelope-open-text {
     display: none;
-}
-
-/* header .contactUsButton:hover {
-    opacity: .5;
-    cursor: pointer;
 } */
 
-.homeBanner2 {
-    /* color: black; */
-    background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
-    height: 60vh;
+video {
+    position: absolute; 
+    z-index: -9999; 
+    height: 40%;
     width: 100%;
+    object-fit: fill;
+}
+
+.banner {
+    width: 45%;
+    position: absolute;
+    top: 16%;
+    right: 12%;
+    color: white;
+    z-index: 1;
+}
+
+.banner button {
+    margin:20px 0 0 0;
+}
+/* End Nav Bar Stylings */
+
+
+/* How Can We Help You Section Stylings */
+.mainInfo {
+    /* width: 100%; */
     position: relative;
-    /* background-size: 100% 500px; */
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    margin: 0;
+    margin: 10vh 2vw 0;
 }
-.homeBanner2 h1 {
-    color:mediumaquamarine;
-    margin:50px 40px 20px;
-    /* font-size: 250%; */
-    text-align: left;
+
+.mainInfo h1 {
+    text-align: center;
 }
-.homeBanner2 h2 {
+
+.mainInfo h2 {
     text-align: left;
-    margin:5px 20px;
-    /* font-size: 130%; */
+    margin: 20px;
     font-weight: bold;
     font-style:italic;
     font-size: 1.3rem;
 }
-.homeBanner2 ul{
-    margin-left: 70px;
-}
-.homeBanner2 p {
-    /* padding: 5% 20%; */
-    text-align: left;
-    margin:10px 20px;
-}
-.homeBanner2 button {
-    float: left;
-    margin: 20px;
 
+.mainInfo p {
+    font-size: .9rem;
+    margin-right: 15px;
 }
-.contactUsForm .submitBtn {
-    width: 200px;
-    height: 40px;
-    background-color: mediumaquamarine; 
-    border: 0; 
-    border-radius: 15px; 
-    font-weight:bold; 
-    font-size: 1.3rem;
+
+.mainInfo button {
+    height: 30px;
+    font-size: 1rem;
+    margin-bottom: 40px;
 }
-.contactUsForm .submitBtn:hover{
-    opacity: .5;
-    cursor: pointer;
-}
-.homeBanner2 .explore{
+.mainInfo .phaseContainer {
     flex:1;
-    padding: 20px;
-    color: white;
+    display: flex;
+    flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
     line-height: 2;
+    margin: 40px;
+    overflow: hidden;
+    color: white;
+    border-radius: 3%;
+    background-color: black;
 }
-.homeBanner2 .explore li{
-    text-decoration: underline;
+.mainInfo img {
+    width: 100%;
+    height: 30vh;
 }
-.homeBanner2 .explore li:hover,h2:hover{
+.mainInfo .phaseContainer:hover {
     opacity: .5;
     cursor: pointer;
 }
-.homeBanner2 .col{
+.mainInfo .mainInfoContainer {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
 }
-/* header .homeBanner {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 73% auto;
-    background-image: url("../Assets/Images/Banner/desktop-home-banner-gif2.gif");
-    display: flex;
-    align-items: center;
-}
 
-header .homeBanner .navClickArea {
-    position: absolute;
-    height: 90%;
-    display: block;
-    background-color: #030303;
-    opacity: 0;
-}
-
-header .homeBanner .navClickArea:hover {
-    cursor: pointer;
-    opacity: .5;
-}
-
-header .homeBanner .navClickArea:nth-child(1) {
-    width: 25%;
-    left: 12%;
-}
-
-header .homeBanner .navClickArea:nth-child(2) {
-    width: 23%;
-    left: 40%;
-}
-
-header .homeBanner .navClickArea:nth-child(3) {
-    width: 23%;
-    left: 65%;
-} */
-/* .homeBanner3 {
-    background-image: url("../Assets/Images/Banner/Homepage image.png");
-    height: 100%;
-    width: 100%; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-} */
-video{
-    position:absolute; 
-    z-index: -9999; 
-    height: 40%;
-    width:100%;
-    object-fit: fill;
-}
-.newbanner {
-    width: 45%;
-    position:absolute;
-    top:16%;
-    right:12%;
-    color:white;
-    z-index: 1;
-}
-.newbanner h1 {
-    font-size: 3.5rem;
-}
-.newbanner h2 {
-    font-size:2.3rem;
+.phase h2{
+    /* color: white; */
+    text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
-
+    font-size: 1.3rem;
 }
-.newbanner button {
-    margin:20px 0 0 0;
-}
-
-header .businessBanner {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../Assets/Images/Banner/businessdevelopment.jpg");
-    background-color: black;
-}
-
-header .professionalBanner {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../Assets/Images/Banner/professionaldevelopment.jpg");
-    background-color: black;
-}
-
-/* End Nav Bar Stylings */
-
-/* About Section Stylings */
-
-/* .about {
-    height: 50vh;
-}
-
-.about .sectionContent {
-    width: 50vw;
-    text-align: center;
-}
-
-.about .sectionContent p {
-    margin-top: 5vh;
-} */
-
-/* End About Section Stylings */
-
-
-/* .quote {
-    text-align:center;
+.phase p{
     font-style:italic;
-    line-height: 1.5;
-    width: 50%;
-    margin:20px auto;
-} */
-
-.aboutUs {
-    display: flex;
-    flex-direction: row;
-}
-
-.aboutUs .aboutContent { 
-    margin-left: 100px;
-    line-height: 2.0;
-    width: 50vw;
-}
-.aboutUs h1 {
-    margin: 2em 0 1em 3em;
-    font-size: 3rem;
-}
-.aboutUs p{
-    font-size: 1.9rem;
-}
-.aboutUs .aboutImage {
-    display: inline-block;
-    margin: 0 auto 3vh;
-}
-.aboutUs .aboutImage img{
-    width:auto;
-    border-radius: 50%;
-    margin: 10vh auto 0;
-
-}
-.aboutUs button{
-    background-color: white;
-    float: right;
-}
-
-
-
-/* Our Approach Section Stylings */
-
-.ourApproach {
-    height: 45vh;
-    padding: 5vh 0 0;
-    align-items: initial;
-}
-
-.ourApproach .sectionContent {
     text-align: center;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    height: 45vh;
-    align-items: center;
-    justify-content: flex-end;
+    font-size: 1.3rem;
 }
+/* End How Can We Help You Section Stylings */
 
-.ourApproach .sectionContent p {
-    margin-top: 5vh;
-}
 
-.ourApproach .sectionContent .serviceStepsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.ourApproach .sectionContent .serviceStepsContainer figure {
-    padding: 1vh 1vw;
-    max-width: 400px;
-}
-
-.ourApproach .sectionContent .serviceStepsContainer figure h2 {
-    text-align: center;
-}
-
-.ourApproach .sectionContent .serviceStepsContainer figure p {
-    margin-top: 0;
-    text-align: center;
-}
-
-.ourApproach .sectionContent .serviceStepsContainer figure img {
-    height: auto;
-    width: 35%;
-}
-
-.ourApproach .sectionContent .serviceStepsContainer figure figcaption {
-    text-align: left;
-    width: 100%;
-}
-
-.ourApproach .phasesTable {
-    width: 100%;
-    margin-top: 5vh;
-}
-
-.ourApproach .phasesTable th {
-    font-size: 1.5rem;
-    color: white;
-    background-color: black;
-    text-align: center;
-}
-
-.ourApproach .phasesTable td {
-    font-size: 1.2rem;
-    background-color: lightgray;
-    text-align: center;
-}
-
-.ourApproach .sectionContent td p{
-    margin-top: 0;
-}
-
-.mobilePhasesTable {
-    display: none;
-}
-
-/* End Our Approach Section Stylings */
-
-/* Our Events Section Stylings */
-
-#eventsAnchor {
-    height: 5vh;
-}
-
-.events {
-    background-color: rgba(239, 242, 244);
-}
-
-.events .sectionIntro {
-    text-align: center;
-    width: 70vw;
-    margin: 0 auto;
-}
-
-.events .sectionContent {
-    width: 100vw;
-}
-
-.events .sectionContent p {
-    margin-top: 5vh;
-}
-
-.events .sectionContent .eventsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5vh;
-}
-
-.events .sectionContent .eventsContainer figure {
-    width: 40%;
-    text-align: left;
-    max-width: 40vw;
-    height: 100%;
-}
-
-.events .sectionContent .eventsContainer figure p {
-    margin-top: 0;
-}
-
-.events .sectionContent .eventsContainer figure img {
-    width: 100%;
-    height: auto;
-}
-
-.events .sectionContent .eventsContainer figure img:hover {
-    cursor: pointer;
-    opacity: .5;
-}
-
-/* End Our Events Section Stylings */
-
-/* Partners Section Stylings */
+/* Projects Section Stylings */
 .partners {
-    /* width: 100%; */
-    /* height: 60vh; */
-    margin:5vh 5vw;
+    margin: 5vh 15vw;
     align-items: center;
-}
-
-.partners .sectionContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 .partners a {
@@ -565,305 +269,81 @@ header .professionalBanner {
     text-transform: uppercase;
     color: black;
     text-align: center;
-    /* text-shadow: 0 0 0.2em #8F7; */
-    font-style:italic;
+    font-style: italic;
     font-size: 3rem;
     margin-top: 1em;
 }
-
-.partners .sectionContent .partnersInfoContainer {
-    /* margin: 2vh auto; */
-    /* width: 50%; */
-    max-width: 800px;
-}
-
-.partners .sectionContent .partnersInfoContainer p {
+.partners p {
+    line-height: 2;
+    font-size: 1.3rem;
     margin: 2vh 0;
 }
 
-.partners .sectionContent .partnersInfoContainer .partnersText {
+.partners .partnersInfoContainer .partnersText {
     height: auto;
 }
 
-.partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
+.partners .partnersInfoContainer .partnerLogosContainer {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: center; */
-    /* position: relative; */
     height: 200px;
     flex-wrap: wrap;
 }
 
-.partners .sectionContent .partnersInfoContainer .partnerLogo {
+.partners .partnersInfoContainer .partnerLogo {
     display: inline-block;
     width: auto;
     height: 60%;
     margin: 2vh 1vw;
 }
 
-.partners .sectionContent .partnersInfoContainer .partnerLogo img {
+.partners .partnersInfoContainer .partnerLogo img {
     height: 100%;
     width: auto;
 }
-.approach{
+/* End Projects Section Stylings */
+
+
+/* About Section Stylings */
+.about {
+    margin-bottom: 10vh;
+}
+
+.aboutUs {
     display: flex;
     flex-direction: row;
-    margin: auto;
-}
- .phase {
-    /* display: flex;
-    flex-direction: column; */
-    border: 3px solid black;
-    width: 20vw;
-    height: 13vh;
-    margin: 3vh 1vw 5vh;
-    text-align: center;
-}
- .phase h2{
-    background-color: black;
-    color: mediumaquamarine;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.projectLightBox .phase{
-    background-color:white;
-    color: black;
-    height: 80%;
-}
-.projectLightBox .phase h2{
-    background-color: mediumaquamarine;
-    color: black;
-}
-.phase p{
-    font-style:italic;
-}
-.partnerLogosContainer figcaption {
-    display: none;
-}
-
-/* End Partners Section Stylings */
-
-/* ------ Business Development Stylings */
-
-/* About Project Section Stylings */
-
-.aboutProject {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 5vh 3vw;
-    height: auto;
-    width: 100vw;
-}
-
-.sideContent {
-    width: 20vw;
-    height: 100%;
-}
-
-.sideContent .sideContentImages img {
-    width: 100%;
-    height: auto;
-    margin: 3vh 0;
-}
-
-.sideContent h1 {
-    text-transform: none;
-    margin-bottom: 5%;
-}
-
-.sideContent a{
-    color: black;
-}
-.ContentImages img{
-    width: 40%;
-    margin: 2vh 5% 2vh 5%;
-}
-
-.projectNavigation .projectCarousel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.projectNavigation .projectCarousel .projectLinksContainer {
-    width: 150px;
-    height: 150px;
-}
-
-.projectNavigation .projectCarousel .projectLinks {
-    display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
-    width: 150px;
-    height: 150px;
-    position: relative;
 }
 
-.projectNavigation .projectCarousel .projectLinks img {
-    height: auto;
-    width: 100%;
-    padding: 0 5%;
-    display: none;
-    position: absolute;
+.aboutUs .aboutContent { 
+    line-height: 2;
+    width: 50vw;
 }
 
-.projectNavigation .projectCarousel .carouselControls {
-    font-size: 8rem;
-    padding: 0 2%;
-    opacity: .5;
-}
-
-.projectNavigation .projectCarousel .carouselControls:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.projectInformation {
-    width: 65vw;
-    margin-left: 10%;
-}
-
-.projectInformation .testimonial {
-    font-style: italic;
-    font-weight: 600;
-    margin-top: 5vh;
-}
-
-.projectInformation .testimonial p {
-    font-size: 2rem;
-}
-
-.projectInformation .testimonial .reference {
-    text-align: right;
-}
-
-
-.mobileServicesTable{
-    display: none;
-}
-
-
-.servicesTable th img {
-    height: 80%;
-    width: auto;
-    margin-top: 5vh;
-}
-
-.servicesTable td {
-    padding-left: 2vw;
-    vertical-align: middle;
-    padding-bottom: 7vh;
-}
-
-.servicesTable .phasesTable {
-    width: 100%;
-    margin-top: 0;
-}
-
-.servicesTable th h2{
-    font-size: 1.5rem;
-    padding-bottom: 5vh;
-}
-
-
-.phasesTable th {
-    font-size: 1.5rem;
-    color: white;
-    background-color: black;
-    text-align: left;
-    padding-left: 2vw;
-}
-
-.phasesTable td {
-    font-size: 1.2rem;
-    background-color: lightgray;
-    padding-bottom: 0;
-}
-
-.servicesTable .adviseListContainer {
-    display: flex;
-    justify-content: space-around;
-    
-    flex-wrap: wrap;
-}
-
-.servicesTable .adviseList {
-    margin: 2vh 0vw 0;
-}
-
-.adviseList ul{
-    margin-left: 20px;
-}
-
-.adviseList li{
-    font-size: 0.95rem;
-}
-
-.servicesTable {
-    list-style-type: none;
-}
-
-.adviseList p {
-    font-weight: bold;
-}
-
-.aboutTeam {
-    margin-top: 1vh;
-}
-
-.aboutTeam .teamProfiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 1vh;
-}
-
-.aboutTeam .teamProfiles figure {
-    margin: 2vh 1vw 0 0;
-    display: none;
-}
-
-.aboutTeam .teamProfiles figure:hover .teamProfileImage {
-    opacity: .5;
-    cursor: pointer;
-}
-
-.aboutTeam .teamProfiles figure .teamProfileImage {
-    height: 100px;
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 100%;
-    background-color: gray;
+.about h1 {
+    text-align: center;
     margin-bottom: 2vh;
 }
 
-.aboutTeam .teamProfiles figure figcaption p {
-    text-align: center;
-    font-size: 1rem;
+.aboutUs p {
+    font-size: 1.5rem;
 }
 
-.aboutTeam .teamProfiles figure figcaption .teamName {
-    font-weight: 600;
+.aboutUs .aboutImage img {
+    width:auto;
+    border-radius: 50%;
+    margin: 0 auto 0;
+
 }
-
-.aboutTeam .teamProfiles figure figcaption .roleDescription {
-    display: none;
+.aboutUs button {
+    background-color: white;
+    float: right;
 }
+/* End About Section Stylings */
 
-/*End About Project Section Stylings */
-
-/* ---- End Business Development Stylings */
 
 /* Footer Stylings */
-
 footer {
     background-color: black;
     color: white;
@@ -883,18 +363,22 @@ footer .footerLogo {
     height: auto;
 }
 
-footer p {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-}
-
-footer .contactUsContainer h3 {
-    font-size: 1.5rem;
-}
-
-.contactUsForm h2{
+.contactUsForm h2 {
     color: mediumaquamarine;
     font-size: 1.5rem;
+}
+.contactUsForm .submitBtn {
+    width: 200px;
+    height: 40px;
+    background-color: mediumaquamarine; 
+    border: 0; 
+    border-radius: 15px; 
+    font-weight:bold; 
+    font-size: 1.3rem;
+}
+.contactUsForm .submitBtn:hover{
+    opacity: .5;
+    cursor: pointer;
 }
 footer .contactUsForm {
     text-align: center;
@@ -950,11 +434,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     cursor: pointer;
     opacity: .5;
 }
-
 /* End Footer Stylings */
 
-/* LightBox Stylings */
 
+/* LightBox Stylings */
 .lightBox {
     position: fixed;
     z-index: 20;
@@ -1203,10 +686,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     text-align: left;
     margin-right: 2em;
 }
-/* .lightBox .weAdviseContent p{
-    text-align: left;
-    margin-left: 4em;
-} */
 .lightBox .nextProject {
     height: 20%;
     text-align: end;
@@ -1216,16 +695,30 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     align-items: center;
 }
 
+.projectLightBox .phase {
+    background-color:white;
+    color: black;
+    height: 80%;
+}
+.projectLightBox .phase h2{
+    background-color: mediumaquamarine;
+    color: black;
+}
+.partnerLogosContainer figcaption {
+    display: none;
+}
+
+
 /* End LightBox Stylins */
 
 /* Media Queries */
 
 @media(max-width: 1600px), (max-height: 800px) {
     h1, footer h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     h2, footer h2, header .navBar, .projectInformation .testimonial p {
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
     p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: 1.1rem;
@@ -1234,7 +727,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         width: 10%;
         height: auto;
     }
-    .ourApproach .sectionContent .serviceStepsContainer figure img {
+    .ourApproach .serviceStepsContainer figure img {
         width: 40%;
     }
     .phasesTable th {
@@ -1261,7 +754,19 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 @media(max-width: 1400px), (max-height: 750px) {
     h1, footer h1 {
+        font-size: 3rem;
+    }
+    .banner h2{
         font-size: 2rem;
+    }
+    video {
+        height: 35%;
+    }
+    .mainInfo {
+        margin-top: 0;
+    }
+    .mainInfo img {
+        height: 15vh;
     }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
         font-size: 1.1rem;
@@ -1288,7 +793,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .contactUsButton {
         right: 2%;
     }
-    .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
+    .partners .partnersInfoContainer .partnerLogosContainer {
         height: 150px;
     }
     .lightBox .contactUsForm form .halfFormInput {
@@ -1297,7 +802,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
         padding: 1% 2%;
     }
-    .events .sectionContent .eventsContainer figure{
+    .events .eventsContainer figure{
         max-width: 30vw;
     }
     footer .contactUsForm {
@@ -1306,9 +811,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 @media(max-width:1000px) {
-    /* header .navBar .navLinkText {
-        white-space: normal;
-    } */
     header .contactUsButton {
         width: 18vw;
     }
@@ -1353,27 +855,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         width: 95vw;
         margin-left: 0;
     }
-    .servicesTable {
-        display: none;
-    }
-    .mobileServicesTable{
-        display: block;
-    }
-    .servicesTable th img{
-        height: 60%;
-    }
-    .servicesTable th h2{
-        padding-bottom: 1vh;
-    }
-    .servicesTable td{
-        padding-bottom: 3vh;
-    }
-    .servicesTable .mobilePhasesTable th, .servicesTable .mobilePhasesTable td{
-        text-align: center;
-    }
-    .servicesTable .phasesTable td{
-        padding-bottom: 0;
-    }
     footer .contactUsForm {
         width: 60%;
     }
@@ -1402,13 +883,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 } */
 
 @media (max-width:850px), (max-height: 650px) {
-    .newbanner{
+    .banner{
         width: 60%;
     }
-    .newbanner h2{
+    .banner h2{
         font-size: 1.5rem;
     }
-    .aboutUs p,.homeBanner2 h2{
+    .aboutUs p,.mainInfo h2{
         font-size: 1.2rem;
         line-height: 1.5;
     }
@@ -1420,13 +901,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h1{
         font-size: 1rem;
     }
-    header .navBar .navLinkText .homeBanner2{
+    header .navBar .navLinkText .mainInfo{
         font-size: 1.3rem;
     }
     header .navBar .navLinkText:first-child {
         padding-right: 4.53%;
     }
-    .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
+    .partners .partnersInfoContainer .partnerLogosContainer {
         height: 120px;
     }
     .aboutTeam .teamProfiles figure .teamProfileImage{
@@ -1463,7 +944,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         margin: 2% auto;
         display: block;
     }
-    .events .sectionContent .eventsContainer figure{
+    .events .eventsContainer figure{
         max-width: 40vw;
     }
     header .navBar .navLinkText {
@@ -1494,14 +975,14 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         height: 30px;
         font-size: .8rem;
     }
-    .newbanner{
+    .banner{
         margin: 80px 0 0 40px;
         width: 80%;
     }
-    .newbanner h1{
-        font-size: 2.3rem;
+    .banner h1{
+        font-size: 2rem;
     }
-    .newbanner h2{
+    .banner h2{
         font-size: 1.3rem;
     }
     header{
@@ -1518,18 +999,18 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 1.2rem;
         line-height: normal;
     }
-    .homeBanner2 h2{
+    .mainInfo h2{
         font-size: 1rem;
     }
-    .homeBanner2 .col{
+    .mainInfo .mainInfoContainer{
         display: flex;
         flex-direction: column;
     }
-    .homeBanner2 p,h2{
+    .mainInfo p,h2{
         margin: 0;
         padding: 0;
     }
-    .homeBanner2 button{
+    .mainInfo button{
         margin: 0;
     }
     .navBar .navLink {
@@ -1562,7 +1043,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         margin-left: 0;
         font-size: 1rem;
     }
-    .homeBanner2 {
+    .mainInfo {
         height: 90vh;
     }
     /* header .homeBanner .navClickArea:nth-child(1) {
@@ -1600,10 +1081,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .contactUsButton p {
         display: none;
     }
-    .ourApproach .sectionContent .serviceStepsContainer figure img {
+    .ourApproach .serviceStepsContainer figure img {
         width: 30%;
     }
-    .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
+    .partners .partnersInfoContainer .partnerLogosContainer {
         height: 90px;
     }
     .aboutTeam .teamProfiles figure {
@@ -1657,6 +1138,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .partnersInfoContainer h1,.aboutUs h1,.contactUsForm h1{
         font-size: 2rem;
     }
+    .partners {
+        margin-top: 300vh;
+    }
     footer .contactUsForm {
         width: 90%;
     }
@@ -1665,16 +1149,16 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         height: 30px;
         font-size: .8rem;
     }
-    .newbanner{
+    .banner{
         margin: 80px 0 0 40px;
     }
-    .newbanner h1{
-        font-size: 2.3rem;
+    .banner h1{
+        font-size: 2rem;
     }
-    .newbanner h2{
+    .banner h2{
         font-size: 1.3rem;
     }
-    .homeBanner2 h2{
+    .mainInfo h2{
         font-size: 1rem;
     }
     .aboutUs p{
@@ -1691,15 +1175,15 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .aboutImage .img{
         margin-top: 20px;
     }
-    .homeBanner2 .col{
+    .mainInfo .mainInfoContainer{
         display: flex;
         flex-direction: column;
     }
-    .homeBanner2 p,h2{
+    .mainInfo p,h2{
         margin: 0;
         padding: 0;
     }
-    .homeBanner2 button{
+    .mainInfo button{
         margin: 0;
     }
     .navBar .navLink {
@@ -1718,13 +1202,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         margin: 2% auto;
         display: block;
     }
-    .partners .sectionContent .partnersInfoContainer .partnerLogo img{
+    .partners .partnersInfoContainer .partnerLogo img{
         height: 70%;
     }
-    .ourApproach .sectionContent .serviceStepsContainer figure img{
+    .ourApproach .serviceStepsContainer figure img{
         width: 30%;
     }
-    .events .sectionContent .eventsContainer figure{
+    .events .eventsContainer figure{
         max-width: 30vw;
     }
 }
@@ -1732,10 +1216,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 @media (max-width: 450px), (max-height: 550px) {
     video{
-        height: 60%;
+        height: 50%;
     }
     .aboutImage {
         width: 50%;
+    }
+    .partners {
+        margin-top: 55vh;
     }
     .partnersInfoContainer h1,.aboutUs h1,.contactUsForm h1{
         font-size: 2rem;
@@ -1744,21 +1231,18 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         width: 90%;
     }
     button,.contactUsForm .submitBtn{
-        width: 180px;
+        width: 150px;
         height: 30px;
-        font-size: .8rem;
+        font-size: .9rem;
     }
-    .newbanner{
+    .banner{
         margin: 80px 0 0 40px;
     }
-    .newbanner h1{
-        font-size: 2.3rem;
+    .banner h1{
+        font-size: 2rem;
     }
-    .newbanner h2{
+    .banner h2{
         font-size: 1.3rem;
-    }
-    header{
-        height: 487px;
     }
     .aboutUs {
         display: flex;
@@ -1767,16 +1251,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .aboutImage .img{
         margin-top: 20px;
     }
-    .homeBanner2 .col{
+    .mainInfo .mainInfoContainer{
         display: flex;
         flex-direction: column;
     }
-    .homeBanner2 p,h2{
-        margin: 0;
-        padding: 0;
-    }
-    .homeBanner2 button{
-        margin: 0;
+    .mainInfo button{
+        margin-bottom: 20px;
+        font-size: .8rem;
     }
     .navBar .navLink {
         margin:0;
@@ -1784,67 +1265,38 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .navBar .navLogo {
         margin-left: 10px;
     }
-    .homeBanner2 h1{
+    .about h1 {
+        font-size: 2rem;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .mainInfo h1 {
         margin: 10px 0 0 20px;
         padding: 0;
     }
-    .homeBanner2 p,h2{
+    .mainInfo p,h2 {
         margin-left: 0;
         padding: 0;
         font-size: 0.8rem;
+    }
+    .partners p {
+        font-size: .8rem;
     }
     .aboutUs .aboutImage img{
         height: 200px;
         width: 200px;
         margin: 50px auto 0;
-
     }
     .aboutUs p{
         line-height: 2;
     }
-    .quote{
-        width: 80%;
-        margin:20px auto 0;
-    }
-    section, .sectionContent{
-        min-height: 350px;
-    }
     header {
-        height: 70vh;
+        height: 120vh;
         width: 100vw;
     }
-    header .homeBanner {
-        background-image: url("../Assets/Images/Banner/MOBILE\ FADING\ ANIMATION.gif");
-        display: block;
-        background-size: auto 90%;
-    }
-    header .businessBanner {
-        background-image: url("../Assets/Images/Banner/businessDevelopmentStacked.png")
-    }
-    header .professionalBanner {
-        background-image: url("../Assets/Images/Banner/professionalDevelopmentStacked.png")
-    }
-    header .homeBanner .navClickArea {
-        position: relative;
-        height: 33%;
-        width: 100%;
-        display: inline-block;
-    }
-    header .homeBanner .navClickArea:nth-child(1) {
-        height: 30%;
-        margin-top: 10%;
-        width: 100%;
-        left: 0;
-    }
-    header .homeBanner .navClickArea:nth-child(2) {
-        height: 25%;
-        width: 100%;
-        left: 0;
-    }
-    header .homeBanner .navClickArea:nth-child(3) {
-        height: 30%;
-        width: 100%;
-        left: 0;
+    .mainInfo img {
+        height: 20vh;
     }
     h1, footer h1 {
         font-size: 1rem;
@@ -1856,47 +1308,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: .8rem;
         line-height: 1rem;
     }
-    .ourApproach {
-        height: 90vh;
-        justify-content: center;
-        padding: 0;
-    }
-    .ourApproach .sectionContent {
-        height: 90vh;
-    }
-    #eventsAnchor {
-        height: 0vh;
-    }
-    .ourApproach .sectionContent .serviceStepsContainer {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .ourApproach .sectionContent .serviceStepsContainer figure {
-        width: 70%;
-        max-width: auto;
-    }
-    .phasesTable {
-        display: none;
-        margin-top: 0;
-    }
-    .mobilePhasesTable {
-        display: block;
-      
-    }
-    .mobilePhasesTable th{
-        width: 100vw;
-    }
-    .ourApproach .mobilePhasesTable {
-        width: auto;
-        justify-self: flex-end;
-        width: 100vw;
-        margin-top: 5vh;
-    }
-    .ourApproach .mobilePhasesTable th {
-        width: 100vw;
-    }
-    
-    .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
+    .partners .partnersInfoContainer .partnerLogosContainer {
         height: 80px;
     }
     footer .footerLogo {
@@ -1922,19 +1334,19 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 @media (max-height: 550px){
-    .ourApproach .sectionContent .serviceStepsContainer figure{
+    .ourApproach .serviceStepsContainer figure{
         width: 33%;
     }
-    .events .sectionContent .eventsContainer figure img{
+    .events .eventsContainer figure img{
         width: 75%;
     }
 }
 
 @media (max-height: 400px){
-    .events .sectionContent .eventsContainer{
+    .events .eventsContainer{
         justify-content: center;
     }
-    .events .sectionContent .eventsContainer figure{
+    .events .eventsContainer figure{
         max-width: 20vw;
     }
     header .navBar .navLinkText{
@@ -1943,7 +1355,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 @media (max-width: 350px) {
-    .homeBanner2 h2{
+    .mainInfo h2{
         font-size: .7rem;
     }
     h1, footer h1 {
@@ -1962,7 +1374,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .homeBanner {
         background-size: auto 80%;
     }
-    .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
+    .partners .partnersInfoContainer .partnerLogosContainer {
         height: 60px;
     }
     .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
