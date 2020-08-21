@@ -24,7 +24,6 @@ section {
 }
 
 
-
 h1 {
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -51,7 +50,7 @@ button {
     border-radius: 15px;
     font-weight:bold;
     float: left;
-    margin: 20px;
+    margin: 20px 0 0 0;
     font-size: 1.3rem;
 }
 button:hover {
@@ -64,27 +63,23 @@ button:hover {
 
 header {
     height: 50vh;
-    /* width: 100vw; */
-    padding-top: 10vh;
-    /* background-color: #030303; */
+    padding-top: 0vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    /* min-width: 300px; */
 }
 
 header .navBar {
     z-index: 10;
     position: fixed;
-    height: 10vh;
+    height: 12vh;
     top: 0;
     width: 100vw;
     min-width: 300px;
     padding: 0 20vw;
     background-color: black;
     display: flex;
-    /* justify-content: space-around; */
     color: white;
     align-items: center;
     font-size: 1.5rem;
@@ -92,12 +87,15 @@ header .navBar {
     justify-content: flex-end;
     margin-left: auto;
 
+
+}
+/*    ------   Added for the hiding navigation feature    ---- */
+header .navBar.hide {
+    transform: translate(-100%);
 }
 
 header .navBar .navLink {
     display: inline-block;
-    /* text-align: center; */
-    /* width: 33%; */
     margin-left: 60px;
 }
 
@@ -121,16 +119,18 @@ header .navBar .navLinkText:visited {
 
 header .navBar .navLogo {
     position: absolute;
-    left: 1%;
+    left: -3%;
     background-color: black;
-    margin-top: 5vh;
-    width: 15vh;
-    height: 15vh;
+    margin-top: 0.5vh;
+    width: 13vh;
+    height: 13vh;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /*
     box-shadow: 0px 0px 5px 5px black;
+    */
 }
 
 header .navBar .navLogo img {
@@ -170,16 +170,13 @@ header .contactUsButton .fa-envelope-open-text {
 } */
 
 .homeBanner2 {
-    /* color: black; */
     background-image: url("../Assets/Images/Banner/3e\'s\ background\ image.png");
     height: 50vh;
     width: 100%;
     position: relative;
-    /* background-size: 100% 500px; */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
@@ -188,17 +185,14 @@ header .contactUsButton .fa-envelope-open-text {
 .homeBanner2 h1 {
     color:mediumaquamarine;
     margin:50px 40px 20px;
-    /* font-size: 250%; */
     text-align: left;
 }
 .homeBanner2 h2 {
     text-align: left;
     margin:5px 20px;
-    /* font-size: 130%; */
     font-weight: bold;
 }
 .homeBanner2 p {
-    /* padding: 5% 20%; */
     text-align: left;
     margin:10px 20px;
 }
@@ -221,8 +215,6 @@ header .contactUsButton .fa-envelope-open-text {
     cursor: pointer;
 }
 .homeBanner2 .explore{
-    /* display: flex;
-    flex-direction: column; */
     flex:1;
     padding: 20px;
     color: white;
@@ -287,7 +279,7 @@ header .homeBanner .navClickArea:nth-child(3) {
 video{
     position:absolute; 
     z-index: -9999; 
-    height: 40%;
+    height: 50%;
     width:100%;
     object-fit: fill;
 }
@@ -309,6 +301,27 @@ video{
 .newbanner button {
     margin:20px 0 0 0;
 }
+
+/*   ---  for adding logo on newbanner ---- */
+.newbanner .newBannerLogo {
+    position: absolute;
+    left: -98%;
+    margin-top: -33vh;
+    width: 13vh;
+    height: 13vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newbanner .newBannerLogo img {
+    width: 80%;
+    margin-right: -5%;
+    height: auto;
+
+}
+
 
 header .businessBanner {
     height: 100%;
@@ -350,14 +363,6 @@ header .professionalBanner {
 /* End About Section Stylings */
 
 
-.quote {
-    text-align:center;
-    font-style:italic;
-    line-height: 1.5;
-    width: 50%;
-    margin:20px auto;
-}
-
 .aboutUs {
     display: flex;
     flex-direction: row;
@@ -370,22 +375,28 @@ header .professionalBanner {
 }
 
 .aboutUs h1 {
-    margin: 1em 0 1em 3em;
-    /* font-style: normal; */
+    margin: 2em 0 1em 3em;
     font-size: 3rem;
 }
+.aboutUs p{
+    font-size: 1.5rem;
+}
+
 .aboutUs .aboutImage {
     display: inline-block;
-    margin: auto;
-    
-
+    margin: 0 auto 3vh;
 }
+
 .aboutUs .aboutImage img{
     width:auto;
-    /* height: 100%; */
     border-radius: 50%;
     margin: 10vh auto 0;
-    /* position: absolute; */
+
+}
+
+.aboutUs button{
+    background-color: white;
+    float: right;
 }
 
 
@@ -469,6 +480,135 @@ header .professionalBanner {
 }
 
 /* End Our Approach Section Stylings */
+
+
+/* ----- CSS  for enable page starts  -----*/
+header .enableBanner {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    background-color: black;
+}
+
+header .enableBanner .enableBannerContent {
+    position:absolute;
+    top:16%;
+    right:12%;
+    color:white;
+    z-index: 1;
+}
+
+
+.enableBanner h1 {
+    font-size: 3.2rem;
+}
+
+.enableBanner p {
+    font-size:1.9rem;
+    font-weight: normal;
+    
+}
+
+.diverseContentInfo {
+    text-align: center;
+}
+
+.diverseContentInfo h1 {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    font-style:italic;
+    font-size: 3rem;
+    margin-top: 1em;
+}
+
+.diverseContentInfo h2 {
+    font-size: 1.4rem;
+}
+
+.aboutDiverseContent {
+    text-align: center;
+    line-height:2.0;
+}
+
+.diverseImage {
+    float:left;
+    width:50%;
+    padding: 5 px;
+}
+.diverseImageTwo::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.testimonialsName {
+    text-align:center;
+}
+
+
+.testimonialsContentInfo {
+    text-align: center;
+    line-height: 2.2;
+}
+.testimonialsContentInfo h2 {
+    font-size:1.4rem;
+}
+
+/* ---  CSS for empower page starts ---*/
+header .empowerBanner {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    background-color: black;
+}
+
+header .empowerBanner .empowerBannerContent {
+    position:absolute;
+    top:16%;
+    right:8%;
+    color:white;
+    z-index: 1;
+}
+
+.empowerBanner h1 {
+    font-size: 3.2rem;
+}
+
+.empowerBanner p {
+    font-size:1.9rem;
+    font-weight: normal;
+}
+
+/* -- Adding buttons under company's logo for each clients -- */
+
+.partners imageButton {
+    text-align:center;  
+}
+
+.partners button {
+    background-color: black;
+    color: white;
+}
+
+.testimonialsName h1 {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    /* text-shadow: 0 0 0.2em #8F7; */
+    font-style:italic;
+    font-size: 3rem;
+    margin-top: 1em;
+
+}
+
+
 
 /* Our Events Section Stylings */
 
@@ -557,6 +697,8 @@ header .professionalBanner {
     margin-top: 1em;
 }
 
+
+
 .partners .sectionContent .partnersInfoContainer {
     /* margin: 2vh auto; */
     /* width: 50%; */
@@ -574,7 +716,7 @@ header .professionalBanner {
 .partners .sectionContent .partnersInfoContainer .partnerLogosContainer {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start;
+    /*justify-content: flex-start; 
     align-items: center; */
     /* position: relative; */
     height: 200px;
@@ -938,6 +1080,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 /* End Footer Stylings */
+
+
 
 /* LightBox Stylings */
 

@@ -33,17 +33,13 @@
     
     <body>
         <header>
-            <nav class="navBar">
-                <!--  
-                <a class="navLink navLinkText" href="Pages/community.html">Community
-                    Development</a>
-                -->
+            
+            <nav class="navBar" id="navbar">
                 <a class="navLink navLogo" href="."><img src="Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
                             title="LIFE3"></img></a>
-                <a class="navLink navLinkText" href="Pages/professional.html">Enable</a>
-                <a class="navLink navLinkText" href="Pages/community.html">Empower</a>
+                <a class="navLink navLinkText" href="Pages/empower.html">Empower</a>
+                <a class="navLink navLinkText" href="Pages/enable.html">Enable</a>
                 <a href="#contactUs"><button class="contactUsButton"><p>Contact Us</p></button></a>
-     
             </nav>
     
     
@@ -55,7 +51,7 @@
     
              <!--   -- new approach --  -->
              
-             <video autoplay muted loop>
+            <video autoplay muted loop>
                 <source  src="Assets/Images/Banner/life3.MP4">     
             </video>
             <div class="newbanner">
@@ -64,30 +60,46 @@
                     <h2> Entrepreneurs with options to design <br> and build mobile or web applications <h2>
                     <a href="#homeBanner2"> <button> LEARN MORE </button> </a>
                 </div>
+                <a class="newBannerLogo" href="."><img src="Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
+                    title="LIFE3"></img></a>
             </div>
     
         </header>
         <main>
-    <!--         
-            <div class="quote">
-                <h2>" LIFE3's vision is to provide convenient and personalized,user-driven experiences empowered through ideas, creativity and creations "</h2>
-            </div> -->
+
+        <script>
+            const nav = document.querySelector('#navbar');
+            
+            let prevScrollpos= window.pageYOffset;
+            nav.classList.add('hide')
+
+            window.addEventListener('scroll', ()=> {
+                
+                let currentScrollPos= window.pageYOffset;
+                if(prevScrollpos > currentScrollPos){
+                    nav.classList.add('hide');
+                }else{
+                    nav.classList.remove('hide');
+                }
+                prevScrollpos= currentScrollPos;
+            });
+        </script>
     
+            
             <div class= "aboutUs">
                 <div class="displayAbout">
                     <h1 >  ABOUT US </h1>
                     <div class = "aboutContent">
-                        <p>LIFE3 is committed to <strong>educating</strong> its community by demonstrating how product development  and design is applied to building 
-                            mobile and web applications. LIFE3 <strong>enables</strong> startups to build and create product releases while <strong>empowering</strong> early-to-mid 
-                            career professionals with  the opportunity to work on real business problems.
-                        </p>
+                        <p><strong>WE ENABLE</strong> equity of underrepresented groups in technology-focused careers and entrepreneurial ventures.</p> 
                     </div>
+                    <a href="Pages/enable.html"><button>learn more <strong>&rarr;</strong></button></a>
                 </div>
     
                 <div class= "aboutImage">
                     <img src="Assets/Images/Banner/About Us image.jpg">
                 </div>
             </div>
+        
             <!-- <section class="ourApproach">
                 <div class="sectionContent">
                     <h1>Our Service Approach</h1>
@@ -1178,7 +1190,7 @@
             <div class="projectLightBox">
                 <div class="weOffer">
                     <div>
-                        <img src="Assets/Images/Icons/We offer.png">
+                        <img src="Assets/Images/Icons/We offter.png">
                         <h2>We Offer</h2>
                     </div>
                     <div class="weOfferContent"></div>
