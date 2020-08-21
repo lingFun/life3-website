@@ -899,7 +899,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 1rem;
     }
     h1{
-        font-size: 1rem;
+        font-size: 2.3rem;
     }
     header .navBar .navLinkText .mainInfo{
         font-size: 1.3rem;
@@ -1168,7 +1168,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header{
         height: 487px;
     }
-    .aboutUs {
+    /* .aboutUs {
         display: flex;
         flex-direction: column;
     }
@@ -1178,7 +1178,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .mainInfo .mainInfoContainer{
         display: flex;
         flex-direction: column;
-    }
+    } */
     .mainInfo p,h2{
         margin: 0;
         padding: 0;
