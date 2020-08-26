@@ -100,7 +100,8 @@ header .navBar .navLink {
 }
 
 header .navBar .navLinkText {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
     text-align: center;
     display: block;
     white-space: nowrap;
@@ -160,6 +161,11 @@ header .contactUsButton {
     text-transform: uppercase;
     margin: 5px;
 }
+header .contactUsButton p{
+    font-size: 1.3rem;
+    font-weight:bold;
+}
+
 
 header .contactUsButton .fa-envelope-open-text {
     display: none;
@@ -568,8 +574,12 @@ header .enableBanner .enableBannerContent {
     font-size:1.4rem;
 }
 
+.testimonialsImage h1 {
+    font-size:2.2rem;
+}
+
 .testimonialsContentInfo p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height:2.0;
     font-weight:500;
 }
