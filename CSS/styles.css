@@ -1220,7 +1220,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 @media (max-height:650px) {
     video{
-        height: 60%;
+        height: 50%;
     }
     .aboutImage {
         width: 50%;
@@ -1229,7 +1229,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 2rem;
     }
     .partners {
-        margin-top: 300vh;
+        margin-top: 10vh;
     }
     footer .contactUsForm {
         width: 90%;
@@ -1255,9 +1255,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 1.2rem;
         line-height: normal;
     }
-    header{
+    /* header{
         height: 487px;
-    }
+    } */
     /* .aboutUs {
         display: flex;
         flex-direction: column;
@@ -1274,7 +1274,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         padding: 0;
     }
     .mainInfo button{
-        margin: 0;
+        margin-bottom: 40px;
     }
     .navBar .navLink {
         margin:0;
@@ -1312,7 +1312,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         width: 50%;
     }
     .partners {
-        margin-top: 55vh;
+        margin-top: 10vh;
     }
     .partnersInfoContainer h1,.aboutUs h1,.contactUsForm h1{
         font-size: 2rem;
