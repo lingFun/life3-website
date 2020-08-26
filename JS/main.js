@@ -32,9 +32,10 @@ $(".slide").click(function() {
 });
 
 
-$(".teamProfiles figure").click(function() {
+$(".teamProfiles2 figure").click(function() {
   $(".lightBox").fadeIn(500);
   $(".lightBox").css("display", "flex");
+  $(".projectLightBox").css("display", "none");
   $(".lightBoxContent .teamMemberLightBox").css("display", "flex");
   $(".lightBoxContent iFrame").css("display", "none");
 
@@ -66,6 +67,7 @@ $(".teamProfiles figure").click(function() {
 $(".partnerLogosContainer figure").click(function() {
   $(".lightBox").fadeIn(500);
   $(".lightBox").css("display", "flex");
+  $(".projectLightBox").css("display", "block");
   $(".lightBoxContent .projectLightBox").css("display", "flex");
   $(".lightBoxContent iFrame").css("display", "none");
 
