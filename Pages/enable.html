@@ -73,11 +73,37 @@
 
 
     <footer>
-        <img class="footerLogo" src="../Assets/Images/Icons/LIFE3FooterLogo.png" alt="LIFE3 Logo" title="LIFE3">
-        <!-- <div class="contactUsContainer">
-            <h3>CONTACT US</h3>
-            <p>215 Moore St, <br> Brooklyn, NY 11206 <br> USA</p>
-        </div> -->
+        <div class="contactUsForm" id="contactUs">
+            <!-- <img src="../Assets/Images/contactus_modular.png"> -->
+            <form action="https://formspree.io/xzbeebbo" method="POST">
+                <h2>CONTACT US</h2>
+                <h1>SEND US A MESSAGE</h1>
+                <br>
+                <div class="formInput">
+                    <input type="text" name="Organization Name" placeholder="Your Organization Name">
+                    <select id="mylist" name="Organization Type" placeholder="CompanyType">
+                        <option value ="Technical company">Technical company</option>
+                        <option value ="Educational institution">Educational institution</option>
+                        <option value ="others">others</option>
+                    </select> 
+                </div>
+
+                <div class="emailInput">
+                    <input type="email" name="emailAddress" placeholder="Email">
+                </div>
+
+                <div class="formInput">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="tel" name="phoneNumber" placeholder="Phone#">
+                </div>
+                <div class="messageInput">
+                    <textarea type="text" name="message" placeholder="Message"></textarea>
+                </div>
+                <input class="submitBtn" type="submit" value="SEND MESSAGE">
+    
+            </form>
+        </div>
+        
         <div class="socialMediaContainer">
             <p>EMAIL US | CALL US (917) 570-2669</p>
             <div class="iconBar">

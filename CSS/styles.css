@@ -110,7 +110,8 @@ header .navBar .navLinkText {
 }
 
 header .navBar .navLinkText:hover {
-    opacity: .5;
+    
+    opacity: .5; 
 }
 
 header .navBar .navLinkText:visited {
@@ -1047,7 +1048,26 @@ footer .socialMediaContainer .iconBar {
 
 footer .contactUsForm input{
     padding: 5px;
-    width: 40%;
+    width: 34%;
+    height: 35px;
+    margin: 10px 2%;
+    align-items: center;
+    display: inline-block;
+}
+
+footer .contactUsForm select{
+    padding: 5px;
+    width: 34%;
+    height: 35px;
+    margin: 10px 2%;
+    align-items: center;
+    display: inline-block;
+}
+
+/* --- new class added for form(email) --- */
+footer .contactUsForm .emailInput input{
+    padding: 5px;
+    width: 73%;
     height: 35px;
     margin: 10px 2%;
     align-items: center;
@@ -1056,8 +1076,8 @@ footer .contactUsForm input{
 
 footer .contactUsForm textarea{
     padding: 5px;
-    width: 85%;
-    height: 70px;
+    width: 73%;
+    height: 60px;
     margin:10px 0;
     align-items: center;
 }
