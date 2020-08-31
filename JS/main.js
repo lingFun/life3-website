@@ -456,3 +456,22 @@ $(".carouselControls").click(function() {
 /* Contact Us Script */
 
 /* End Contact Us Script */
+
+/* Navigation Bar Scroll to Show Script */
+const nav = document.querySelector('#navbar');
+
+let prevScrollpos= window.pageYOffset;
+nav.classList.add('hide')
+
+window.addEventListener('scroll', ()=> {
+
+    let currentScrollPos= window.pageYOffset;
+    if(prevScrollpos > currentScrollPos){
+        nav.classList.add('hide');
+    }else{
+        nav.classList.remove('hide');
+    }
+    prevScrollpos= currentScrollPos;
+});
+
+/* End Navigation Bar Scroll to Show Script */

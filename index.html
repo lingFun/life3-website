@@ -33,7 +33,7 @@
 
 <body>
     <header>
-        <nav class="navBar">
+        <nav class="navBar" id="navbar">
             <a class="navLink navLogo" href="."><img src="Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
                         title="LIFE3"></img></a>
                         <a class="navLink navLinkText" href="Pages/empower.html">Empower</a>
@@ -282,13 +282,18 @@
                 <h1>SEND US A MESSAGE</h1>
                 <br>
                 <div class="formInput">
-                    <input type="text" name="companyName" placeholder="Your Company/Institution Name (Optional)">
-                    <input type="email" name="emailAddress" placeholder="Email">
+                    <input type="text" name="companyName" placeholder="Your Organization Name">
+                    <select id="mylist" name="Organization Type" placeholder="CompanyType">
+                        <option value ="Technical company">Technical company</option>
+                        <option value ="Educational institution">Educational institution</option>
+                        <option value ="others">others</option>
+                    </select> 
                 </div>
                 <div class="formInput">
                     <input type="text" name="name" placeholder="Your Name">
                     <input type="tel" name="phoneNumber" placeholder="Phone#">
                 </div>
+                <input class="input2" type="email" name="emailAddress" placeholder="Email">
                 <div class="messageInput">
                     <textarea type="text" name="message" placeholder="Message"></textarea>
                 </div>
