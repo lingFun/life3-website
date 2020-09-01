@@ -21,9 +21,21 @@ $(".eventImage").click(function() {
   $(".lightBoxContent iFrame").attr("src", fileLink);
 });
 
-$(".teamProfiles figure").click(function() {
+$(".slide").click(function() {
+  var fileLink = $(this).attr("file");
   $(".lightBox").fadeIn(500);
   $(".lightBox").css("display", "flex");
+  $(".projectLightBox").css("display", "none");
+  $(".lightBox .slideShow").css("display", "block");
+  $(".lightBoxContent iFrame").css("display", "block");
+  $(".lightBoxContent iFrame").attr("src", fileLink);
+});
+
+
+$(".teamProfiles2 figure").click(function() {
+  $(".lightBox").fadeIn(500);
+  $(".lightBox").css("display", "flex");
+  $(".projectLightBox").css("display", "none");
   $(".lightBoxContent .teamMemberLightBox").css("display", "flex");
   $(".lightBoxContent iFrame").css("display", "none");
 
@@ -55,6 +67,7 @@ $(".teamProfiles figure").click(function() {
 $(".partnerLogosContainer figure").click(function() {
   $(".lightBox").fadeIn(500);
   $(".lightBox").css("display", "flex");
+  $(".projectLightBox").css("display", "block");
   $(".lightBoxContent .projectLightBox").css("display", "flex");
   $(".lightBoxContent iFrame").css("display", "none");
 
@@ -443,3 +456,22 @@ $(".carouselControls").click(function() {
 /* Contact Us Script */
 
 /* End Contact Us Script */
+
+/* Navigation Bar Scroll to Show Script */
+const nav = document.querySelector('#navbar');
+
+let prevScrollpos= window.pageYOffset;
+nav.classList.add('hide')
+
+window.addEventListener('scroll', ()=> {
+
+    let currentScrollPos= window.pageYOffset;
+    if(prevScrollpos > currentScrollPos){
+        nav.classList.add('hide');
+    }else{
+        nav.classList.remove('hide');
+    }
+    prevScrollpos= currentScrollPos;
+});
+
+/* End Navigation Bar Scroll to Show Script */
