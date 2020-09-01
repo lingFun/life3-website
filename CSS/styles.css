@@ -383,6 +383,137 @@ video {
 }
 /* End About Section Stylings */
 
+/* ----- CSS  for enable page starts  -----*/
+header .enableBanner {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    background-color: black;
+}
+
+header .enableBanner .enableBannerContent {
+    position:absolute;
+    top:16%;
+    right:12%;
+    color:white;
+    z-index: 1;
+}
+
+
+.enableBanner h1 {
+    font-size: 3.2rem;
+}
+
+.enableBanner p {
+    font-size:1.9rem;
+    font-weight: 400;
+    line-height: 1.2;
+    
+}
+
+.diverseContentInfo {
+    text-align: center;
+}
+
+.diverseContentInfo h1 {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    font-style:italic;
+    font-size: 3rem;
+    margin-top: 1em;
+}
+
+.diverseContentInfo h2 {
+    font-size: 1.4rem;
+}
+.diverseContentInfo p {
+    font-size: 1.6rem;
+    font-weight: 545;
+    line-height:2;
+}
+
+.aboutDiverseContent {
+    text-align: center;
+    line-height:2.0;
+}
+
+.diverseImage {
+    float:left;
+    width:50%;
+    padding: 5 px;
+}
+.diverseImageTwo::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.testimonialsName {
+    text-align:center;
+}
+
+
+.testimonialsContentInfo {
+    text-align: left;
+    margin-left: 230px;
+
+}
+
+
+.testimonialsImage h2 {
+    font-size:1.4rem;
+}
+
+.testimonialsImage h1 {
+    font-size:2.2rem;
+}
+
+.testimonialsContentInfo p {
+    font-size: 1.6rem;
+    line-height:2.0;
+    font-weight:500;
+}
+
+/* ---  CSS for empower page starts ---*/
+header .empowerBanner {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    background-color: black;
+}
+
+header .empowerBanner .empowerBannerContent {
+    position:absolute;
+    top:16%;
+    right:8%;
+    color:white;
+    z-index: 1;
+}
+
+.empowerBanner h1 {
+    font-size: 3.2rem;
+}
+
+.empowerBanner p {
+    font-size:1.9rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* -- Adding buttons under company's logo for each clients -- */
+
+.partners imageButton {
+    text-align:center;  
+}
+
+
 
 /* Footer Stylings */
 footer {
