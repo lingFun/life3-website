@@ -824,6 +824,12 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 /* Media Queries */
 
 @media(max-width: 1600px), (max-height: 800px) {
+    .banner{
+        width: 60%;
+    }
+    .header{
+        height: 60vh;
+    }
     h1, footer h1 {
         font-size: 3rem;
     }
@@ -869,8 +875,14 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .banner h2{
         font-size: 2rem;
     }
-    video {
-        height: 45%;
+    .banner{
+        width: 60%;
+    }
+    .header{
+        height: 60vh;
+    }
+    .about{
+        height: 90vh;
     }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
         font-size: 1.1rem;
