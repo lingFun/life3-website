@@ -69,14 +69,16 @@ header {
 header .navBar {
     z-index: 10;
     position: fixed;
-    height: 10vh;
+    height: 12vh;
     top: 0;
     width: 100vw;
     min-width: 300px;
     padding: 0 20vw;
     background-color: black;
     display: flex;
+    /*
     justify-content: space-around;
+    */
     color: white;
     align-items: center;
     font-size: 1.5rem;
@@ -93,6 +95,7 @@ header .navBar.hide {
 header .navBar .navLink {
     display: inline-block;
     margin-left: 60px;
+
 }
 
 header .navBar .navLinkText {
@@ -109,18 +112,18 @@ header .navBar .navLinkText {
 header .navBar .navLinkText:hover {
     opacity: .5;
 }
-
-/* header .navBar .navLinkText:visited {
-    color: grey;
-} */
-
+/*
+ header .navBar .navLinkText:visited {
+    color:mediumaquamarine;
+} 
+*/
 header .navBar .navLogo {
     position: absolute;
-    left: 1%;
+    left: -2%;
     background-color: black;
-    margin-top: 5vh;
-    width: 15vh;
-    height: 15vh;
+    margin-top:.5vh;
+    width: 13vh;
+    height: 13vh;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -138,7 +141,7 @@ header .navBar .navLogo img:hover {
     opacity: .5;
 }
 
-/* header .contactUsButton {
+header .contactUsButton {
     right: 4%; 
     position: absolute;
     z-index: 3;
@@ -153,11 +156,11 @@ header .navBar .navLogo img:hover {
     padding: 10px;
     text-transform: uppercase;
     margin: 5px;
-} */
+}
 
-/* header .contactUsButton .fa-envelope-open-text {
+ header .contactUsButton .fa-envelope-open-text {
     display: none;
-} */
+} 
 
 video {
     position: absolute; 
@@ -188,6 +191,26 @@ video {
     margin:20px 0 0 0;
 }
 /* End Nav Bar Stylings */
+
+/* Adding logo on the banner */
+.banner .newBannerLogo {
+    position: absolute;
+    left: -43%;
+    margin-top: -37vh;
+    width: 13vh;
+    height: 13vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .newBannerLogo img {
+    width: 80%;
+    margin-right: -5%;
+    height: auto;
+
+}
 
 
 /* How Can We Help You Section Stylings */
@@ -279,7 +302,7 @@ video {
 
 /* Projects Section Stylings */
 .partners {
-    margin: 5vh 15vw;
+    margin: 8vh 15vw;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -323,18 +346,32 @@ video {
 }
 
 .partners .partnersInfoContainer .partnerLogo {
+    /*
     display: inline-block;
     width: auto;
     height: 60%;
     margin: 2vh 1vw;
+    */
+    display: inline-block; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 60%;
+    width: auto;
 }
 .partners .partnersInfoContainer .partnerLogo:hover {
     cursor: pointer;
     opacity: .5;
 }
+
+.partners .sectionContent .partnersInfoContainer .partnerLogoNames h2 {
+    text-align:center;
+    font-size:2.2rem;
+    margin:1.8vh 2vw ;
+}
 .partners .partnersInfoContainer .partnerLogo img {
     height: 100%;
     width: auto;
+    margin-left: 25%;
 }
 /* End Projects Section Stylings */
 
@@ -511,6 +548,31 @@ header .empowerBanner .empowerBannerContent {
 
 .partners imageButton {
     text-align:center;  
+}
+
+.partners button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px; 
+    border: 0; 
+    border-radius: 15px;
+    font-weight:bold;
+    float: left;
+    margin: 20px 0 0 0;
+    font-size: 1.5rem;
+}
+
+.testimonialsName h1 {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    /* text-shadow: 0 0 0.2em #8F7; */
+    font-style:italic;
+    font-size: 3rem;
+    margin-top: 1em;
+
 }
 
 
