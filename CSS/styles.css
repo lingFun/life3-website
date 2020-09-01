@@ -170,7 +170,7 @@ video {
 .banner {
     width: 50%;
     position: absolute;
-    top: 16%;
+    top: 10%;
     right: 12%;
     color: white;
     z-index: 1;
@@ -178,9 +178,11 @@ video {
 
 .banner h1 {
     font-weight: 900;
+    line-height: 2;
 }
 .banner h2 {
     font-weight: 500;
+    line-height: 2;
 }
 .banner button {
     margin:20px 0 0 0;
@@ -217,6 +219,11 @@ video {
 .mainInfo p {
     font-size: .9rem;
     margin-right: 15px;
+}
+
+.mainInfo .describle {
+    color: mediumaquamarine;
+    text-align: right;
 }
 
 .mainInfo button {
@@ -334,42 +341,44 @@ video {
 
 /* About Section Stylings */
 .about {
-    margin-bottom: 10vh;
-}
-
-.aboutUs {
-    display: flex;
-    flex-direction: row;
+    background-image: url("../Assets/Images/Banner/We\ enable\ background\ image.png");
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
     align-items: center;
     justify-content: center;
+    text-align: left;
+    color: white;
 }
 
-.aboutUs .aboutContent { 
+.about .aboutContent { 
     line-height: 2;
-    width: 50vw;
+    width: 50%;
+    margin: auto;
+}
+
+.about .aboutUs {
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
 }
 
 .about h1 {
-    text-align: center;
-    margin-bottom: 2vh;
     font-weight: 900;
-    font-style: italic;
+    color: mediumaquamarine;
+    padding-top: 10%;
 }
 
-.aboutUs p {
+.about p {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.aboutUs .aboutImage img {
-    width:auto;
-    border-radius: 50%;
-    margin: 0 auto 0;
-
-}
-.aboutUs button {
-    background-color: white;
-    float: right;
+.aboutContent .click {
+    /* font-size: 1.8rem; */
+    text-transform: uppercase;
+    text-align: right;
     font-weight: 700;
 }
 /* End About Section Stylings */
@@ -384,7 +393,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 20vh;
-    min-height: 600px;
+    min-height: 800px;
     min-width: 300px;
     clear: both;
     position: relative;
@@ -419,6 +428,7 @@ footer .footerLogo {
     cursor: pointer;
 }
 footer .contactUsForm {
+    margin-top: 5vh;
     text-align: center;
     align-items: center;
     width: 50%;
@@ -862,9 +872,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     video {
         height: 45%;
     }
-    .mainInfo {
-        margin-top: 15vh;
-    }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
         font-size: 1.1rem;
     }
@@ -1140,24 +1147,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         margin-left: 0;
         font-size: 1rem;
     }
-    .mainInfo {
-        height: 90vh;
-    }
-    /* header .homeBanner .navClickArea:nth-child(1) {
-        height: 90%;
-        width: 29%;
-        left: 2%;
-    }
-    header .homeBanner .navClickArea:nth-child(2) {
-        height: 90%;
-        width: 30%;
-        left: 35%;
-    }
-    header .homeBanner .navClickArea:nth-child(3) {
-        height: 90%;
-        width: 30%;
-        left: 68%;
-    } */
     header .contactUsButton .fa-envelope-open-text {
         display: inline-block;
         color: white;
@@ -1238,6 +1227,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .partners {
         margin-top: 10vh;
     }
+    .about {
+        width: 60%;
+    }
     footer .contactUsForm {
         width: 90%;
     }
@@ -1262,20 +1254,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 1.2rem;
         line-height: normal;
     }
-    /* header{
-        height: 487px;
-    } */
-    /* .aboutUs {
-        display: flex;
-        flex-direction: column;
-    }
-    .aboutImage .img{
-        margin-top: 20px;
-    }
-    .mainInfo .mainInfoContainer{
-        display: flex;
-        flex-direction: column;
-    } */
     .mainInfo p,h2{
         margin: 0;
         padding: 0;
@@ -1313,13 +1291,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 @media (max-width: 450px), (max-height: 550px) {
     video{
-        height: 50%;
+        height: 70vh;
     }
     .aboutImage {
         width: 50%;
-    }
-    .partners {
-        margin-top: 10vh;
     }
     .partnersInfoContainer h1,.aboutUs h1,.contactUsForm h1{
         font-size: 2rem;
@@ -1341,17 +1316,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .banner h2{
         font-size: 1.3rem;
     }
-    /* .aboutUs {
-        display: flex;
-        flex-direction: column;
-    } */
     .aboutImage .img{
         margin-top: 20px;
     }
-    /* .mainInfo .mainInfoContainer{
-        display: flex;
-        flex-direction: column;
-    } */
     .mainInfo button{
         margin-bottom: 20px;
         font-size: .8rem;
@@ -1362,8 +1329,15 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .navBar .navLogo {
         margin-left: 10px;
     }
-    .about h1 {
+    .about .aboutContent {
+        width: 70%;
+    }
+    .about h1{
         font-size: 2rem;
+        padding-top: 30%;
+    }
+    .about .aboutUs {
+        padding-top: 100px;
     }
     .about p {
         font-size: 1rem;
@@ -1389,7 +1363,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         line-height: 2;
     }
     header {
-        height: 120vh;
+        height: 70vh;
         width: 100vw;
     }
     .mainInfo img {
@@ -1403,7 +1377,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: .8rem;
-        line-height: 1rem;
+        /* line-height: 1rem; */
     }
     .partners .partnersInfoContainer .partnerLogosContainer {
         height: 80px;
