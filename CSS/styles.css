@@ -208,7 +208,7 @@ video {
 }
 
 .mainInfo h2 {
-    text-align: left;
+    /* text-align: left; */
     margin: 20px;
     font-weight: bold;
     font-style:italic;
@@ -223,7 +223,6 @@ video {
 
 .mainInfo .describle {
     color: mediumaquamarine;
-    text-align: right;
 }
 
 .mainInfo button {
@@ -342,8 +341,8 @@ video {
 /* About Section Stylings */
 .about {
     background-image: url("../Assets/Images/Banner/We\ enable\ background\ image.png");
-    height: 70vh;
     width: 100%;
+    height: 80vh;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -352,8 +351,8 @@ video {
 }
 
 .about .aboutContent { 
-    line-height: 2;
-    width: 50%;
+
+    width: 60%;
     margin: auto;
 }
 
@@ -361,22 +360,24 @@ video {
     font-style: italic;
     color: white;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 80px;
+    /* padding-top: 10%; */
+    font-size: 4rem;
 }
 
 .about h1 {
     font-weight: 900;
     color: mediumaquamarine;
-    padding-top: 10%;
+    /* padding-top: 10%; */
+    padding-top: 80px;
 }
 
 .about p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .aboutContent .click {
-    /* font-size: 1.8rem; */
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
@@ -393,7 +394,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 20vh;
-    min-height: 800px;
+    min-height: 750px;
     min-width: 300px;
     clear: both;
     position: relative;
@@ -830,14 +831,20 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .header{
         height: 60vh;
     }
+    .about{
+        height: 70vh;
+    }
+    .about .aboutUs {
+        font-size: 3rem;
+    }
     h1, footer h1 {
         font-size: 3rem;
     }
     h2, footer h2, header .navBar, .projectInformation .testimonial p {
         font-size: 2rem;
     }
-    p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
-        font-size: 1.1rem;
+    .about p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+        font-size: 1.8rem;
     }
     footer .footerLogo {
         width: 10%;
@@ -872,8 +879,11 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h1, footer h1 {
         font-size: 3rem;
     }
+    .about .aboutUs {
+        font-size: 3rem;
+    }
     .banner h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .banner{
         width: 60%;
@@ -882,13 +892,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         height: 60vh;
     }
     .about{
-        height: 90vh;
+        height: 60vh;
     }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
         font-size: 1.1rem;
     }
-    p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
-        font-size: 1rem;
+    .about p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+        font-size: 1.5rem;
     }
     .teamProfileImage{
         width: 80px;
@@ -978,6 +988,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         margin-right: 40px;
         margin-left: 0;
     }
+    .mainInfo .mainInfoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .about p{
+        font-size: 1.3rem;
+    }
 }
 
 /* @media (max-height: 700px){
@@ -1016,6 +1033,12 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     h1{
         font-size: 2.3rem;
+    }
+    .about {
+        height: 60vh;
+    }
+    .about .aboutUs {
+        font-size: 3rem;
     }
     header .navBar .navLinkText .mainInfo{
         font-size: 1.3rem;
@@ -1111,6 +1134,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .aboutImage .img{
         margin-top: 20px;
     }
+    .about .aboutUs {
+        font-size: 2rem;
+    }
     .aboutUs p{
         font-size: 1.2rem;
         line-height: normal;
@@ -1125,9 +1151,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .mainInfo p,h2{
         margin: 0;
         padding: 0;
-    }
-    .mainInfo button{
-        margin: 0;
     }
     .navBar .navLink {
         margin:0;
@@ -1262,6 +1285,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .mainInfo h2{
         font-size: 1rem;
     }
+    .about .aboutUs {
+        font-size: 2rem;
+    }
     .aboutUs p{
         font-size: 1.2rem;
         line-height: normal;
@@ -1341,6 +1367,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header .navBar .navLogo {
         margin-left: 10px;
     }
+    .about{
+        height: 60vh;
+    }
     .about .aboutContent {
         width: 70%;
     }
@@ -1350,6 +1379,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .about .aboutUs {
         padding-top: 100px;
+        font-size: 2rem;
     }
     .about p {
         font-size: 1rem;
@@ -1414,6 +1444,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     footer .socialMediaContainer .socialMediaIcon{
         font-size: 1rem;
     }
+    .mainInfo .mainInfoContainer{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-height: 550px){
@@ -1462,6 +1496,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
         padding: 5%;
+    }
+    .mainInfo .mainInfoContainer{
+        display: flex;
+        flex-direction: column;
     }
 }
 
