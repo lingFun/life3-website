@@ -73,7 +73,7 @@ header .navBar {
     top: 0;
     width: 100vw;
     min-width: 300px;
-    padding: 0 20vw;
+    padding: 0 2vw;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -218,7 +218,6 @@ video {
 
 .mainInfo p {
     font-size: .9rem;
-    margin-right: 15px;
 }
 
 .mainInfo .describle {
@@ -334,6 +333,13 @@ video {
 .partners .partnersInfoContainer .partnerLogo img {
     height: 100%;
     width: auto;
+}
+
+.projectLightBox .partnerLogo img {
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    text-align: center;
 }
 /* End Projects Section Stylings */
 
@@ -567,7 +573,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 .teamProfileImage {
     display: block;
-    position: relative;
+    /* position: relative; */
 }
 
 .lightBox .teamProfileImage {
@@ -735,29 +741,36 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 
 .lightBox .projectLightBox {
-    background-color: black;
-    color: white;
-    width: 60%;
-    height: 100%;   /*project module height*/
+    margin-top: 10vh;
+    padding: 20px 10%;
+    background-color: white;
+    color: black;
+    width: 85%;
+    height: 100%;   /* project module height */
+    overflow-y: scroll;
+    position: fixed;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .lightBox .projectLightBox .weProvide {
     background-color: white;
     color: black;
-    height: 35%;    /*project module height: weProvide*/
+    height: 100vh;    /*project module height: weProvide*/
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .lightBox .projectLightBox .weOffer,.weAdvise {
-    height: 20%;    /*project module height: weOffer*/
+    height: 200vh;    /*project module height: weOffer*/
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
 }
 .lightBox .projectLightBox .weAdvise{
-    height: 35%;    /*project module height: weAdvise*/
+    height: 400vh;    /*project module height: weAdvise*/
 }
 .lightBox .projectLightBox .phaseIcon {
     width: 8vw ;
@@ -768,7 +781,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     margin: 0 2em;
 }
 .lightBox .nextProject {
-    height: 10%;    /*project module height: nextProject*/
+    height: 200vh;    /*project module height: nextProject*/
     text-align: end;
     padding-right: 2vw;
     background-color: white;
@@ -783,11 +796,19 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     padding: 20px;
 }
 .projectLightBox .phase {
-    background-color:white;
-    color: black;
-    height: 90%;
-    width: 30%;
-    margin: auto;
+    background-color:black;
+    color: white;
+    height: 40vh;
+    width: 40%;
+    margin: 20px auto;
+}
+.projectLightBox p {
+    font-size: 1.3rem;
+}
+.projectLightBox .phaseContainer {
+    display: flex;
+    flex-direction: row;
+    /* padding: 20px 10%; */
 }
 .projectLightBox .phase h2{
     background-color: mediumaquamarine;
@@ -1035,7 +1056,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 2.3rem;
     }
     .about {
-        height: 60vh;
+        height: 70vh;
     }
     .about .aboutUs {
         font-size: 3rem;
@@ -1262,9 +1283,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .partners {
         margin-top: 10vh;
     }
-    .about {
-        width: 60%;
-    }
     footer .contactUsForm {
         width: 90%;
     }
@@ -1272,9 +1290,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         width: 180px;
         height: 30px;
         font-size: .8rem;
-    }
-    .banner{
-        margin: 80px 0 0 40px;
     }
     .banner h1{
         font-size: 2rem;
