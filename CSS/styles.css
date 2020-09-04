@@ -953,7 +953,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 }
 .lightBox .projectLightBox .phaseIcon {
     width: 8vw ;
-   margin: 5px;
+   margin: 10px;
 }
 .lightBox .weOfferContent,.weProvideContent {
     text-align: left;
@@ -977,8 +977,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 .projectLightBox .phase {
     background-color:white;
     color: black;
-    height: 90%;
-    width: 30%;
+    height: 60%;
+    width: 35%;
     margin: auto;
 }
 .projectLightBox .phase h2{
@@ -1027,7 +1027,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 3rem;
     }
     h2, footer h2, header .navBar, .projectInformation .testimonial p {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: 1.1rem;
@@ -1061,6 +1061,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
 }
 
+/* -----working on it (sambeg)------- */
 @media(max-width: 1400px), (max-height: 750px) {
     h1, footer h1 {
         font-size: 3rem;
@@ -1078,7 +1079,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         height: 90vh;
     }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
     p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: 1rem;
@@ -1117,6 +1118,111 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     footer .contactUsForm {
         width: 60%;
     }
+    /* --- sambeg added --- */
+    
+    .lightBox .lightBoxBackground {
+        width:100px;
+        height: 100px;
+    }
+    .lightBox .projectLightBox .phaseIcon {
+        width: 14vw;
+        margin: 5px;
+    }
+
+    .projectLightBox .weOffer,.weAdvise, .weProvide{
+        font-size:1.1rem;
+    }
+    .lightBox .teamContainer {
+        align-items: center;
+        margin-left: 2.0em;
+    }
+    .lightBox .projectLightBox .weProvide {
+        background-color: white;
+        color: black;
+        height: 22%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .lightBox .projectLightBox .weAdvise {
+        height: 25%;
+    }
+    .projectLightBox .teamProfileImage {
+        height: 100px ;
+        width: 100px;
+        display: block;
+        position: relative;
+    } 
+    .projectLightBox .teamProfiles2 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .lightBox .teamName {
+        font-size: 1.0rem;
+    }
+
+    .lightBox .teamRole {
+        font-size: 0.8rem;
+    }
+    .lightBox .teamMemberContainer{
+        display: inline-block;
+        width: auto;
+        height:60%;
+        margin: 0.5vh 3vw;
+        padding: 0px;
+
+    }
+    .lightBox .teamContainer h2 {
+        font-size:1.7rem;
+        color:black;
+    }
+    .projectLightBox .phase {
+        background-color: white;
+        color: black;
+        height: 50%;
+        width: 30%;
+        margin: auto;
+    }
+    .projectLightBox .phase h2 {
+        background-color: mediumaquamarine;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+    .phase p {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .projectLightBox .listhead {
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .teamProfileImage .socialIcon {
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        opacity: 0;
+        font-size: 5rem;
+        color: white;
+    }
+    .lightBox .teamMemberLightBox .profileInformation {
+        width: 80%;
+        margin-left: 5vw;
+    }
+
 }
 
 @media(max-width:1000px) {
@@ -1191,6 +1297,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
 } */
 
+/*   ------ workimg on (sambeg)-----*/
 @media (max-width:850px), (max-height: 650px) {
     .banner{
         width: 60%;
@@ -1262,6 +1369,89 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     footer .contactUsForm {
         width: 90%;
+    }
+    /*----- sambeg working -----*/ 
+    .lightBox .lightBoxBackground {
+        width:100px;
+        height: 100px;
+    }
+    .lightBox .projectLightBox .phaseIcon {
+        width: 14vw;
+        margin: 5px;
+    }
+
+    .projectLightBox .weOffer,.weAdvise, .weProvide{
+        font-size:0.9rem;
+    }
+    .lightBox .teamContainer {
+        align-items: center;
+        margin-left: 2.0em;
+    }
+    .lightBox .projectLightBox .weProvide {
+        background-color: white;
+        color: black;
+        height: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .lightBox .projectLightBox .weAdvise {
+        height: 25%;
+    }
+    .projectLightBox .teamProfileImage {
+        height: 80px ;
+        width: 80px;
+        display: block;
+        position: relative;
+    } 
+    .projectLightBox .teamProfiles2 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .lightBox .teamName {
+        font-size: 1.0rem;
+    }
+
+    .lightBox .teamRole {
+        font-size: 0.8rem;
+    }
+    .lightBox .teamMemberContainer{
+        display: inline-block;
+        width: auto;
+        height:60%;
+        margin: 0.5vh 3vw;
+        padding: 0px;
+
+    }
+    .lightBox .teamContainer h2 {
+        font-size:1.4rem;
+        color:black;
+    }
+    .projectLightBox .phase {
+        background-color: white;
+        color: black;
+        height: 50%;
+        width: 30%;
+        margin: auto;
+    }
+    .projectLightBox .phase h2 {
+        background-color: mediumaquamarine;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+    .phase p {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .projectLightBox .listhead {
+        font-weight: 700;
+        font-style: normal;
     }
 
 }
@@ -1416,6 +1606,78 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .servicesTable .adviseList p, .servicesTable .adviseList li{
         font-size: .6rem;
     }
+    /* ---- sambeg added ----*/ 
+    /*  added (sambeg)  */
+    .lightBox .lightBoxBackground {
+        width:100px;
+        height: 100px;
+    }
+    .lightBox .projectLightBox .phaseIcon {
+        width: 14vw;
+        margin: 5px;
+    }
+
+    .projectLightBox .weOffer,.weAdvise, .weProvide{
+        font-size:0.6rem;
+    }
+    .lightBox .teamContainer {
+        align-items: center;
+        margin-left: 0.3em;
+    }
+    .projectLightBox .teamProfileImage {
+        height: 50px ;
+        width: 50px;
+        display: block;
+        position: relative;
+    } 
+    .projectLightBox .teamProfiles2 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .lightBox .teamName {
+        font-size: 1.0rem;
+    }
+
+    .lightBox .teamRole {
+        font-size: 0.8rem;
+    }
+    .lightBox .teamMemberContainer{
+        display: inline-block;
+        width: auto;
+        height:60%;
+        margin: 0.5vh 0.5vw;
+        padding: 0px;
+
+    }
+    .lightBox .teamContainer h2 {
+        font-size:1.0rem;
+        color:black;
+    }
+    .projectLightBox .phase {
+        background-color: white;
+        color: black;
+        height: 60%;
+        width: 30%;
+        margin: auto;
+    }
+    .projectLightBox .phase h2 {
+        background-color: mediumaquamarine;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+    .phase p {
+        font-style: italic;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    .projectLightBox .listhead {
+        font-weight: 700;
+        font-style: normal;
+    }
     
 }
 
@@ -1493,7 +1755,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
 }
 
-
+/*    -------    currently working (sambeg)-------*/
 @media (max-width: 450px), (max-height: 550px) {
     video{
         height: 70vh;
@@ -1607,6 +1869,90 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     footer .socialMediaContainer .socialMediaIcon{
         font-size: 1rem;
     }
+
+
+    /*  added (sambeg)  */
+    .lightBox .lightBoxBackground {
+        width:100px;
+        height: 100px;
+    }
+    .lightBox .projectLightBox .phaseIcon {
+        width: 14vw;
+        margin: 5px;
+    }
+
+    .projectLightBox .weOffer,.weAdvise, .weProvide{
+        font-size:0.6rem;
+    }
+    .lightBox .teamContainer {
+        align-items: center;
+        margin-left: 0.3em;
+    }
+    .lightBox .projectLightBox .weProvide {
+        background-color: white;
+        color: black;
+        height: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projectLightBox .teamProfileImage {
+        height: 50px ;
+        width: 50px;
+        display: block;
+        position: relative;
+    } 
+    .projectLightBox .teamProfiles2 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .lightBox .teamName {
+        font-size: 0.8rem;
+    }
+
+    .lightBox .teamRole {
+        font-size: 0.8rem;
+    }
+    .lightBox .teamMemberContainer{
+        display: inline-block;
+        width: auto;
+        height:60%;
+        margin: 0.5vh 0.5vw;
+        padding: 0px;
+
+    }
+    .lightBox .teamContainer h2 {
+        font-size:0.8rem;
+        color:black;
+    }
+    .projectLightBox .phase {
+        background-color: white;
+        color: black;
+        height: 65%;
+        width: 30%;
+        margin: auto;
+    }
+    .projectLightBox .phase h2 {
+        background-color: mediumaquamarine;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 0.6rem;
+    }
+    .phase p {
+        font-style: italic;
+        text-align: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+    .projectLightBox .listhead {
+        font-weight: 700;
+        font-style: normal;
+    }
+
 }
 
 @media (max-height: 550px){
@@ -1616,6 +1962,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .events .eventsContainer figure img{
         width: 75%;
     }
+
 }
 
 @media (max-height: 400px){
@@ -1655,6 +2002,90 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
         padding: 5%;
+    }
+    /* --- sambeg added----*/
+    /*  added (sambeg)  */
+    .lightBox .lightBoxBackground {
+        width:100px;
+        height: 100px;
+    }
+    .lightBox .projectLightBox .phaseIcon {
+        width: 14vw;
+        margin: 5px;
+    }
+
+    .projectLightBox .weOffer,.weAdvise, .weProvide{
+        font-size:0.4rem;
+    }
+    .lightBox .teamContainer {
+        align-items: center;
+        margin-left: 2.0em;
+    }
+    .lightBox .projectLightBox .weProvide {
+        background-color: white;
+        color: black;
+        height: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .lightBox .projectLightBox .weAdvise {
+        height: 25%;
+    }
+    .projectLightBox .teamProfileImage {
+        height: 40px ;
+        width: 40px;
+        display: block;
+        position: relative;
+    } 
+    .projectLightBox .teamProfiles2 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .lightBox .teamName {
+        font-size: 0.6rem;
+    }
+
+    .lightBox .teamRole {
+        font-size: 0.4rem;
+    }
+    .lightBox .teamMemberContainer{
+        display: inline-block;
+        width: auto;
+        height:60%;
+        margin: 0.5vh 3vw;
+        padding: 0px;
+
+    }
+    .lightBox .teamContainer h2 {
+        font-size:0.8rem;
+        color:black;
+    }
+    .projectLightBox .phase {
+        background-color: white;
+        color: black;
+        height: 60%;
+        width: 30%;
+        margin: auto;
+    }
+    .projectLightBox .phase h2 {
+        background-color: mediumaquamarine;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 0.6rem;
+    }
+    .phase p {
+        font-style: italic;
+        text-align: center;
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+    .projectLightBox .listhead {
+        font-weight: 700;
+        font-style: normal;
     }
 }
 
