@@ -1061,7 +1061,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
 }
 
-/* -----working on it (sambeg)------- */
 @media(max-width: 1400px), (max-height: 750px) {
     h1, footer h1 {
         font-size: 3rem;
@@ -1118,7 +1117,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     footer .contactUsForm {
         width: 60%;
     }
-    /* --- sambeg added --- */
+
+    /* ----  for module  ----   */ 
+    /*   --- added ---   */
     
     .lightBox .lightBoxBackground {
         width:100px;
@@ -1297,7 +1298,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
 } */
 
-/*   ------ workimg on (sambeg)-----*/
+
 @media (max-width:850px), (max-height: 650px) {
     .banner{
         width: 60%;
@@ -1370,7 +1371,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     footer .contactUsForm {
         width: 90%;
     }
-    /*----- sambeg working -----*/ 
+    /* ------ for module  ------  */
+    /*----- added -----*/ 
     .lightBox .lightBoxBackground {
         width:100px;
         height: 100px;
@@ -1606,8 +1608,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .servicesTable .adviseList p, .servicesTable .adviseList li{
         font-size: .6rem;
     }
-    /* ---- sambeg added ----*/ 
-    /*  added (sambeg)  */
+    /* ---- for module ----*/ 
+    /*  added   */
     .lightBox .lightBoxBackground {
         width:100px;
         height: 100px;
@@ -1755,7 +1757,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
 }
 
-/*    -------    currently working (sambeg)-------*/
+
 @media (max-width: 450px), (max-height: 550px) {
     video{
         height: 70vh;
@@ -1870,8 +1872,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 1rem;
     }
 
-
-    /*  added (sambeg)  */
+/*     ----- for module -----*/
+    /*  added  */
     .lightBox .lightBoxBackground {
         width:100px;
         height: 100px;
@@ -2003,8 +2005,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .lightBox .contactUsForm form .formInput, .lightBox .contactUsForm form .halfFormInput, .lightBox .contactUsForm form .messageInput {
         padding: 5%;
     }
-    /* --- sambeg added----*/
-    /*  added (sambeg)  */
+    /* --- for module  ----*/
+    /*  added  */
     .lightBox .lightBoxBackground {
         width:100px;
         height: 100px;
