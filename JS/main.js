@@ -465,9 +465,9 @@ nav.classList.add('hide')
 
 window.addEventListener('scroll', ()=> {
 
-    let currentScrollPos= window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
     if(prevScrollpos > currentScrollPos){
-        nav.classList.add('hide');
+        nav.classList.remove('hide');
     }else{
         nav.classList.remove('hide');
     }

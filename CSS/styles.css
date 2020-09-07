@@ -375,8 +375,8 @@ video {
 .about h1 {
     font-weight: 900;
     color: mediumaquamarine;
-    /* padding-top: 10%; */
-    padding-top: 80px;
+    padding-top: 10%;
+    /* padding-top: 80px; */
 }
 
 .about p {
@@ -851,9 +851,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .header{
         height: 60vh;
     }
-    .about{
-        height: 70vh;
-    }
     .about .aboutUs {
         font-size: 4rem;
     }
@@ -912,9 +909,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         width: 60%;
     }
     .header{
-        height: 60vh;
-    }
-    .about{
         height: 60vh;
     }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
@@ -1064,9 +1058,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h1{
         font-size: 2.3rem;
     }
-    .about {
-        height: 60vh;
-    }
     .about .aboutUs {
         font-size: 3rem;
     }
@@ -1162,7 +1153,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 1.3rem;
     }
     header{
-        height: 487px;
+        height: 60vh;
     }
     .aboutUs {
         display: flex;
@@ -1297,7 +1288,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 @media (max-height:650px) {
     video{
-        height: 50%;
+        height: 60%;
     }
     .aboutImage {
         width: 50%;
