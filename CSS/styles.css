@@ -69,7 +69,7 @@ header {
 header .navBar {
     z-index: 10;
     position: fixed;
-    height: 12vh;
+    height: 10vh;
     top: 0;
     width: 100vw;
     min-width: 300px;
@@ -121,7 +121,7 @@ header .navBar .navLogo {
     position: absolute;
     left: -2%;
     background-color: black;
-    margin-top:.5vh;
+    margin-top:2.5vh;
     width: 13vh;
     height: 13vh;
     border-radius: 50%;
@@ -196,7 +196,7 @@ video {
 .banner .newBannerLogo {
     position: absolute;
     left: -43%;
-    margin-top: -37vh;
+    margin-top: -35vh;
     width: 13vh;
     height: 13vh;
     border-radius: 50%;
