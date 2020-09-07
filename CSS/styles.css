@@ -33,15 +33,15 @@ a {
 
 button {
     text-transform: uppercase;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     background-color: mediumaquamarine; 
     border: 0; 
     border-radius: 15px;
     font-weight:bold;
     float: left;
     margin: 20px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 button:hover {
@@ -182,7 +182,9 @@ video {
 }
 .banner h2 {
     font-weight: 500;
-    line-height: 2;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    /* line-height: 2; */
 }
 .banner button {
     margin:20px 0 0 0;
@@ -198,7 +200,7 @@ video {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    margin: 10vh 2vw 0;
+    margin: 5vh 2vw 0;
 }
 
 .mainInfo h1 {
@@ -277,7 +279,7 @@ video {
 
 /* Projects Section Stylings */
 .partners {
-    margin: 5vh 15vw;
+    margin: 2vh 12vw 5vh;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -299,12 +301,11 @@ video {
     text-align: center;
     font-style: italic;
     font-size: 3rem;
-    margin-top: 1em;
     font-weight: 900;
 }
 .partners p {
     line-height: 2;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 2vh 0;
     font-weight: 500;
 }
@@ -335,7 +336,7 @@ video {
     width: auto;
 }
 
-.projectLightBox .partnerLogo img {
+.projectLightBox .partnerLogo{
     height: 200px;
     width: auto;
     margin: 10px;
@@ -367,7 +368,7 @@ video {
     color: white;
     text-align: center;
     padding-top: 80px;
-    /* padding-top: 10%; */
+    margin-bottom: 10px;
     font-size: 4rem;
 }
 
@@ -422,12 +423,12 @@ footer .footerLogo {
 }
 
 .contactUsForm .submitBtn {
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     background-color: mediumaquamarine; 
     border: 0; 
     border-radius: 15px; 
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 .contactUsForm .submitBtn:hover{
@@ -742,7 +743,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 .lightBox .projectLightBox {
     margin-top: 10vh;
-    padding: 20px 10%;
+    padding: 20px 5%;
     background-color: white;
     color: black;
     width: 85%;
@@ -753,44 +754,22 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     align-content: center;
     text-align: center;
 }
-.lightBox .projectLightBox .weProvide {
-    background-color: white;
-    color: black;
-    height: 100vh;    /*project module height: weProvide*/
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+.projectLightBox .nextProject {
+    margin: 2em;
+    float: right;
     align-items: center;
 }
-.lightBox .projectLightBox .weOffer,.weAdvise {
-    height: 200vh;    /*project module height: weOffer*/
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-}
-.lightBox .projectLightBox .weAdvise{
-    height: 400vh;    /*project module height: weAdvise*/
-}
-.lightBox .projectLightBox .phaseIcon {
-    width: 8vw ;
-   margin: 5px;
-}
-.lightBox .weOfferContent,.weProvideContent {
-    text-align: left;
-    margin: 0 2em;
-}
-.lightBox .nextProject {
-    height: 200vh;    /*project module height: nextProject*/
-    text-align: end;
-    padding-right: 2vw;
-    background-color: white;
-    color:black;
-    align-items: center;
+.projectLightBox .nextProject button {
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 40px;
+    font-size: 1.3rem;
+
 }
 .lightBox .teamContainer {
     align-items: center;
-    margin-left: 2em;
+    margin: 2em;
 }
 .lightBox .teamMemberContainer {
     padding: 20px;
@@ -799,11 +778,15 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     background-color:black;
     color: white;
     height: 40vh;
-    width: 40%;
+    width: 35%;
     margin: 20px auto;
 }
 .projectLightBox p {
     font-size: 1.3rem;
+    font-weight: 600;
+}
+.projectLightBox .servicesContent {
+    padding: 10px 10%;
 }
 .projectLightBox .phaseContainer {
     display: flex;
@@ -815,7 +798,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     color: black;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .projectLightBox .phase li {
     font-weight: 500;
@@ -840,7 +823,23 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     cursor: pointer;
     opacity: .5;
 }
-
+.projectLightBox h1 {
+    font-style: italic;
+    margin: 10px;
+    /* text-transform: none; */
+}
+.projectLightBox .redesignContainer {
+    display: flex;
+    flex-direction: row;
+}
+.projectLightBox .redesignContainer .redesigncell {
+    width: 50%;
+    margin: 10px;
+}
+.projectLightBox .redesignContainer .redesigncell img {
+    width: 100%;
+    margin-top: 5px;
+}
 /* End LightBox Stylins */
 
 /* Media Queries */
@@ -856,7 +855,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         height: 70vh;
     }
     .about .aboutUs {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     h1, footer h1 {
         font-size: 3rem;
@@ -864,8 +863,11 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h2, footer h2, header .navBar, .projectInformation .testimonial p {
         font-size: 2rem;
     }
-    .about p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
-        font-size: 1.8rem;
+    p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+        font-size: 1.5rem;
+    }
+    .about p {
+        font-size: 2rem;
     }
     footer .footerLogo {
         width: 10%;
@@ -1056,7 +1058,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 2.3rem;
     }
     .about {
-        height: 70vh;
+        height: 60vh;
     }
     .about .aboutUs {
         font-size: 3rem;
@@ -1367,7 +1369,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         font-size: 2rem;
     }
     .banner h2{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .aboutImage .img{
         margin-top: 20px;
@@ -1390,10 +1392,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     .about h1{
         font-size: 2rem;
-        padding-top: 30%;
+        padding-top: 10%;
     }
     .about .aboutUs {
-        padding-top: 100px;
+        padding-top: 10%;
         font-size: 2rem;
     }
     .about p {
@@ -1402,6 +1404,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .mainInfo h1 {
         margin: 10px 0 0 20px;
         padding: 0;
+        font-size: 2rem;
     }
     .mainInfo p,h2 {
         margin-left: 0;
@@ -1422,9 +1425,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     header {
         height: 70vh;
         width: 100vw;
-    }
-    .mainInfo img {
-        height: 20vh;
     }
     h1, footer h1 {
         font-size: 1rem;
