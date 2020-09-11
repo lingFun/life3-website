@@ -278,7 +278,7 @@
     
         <footer>
             <div class="contactUsForm" id="contactUs">
-                <form action="https://formspree.io/xknqdbrk" method="POST">
+                <form action="contactform.php" method="POST">
                     <h2>CONTACT US</h2>
                     <h1>SEND US A MESSAGE</h1>
                     <br>
