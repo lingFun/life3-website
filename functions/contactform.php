@@ -7,7 +7,7 @@ $input2= $_POST('Email-Address');
 
 mysql_connect("localhost","root","");
 mysql_select_db("test");
-$select="insert into project(Company Name, Organization Type, Name, Phone-Number, Email-Address) values ('".$formInput"' ,'".$input2"')";
+$select="insert into project(Company Name, Organization Type, Name, Phone-Number, Email-Address) values ('".$formInput."' ,'".$input2."')";
 $sql=mysql_query($select);
 
 print '<script type= "text/javascript">';
