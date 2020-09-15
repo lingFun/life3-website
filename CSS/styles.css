@@ -57,7 +57,7 @@ table {
 
 /* Nav Bar Stylings */
 header {
-    height: 50vh;
+    height: 60vh;
     /* width: 100vw; */
     /* padding-top: 10vh; */
     display: flex;
@@ -83,7 +83,6 @@ header .navBar {
     box-shadow: 0px 0px 5px 5px black;
     justify-content: flex-end;
     margin-left: auto;
-    padding-right: 13vw;
 }
 
 header .navBar.hide {
@@ -162,7 +161,7 @@ header .contactUsButton {
 video {
     position: absolute; 
     z-index: -9999; 
-    height: 50%;
+    height: 60%;
     width: 100%;
     object-fit: fill;
 }
@@ -179,6 +178,8 @@ video {
 .banner h1 {
     font-weight: 900;
     line-height: 2;
+    color: mediumaquamarine;
+    margin-top: 5%;
 }
 .banner h2 {
     font-weight: 500;
@@ -201,7 +202,7 @@ header .enableBanner {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../Assets/Images/Banner/Homepage image.png");
+    background-image: url("../Assets/Images/Banner/e's background image.png");
     background-color: black;
 }
 .enableBanner .bannerContent {
@@ -211,6 +212,7 @@ header .enableBanner {
 }
 .enableBanner h1 {
     line-height: 2;
+    color: mediumaquamarine;
 }
 .enableBanner h2 {
     line-height: 1.5;
@@ -306,7 +308,7 @@ header .enableBanner {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    margin: 5vh 2vw 0;
+    margin: 5vh 2vw;
 }
 
 .mainInfo h1 {
@@ -445,7 +447,7 @@ header .enableBanner {
 }
 
 .projectLightBox .partnerLogo{
-    height: 200px;
+    height: 150px;
     width: auto;
     margin: 10px;
     text-align: center;
@@ -457,7 +459,7 @@ header .enableBanner {
 .about {
     background-image: url("../Assets/Images/Banner/We\ enable\ background\ image.png");
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -496,6 +498,7 @@ header .enableBanner {
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
+    text-decoration: underline;
 }
 /* End About Section Stylings */
 
@@ -875,6 +878,11 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     font-size: 1.3rem;
 
 }
+.projectLightBox .nextProject p{
+    text-decoration: underline;
+    color: black;
+    margin:10px 0;
+}
 .lightBox .teamContainer {
     align-items: center;
     margin: 2em;
@@ -968,7 +976,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h2, footer h2, header .navBar, .projectInformation .testimonial p {
         font-size: 2rem;
     }
-    p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+    .testimonialsContentInfo p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: 1.5rem;
     }
     .about p {
@@ -1022,9 +1030,12 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p,.servicesTable th h2 {
         font-size: 1.5rem;
     }
-    .about p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+    .testimonialsContentInfo p,.about p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: 1.5rem;
     }
+    /* .contactUsButton p{
+        font-size: 1rem;
+    } */
     .teamProfileImage{
         width: 80px;
         height: 80px;
@@ -1154,20 +1165,33 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .banner h2{
         font-size: 1.5rem;
     }
-    .aboutUs p,.mainInfo h2{
-        font-size: 1.2rem;
-        line-height: 1.5;
+    .aboutContent p,.mainInfo h2{
+        font-size: 1.5rem;
+        line-height: 2;
     }
-    button{
+    button {
         width: 150px;
         height: 30px;
         font-size: 1rem;
     }
-    h1{
+    h1 {
         font-size: 2.3rem;
+    }
+    .bannerContent h1 {
+        margin-top: 200px;
+    }
+    .banner h1 {
+        margin-top: 100px;
     }
     .about .aboutUs {
         font-size: 3rem;
+        padding-top: 150px;
+    }
+    .about h1 {
+        padding-top: 20%;
+    }
+    .about .aboutContent {
+        width: 70%;
     }
     header .navBar .navLinkText .mainInfo{
         font-size: 1.3rem;
@@ -1221,9 +1245,6 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     }
     footer .contactUsForm {
         width: 90%;
-    }
-    .projectLightBox .phase {
-        width: 80%;
     }
 
 }
@@ -1297,8 +1318,8 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p {
         font-size: .8rem;
     }
-    .partners p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
-        font-size: 1rem;
+    .testimonialsContentInfo p, .partners p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+        font-size: 0.8rem;
     }
     .phasesTable th {
         font-size: .8rem;
@@ -1392,7 +1413,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 @media (max-height:650px) {
     video{
-        height: 60%;
+        height: 50%;
     }
     .aboutImage {
         width: 50%;
@@ -1463,6 +1484,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
 
 
 @media (max-width: 450px), (max-height: 550px) {
+    .navBar button{
+        width: 100px;
+    }
     video{
         height: 70vh;
     }
@@ -1483,10 +1507,10 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .banner{
         margin: 80px 0 0 40px;
     }
-    .banner h1{
+    .banner h1, .bannerContent h1 {
         font-size: 2rem;
     }
-    .banner h2{
+    .banner h2, .bannerContent p{
         font-size: 1rem;
     }
     .aboutImage .img{
@@ -1520,6 +1544,9 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         padding: 0;
         font-size: 2rem;
     }
+    .testimonials h1, .diverseContentInfo h1 {
+        font-size: 2rem;
+    }
     .mainInfo p,h2, .projectLightBox .phase h2 {
         margin-left: 0;
         padding: 0;
@@ -1540,13 +1567,13 @@ footer .socialMediaContainer .socialMediaIcon:hover {
         height: 70vh;
         width: 100vw;
     }
-    h1, footer h1 {
+    h1, footer h1, .testimonials h3 {
         font-size: 1rem;
     }
     h2, header .navBar, footer .contactUsContainer h3, .projectInformation .testimonial p {
         font-size: .8rem;
     }
-    .projectLightBox p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
+    .testimonialsContentInfo p,.projectLightBox p, p, li, footer p, .aboutTeam .teamProfiles figure figcaption p {
         font-size: .8rem;
         /* line-height: 1rem; */
     }
@@ -1576,6 +1603,27 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     .mainInfo .mainInfoContainer{
         display: flex;
         flex-direction: column;
+    }
+    .projectLightBox .phaseContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .projectLightBox .phase {
+        width: 70%;
+    }
+    .testimonialsHead img {
+        height: 100px;
+        width: 100px;
+    }
+    .testimonials h2 {
+        font-size: 1.3rem;
+    }
+    .testimonials h3 {
+        font-size: 0.8rem;
+    }
+    .projectLightBox .teamProfileImage {
+        width: 80px;
+        height: 80px;
     }
 }
 
