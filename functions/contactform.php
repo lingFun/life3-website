@@ -1,18 +1,33 @@
 <?php
-$formInput= $_POST('Company Name');
-$formInput= $_POST('Organization Type');
-$formInput= $_POST('Name');
-$formInput= $_POST('Phone-Number');
-$input2= $_POST('Email-Address');
+//$con = mysqli_connect("localhost","root","", "test");
+//$con = mysqli_connect("localhost", "funny1206", "a272245952", "loginPro");
+$con = mysqli_connect("localhost", "funny1205", "a272245952", "contactus_Info");
+//$con = mysqli_connect('localhost', 'cpses_xocqx3zbvi', '', 'loginPro');
 
-mysql_connect("localhost","root","");
-mysql_select_db("test");
-$select="insert into project(Company Name, Organization Type, Name, Phone-Number, Email-Address) values ('".$formInput."' ,'".$input2."')";
-$sql=mysql_query($select);
+if(!$con) {
+    echo 'Connection Error';
+}
 
-print '<script type= "text/javascript">';
-print 'alert("The data is inserted...")';
-print '</script>';
+//mysql_select_db("test");
 
-mysql_close();
+$companyname =$_POST['companyname'];
+$organizationtype= $_POST['organizationtype'];
+$name=$_POST['name'];
+$phonenumber=$_POST['phonenumber'];
+$emailaddress=$_POST['emailaddress'];
+
+
+
+$sql ="INSERT INTO contactus_data (Company_Name, Organization_Type, Users_Fullname, Phone_Number, Email_Address) VALUES ('$companyname' ,'$organizationtype', '$name', '$phonenumber', '$emailaddress')";
+//$sql=mysql_query($select);
+$rs = mysqli_query($con, $sql);
+if($rs)
+{
+	echo "Contact Records Inserted";
+}
+//print '<script type= "text/javascript">';
+//print 'alert("The data is inserted...")';
+//print '</script>';
+
+//mysqli_close();
 ?>

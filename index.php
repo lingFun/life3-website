@@ -278,25 +278,25 @@
     
         <footer>
             <div class="contactUsForm" id="contactUs">
-                <form action="contactform.php" method="POST">
+                <form action="functions/contactform.php" method="POST">
                     <h2>CONTACT US</h2>
                     <h1>SEND US A MESSAGE</h1>
                     <br>
                     <div class="formInput">
-                        <input type="text" name="Company Name" placeholder="Your Organization Name">
-                        <select id="mylist" name="Organization Type" placeholder="CompanyType">
+                        <input type="text" name="companyname" placeholder="Your Organization Name" id="companyname" >
+                        <select id="mylist" name="organizationtype" placeholder="CompanyType" id="organizationtype" >
                             <option value ="Technical company">Technical Company</option>
                             <option value ="Educational institution">Educational Institution</option>
                             <option value ="others">Other</option>
                         </select> 
                     </div>
                     <div class="formInput">
-                        <input type="text" name="Name" placeholder="Your Name">
-                        <input type="tel" name="Phone-Number" placeholder="Phone#">
+                        <input type="text" name="name" placeholder="Your Name" id="name" >
+                        <input type="tel" name="phonenumber" placeholder="Phone#" id="phonenumber">
                     </div>
-                    <input class="input2" type="email" name="Email-Address" placeholder="Email">
+                    <input class="input2" type="email" name="emailaddress" placeholder="Email" id="emailaddress">
                     <div class="messageInput">
-                        <textarea type="text" name="Message" placeholder="Message"></textarea>
+                        <textarea type="text" name="message" placeholder="Message" id="message"></textarea>
                     </div>
                     <input class="submitBtn" type="submit" value="SEND MESSAGE">
         
