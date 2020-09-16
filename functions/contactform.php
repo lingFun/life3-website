@@ -2,7 +2,7 @@
 //$con = mysqli_connect("localhost","root","", "test");
 //$con = mysqli_connect("localhost", "funny1206", "a272245952", "loginPro");
 $con = mysqli_connect("localhost", "funny1205", "a272245952", "contactus_Info");
-//$con = mysqli_connect('localhost', 'cpses_xocqx3zbvi', '', 'loginPro');
+//$con = mysqli_connect('localhost', 'root', '', 'loginPro');
 
 if(!$con) {
     echo 'Connection Error';
