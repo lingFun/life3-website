@@ -1,7 +1,7 @@
 <?php
-//$con = mysqli_connect("localhost","root","", "test");
+$con = mysqli_connect("localhost","root","", "test");
 //$con = mysqli_connect("localhost", "funny1206", "a272245952", "loginPro");
-$con = mysqli_connect("localhost", "funny1205", "a272245952", "contactus_Info");
+//$con = mysqli_connect("localhost", "funny1205", "a272245952", "contactus_Info");
 //$con = mysqli_connect('localhost', 'root', '', 'loginPro');
 
 if(!$con) {
@@ -18,7 +18,7 @@ $emailaddress=$_POST['emailaddress'];
 
 
 
-$sql ="INSERT INTO contactus_data (Company_Name, Organization_Type, Users_Fullname, Phone_Number, Email_Address) VALUES ('$companyname' ,'$organizationtype', '$name', '$phonenumber', '$emailaddress')";
+$sql ="INSERT INTO datas (Company_Name, Organization_Type, Users_Fullname, Phone_Number, Email_Address) VALUES ('$companyname' ,'$organizationtype', '$name', '$phonenumber', '$emailaddress')";
 //$sql=mysql_query($select);
 $rs = mysqli_query($con, $sql);
 if($rs)
