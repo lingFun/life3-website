@@ -33,9 +33,9 @@ a {
 
 button {
     text-transform: uppercase;
-    width: 250px;
+    width: 200px;
     height: 50px;
-    background-color: mediumaquamarine; 
+    background-color: #ADF5D9; 
     border: 0; 
     border-radius: 15px;
     font-weight:bold;
@@ -178,7 +178,7 @@ video {
 .banner h1 {
     font-weight: 900;
     line-height: 2;
-    color: mediumaquamarine;
+    color: #ADF5D9;
     margin-top: 5%;
 }
 .banner h2 {
@@ -212,7 +212,7 @@ header .enableBanner {
 }
 .enableBanner h1 {
     line-height: 2;
-    color: mediumaquamarine;
+    color: #ADF5D9;
 }
 .enableBanner h2 {
     line-height: 1.5;
@@ -265,7 +265,7 @@ header .enableBanner {
     /* float: left; */
     margin-right: 10px;
     border-radius:50%; 
-    border:3px solid mediumaquamarine;
+    border:3px solid #ADF5D9;
 }
 
 .testimonialsName {
@@ -331,7 +331,7 @@ header .enableBanner {
 }
 
 .mainInfo .describle {
-    color: mediumaquamarine;
+    color: #ADF5D9;
 }
 
 .mainInfo button {
@@ -484,7 +484,7 @@ header .enableBanner {
 
 .about h1 {
     font-weight: 900;
-    color: mediumaquamarine;
+    color: #ADF5D9;
     padding-top: 10%;
     /* padding-top: 80px; */
 }
@@ -524,7 +524,7 @@ footer .footerLogo {
 }
 
 .contactUsForm h2 {
-    color: mediumaquamarine;
+    color: #ADF5D9;
     font-size: 1.5rem;
     font-weight: 900;
 }
@@ -536,7 +536,7 @@ footer .footerLogo {
 .contactUsForm .submitBtn {
     width: 250px;
     height: 50px;
-    background-color: mediumaquamarine; 
+    background-color: #ADF5D9; 
     border: 0; 
     border-radius: 15px; 
     font-size: 1.5rem;
@@ -910,7 +910,7 @@ footer .socialMediaContainer .socialMediaIcon:hover {
     /* padding: 20px 10%; */
 }
 .projectLightBox .phase h2{
-    background-color: mediumaquamarine;
+    background-color: #ADF5D9;
     color: black;
     text-transform: uppercase;
     font-weight: 900;

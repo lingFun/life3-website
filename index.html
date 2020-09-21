@@ -289,15 +289,16 @@
 
     <footer>
         <div class="contactUsForm" id="contactUs">
-            <form action="https://formspree.io/xzbeebbo" method="POST">
+            <form action="functions/handle_contact.php" method="POST"> 
+                <!-- https://formspree.io/xzbeebbo -->
                 <h2>CONTACT US</h2>
                 <h1>SEND US A MESSAGE</h1>
                 <br>
                 <div class="formInput">
                     <input type="text" name="companyName" placeholder="Your Organization Name">
-                    <select id="mylist" name="Organization Type" placeholder="CompanyType">
-                        <option value ="Technical company">Technical company</option>
-                        <option value ="Educational institution">Educational institution</option>
+                    <select id="mylist" name="organizationType" placeholder="Company Type">
+                        <option value ="technicalCompany">Technical company</option>
+                        <option value ="educationalInstitution">Educational institution</option>
                         <option value ="others">Other</option>
                     </select> 
                 </div>
