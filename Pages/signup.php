@@ -3,12 +3,12 @@
 
 
 <?php  display_message(); ?>
-<div id="signup" class="container" style="border:1px solid #ccc">
+<div id="signup" class="container">
   <form method="post">
           <?php user_validation();
                 display_message(); ?>
           <h1>Life3 Member Sign Up</h1>
-          <hr>
+          <!-- <hr> -->
           
           <label for="firstname"><b>First Name</b></label>
           <input type="text" placeholder="Enter first name" name="FirstName" required>

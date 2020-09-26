@@ -1,9 +1,9 @@
 <?php require_once('../includes/header.php')?>
 <body>
-  <div id="recover" class="container" mt-5 style="border:1px solid #ccc" >
+  <div id="recover" class="container" mt-5 >
     <form method="POST">
           <h1>Reset Password</h1>
-          <hr>
+          <!-- <hr> -->
           <?php reset_password(); 
                 display_message(); ?>
           <label for="psw"><b>Password</b></label>

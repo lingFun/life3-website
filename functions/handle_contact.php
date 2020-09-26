@@ -15,13 +15,8 @@
             VALUES ('$companyName' ,'$organizationType', '$name', '$phoneNumber', '$emailAddress')";
         $result = Query($sql);
         confirm($result);
-        // $rs = mysqli_query($con, $sql);
-        // if($rs)
-        // {
-        //     echo "Contact Records Inserted";
-        // }
 
-        $mailTo = "lfang001@citymail.cuny.edu";
+        $mailTo = "omar.duran@life3.io";
         $headers = "From: life3.io"  . "\r\n" .
         "CC: omar.duran@life3.io";
         $txt = "Company name: ".$companyName."\nOrganization type: ".$organizationType."\nName: ".$name.
@@ -29,7 +24,6 @@
 
 
         mail($mailTo, $companyName, $txt, $headers);
-        // header("Location: ../thankyou.html");
         redirect("../Pages/thankyou.html");
     }
 
