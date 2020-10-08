@@ -1,10 +1,13 @@
 /* Global Stylings */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: magneta, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Poppins;
+    /*, magneta, "Palatino Linotype", "Book Antiqua", Palatino, serif; */
     scroll-behavior: smooth;
 }
 
@@ -16,6 +19,7 @@ body {
 h1 {
     text-transform: uppercase;
     font-size: 3.5rem;
+    text-decoration: none;
 }
 
 h2 {
@@ -24,6 +28,7 @@ h2 {
 
 p, li {
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
 a {
@@ -180,6 +185,7 @@ video {
     line-height: 2;
     color: #ADF5D9;
     margin-top: 5%;
+    text-decoration: none;
 }
 .banner h2 {
     font-weight: 500;
@@ -314,7 +320,7 @@ header .enableBanner {
 .mainInfo h1 {
     text-align: center;
     font-weight: 900;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .mainInfo h2 {
@@ -408,7 +414,7 @@ header .enableBanner {
     text-transform: uppercase;
     color: black;
     text-align: center;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 3rem;
     font-weight: 900;
 }
@@ -463,7 +469,7 @@ header .enableBanner {
     background-size: cover;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -477,7 +483,8 @@ header .enableBanner {
     font-style: italic;
     color: white;
     text-align: center;
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    padding-bottom: 5vh;
     margin-bottom: 10px;
     font-size: 4rem;
 }
@@ -1059,7 +1066,7 @@ button:hover {
         height: 60vh;
     }
     .about .aboutUs {
-        font-size: 4rem;
+        font-size: 2.3rem;
     }
     h1, footer h1 {
         font-size: 3rem;
@@ -1071,7 +1078,7 @@ button:hover {
         font-size: 1.5rem;
     }
     .about p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2;
     }
     footer .footerLogo {

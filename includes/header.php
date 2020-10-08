@@ -20,10 +20,10 @@
         <nav class="navBar" id="navbar">
             <a class="navLink navLogo" href="."><img src="../Assets/Images/Icons/LIFE3HeaderLogo.png" alt="LIFE3 Logo"
                         title="LIFE3"></img></a>
-                        <a class="navLink navLinkText" href="../Pages/empower.html">Empower</a>
-            <a class="navLink navLinkText" href="../Pages/enable.html">Enable</a>
-            <!-- <a class="navLink navLinkText" href="Pages/signin.php">Educate</a> -->
-            <a href="#contactUs"><button class="navLink navLinkText">Contact Us</button></a>
+            <a class="navLink navLinkText">Educate</a>
+            <a class="navLink navLinkText" href="../index.html">Enable</a>
+            <a class="navLink navLinkText" href="empower.html">Empower</a>
+            <a href="signin.php"><button class="navLink navLinkText">SIGN IN</button></a>
         </nav>
          
 
