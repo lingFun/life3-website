@@ -1028,7 +1028,7 @@ button:hover {
 /* Add padding to container elements */
 .container {
     padding: 30px;
-    width: 50vw;
+    width: 40vw;
     margin: 20vh auto;
     background-color: black;
     color: white;
